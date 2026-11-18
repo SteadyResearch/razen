@@ -1,0 +1,100 @@
+{
+  "profile_version": "0.2.0",
+  "profile_id": "macos-arm64-proof",
+  "host": {
+    "os": "macOS",
+    "os_version": "26.5.1",
+    "arch": "arm64",
+    "minimum_logical_cpus": 4,
+    "minimum_memory_mib": 16384,
+    "required_run_metadata": ["hardware_model", "logical_cpus", "memory_mib", "os_build", "kernel", "filesystem", "storage", "dependency_versions", "fixture_digests"]
+  },
+  "toolchain": {
+    "rust": "1.100.0",
+    "component_target": "wasm32-wasip2"
+  },
+  "transport": {
+    "required_modes": ["http1_forward", "https_connect_tunnel", "https_http1_intercept", "https_http2_intercept"],
+    "bind": "loopback",
+    "fixture_scope": "explicit-address-and-ephemeral-port-grants",
+    "client_trust": "isolated-test-client-only",
+    "upstream_tls_verification": true,
+    "requests_per_case": 20,
+    "redirect_limit": 3,
+    "request_timeout_ms": 2000,
+    "body_limit_bytes": 1048576,
+    "chunk_limit_bytes": 65536
+  },
+  "control": {
+    "ack_deadline_ms": 1000,
+    "stale_admissions_after_barrier": 0
+  },
+  "parser_fuzz": {
+    "seed": 5489,
+    "mutation_version": "0.1.0",
+    "max_inputs": 10000,
+    "max_input_bytes": 65536,
+    "deadline_ms": 30000
+  },
+  "component": {
+    "world": "razen:component-proof/passive-proof@0.1.0",
+    "linear_memory_bytes": 67108864,
+    "instances": 3,
+    "memories": 1,
+    "tables": 2,
+    "table_elements": 16384,
+    "max_concurrent_invocations": 1,
+    "max_concurrent_host_calls": 1,
+    "fuel_per_invocation": 10000000,
+    "epoch_interval_ms": 10,
+    "invocation_deadline_ms": 5000,
+    "host_call_deadline_ms": 250,
+    "runner_rss_monitor_threshold_mib": 256,
+    "rss_sampling_ms": 10
+  },
+  "external_runner": {
+    "backend": "lima-vz-plain-bubblewrap-cgroup-v2",
+    "lima_version": "2.3.0",
+    "bubblewrap_version": "0.13.1",
+    "guest_os": "Debian 13.7 arm64",
+    "guest_cpus": 2,
+    "guest_memory_mib": 2048,
+    "image_url": "https://cloud.debian.org/images/cloud/trixie/20261111-2659/debian-13-genericcloud-arm64-20261111-2659.raw",
+    "image_digest": "sha512:255ed35957114b453d72cf021f70542d09dccbb9210640a220a4d0931fa80e1ea956785a7ca88b33d58b55dd4d00f0677b0016a14c99a168b6ed8e239ac98b09",
+    "direct_network": false,
+    "host_mounts": false,
+    "agent_or_manager_socket_forwarding": false,
+    "memory_max_bytes": 268435456,
+    "memory_swap_max_bytes": 0,
+    "pids_max": 64,
+    "cpu_max": "100000 100000",
+    "tmpfs_max_bytes": 16777216,
+    "file_descriptors_max": 64,
+    "wall_deadline_ms": 5000,
+    "termination_grace_ms": 200,
+    "empty_cgroup_observation_deadline_ms": 1000,
+    "orphan_lease_ms": 2000,
+    "max_concurrent_invocations": 1
+  },
+  "protocol": {
+    "version": "razen.proof/0.1.0",
+    "message_limit_bytes": 1048576,
+    "invocation_output_limit_bytes": 2097152,
+    "admission_queue_capacity": 64,
+    "event_queue_capacity": 256
+  },
+  "ledger": {
+    "journal_mode": "DELETE",
+    "synchronous": "FULL",
+    "fullfsync": true,
+    "foreign_keys": true,
+    "busy_timeout_ms": 250
+  },
+  "measurement": {
+    "latency_warmup_exchanges": 20,
+    "latency_sample_exchanges": 100,
+    "sample_body_bytes": 4096,
+    "product_performance_thresholds_are_r0_gates": false,
+    "provision_or_compile_during_timing": false
+  }
+}

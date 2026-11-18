@@ -1,0 +1,24 @@
+{
+  "schema_version": "0.1.0",
+  "fixture_only": true,
+  "authority": "target.razen.invalid",
+  "excluded_authority": "excluded.razen.invalid",
+  "method": "POST",
+  "target": "/echo?fixture=binary",
+  "body": {"pattern": "ascending-octets", "length_from": "measurement.sample_body_bytes"},
+  "headers": [
+    {"name": "content-type", "value": "application/octet-stream"},
+    {"name": "x-razen-duplicate", "value": "first"},
+    {"name": "x-razen-duplicate", "value": "second"}
+  ],
+  "required_modes": ["http1_forward", "https_connect_tunnel", "https_http1_intercept", "https_http2_intercept"],
+  "scope_variants": ["excluded", "redirect_pivot", "dns_change", "dns_mixed_answers", "ipv4_mapped_ipv6", "ungranted_loopback_port", "ungranted_private_port", "userinfo", "ambiguous_authority", "ipv6_zone"],
+  "tls_variants": ["invalid_upstream_certificate", "connect_sni_mismatch", "decrypted_authority_mismatch", "client_root_removed"],
+  "body_variants": ["oversized_body", "truncated_content_length", "truncated_chunked", "conflicting_framing", "unsupported_encoding", "unsupported_protocol", "redirect_limit"],
+  "h2_max_concurrent_streams": 2,
+  "h2_reset_reason": "CANCEL",
+  "encoding_policy": "identity-only; other content encodings are explicitly rejected without decompression or replacement",
+  "framing_policy": "Rama HTTP/1 decoder; incomplete or conflicting frames fail explicitly",
+  "trust_policy": "ephemeral-memory-CA; isolated-client-and-upstream-roots; OS-trust-readonly",
+  "measurement_policy": "interleaved warm direct and proxy on the same already-running owned receiver; exact profile counts and body size; raw samples; no R1 threshold claims"
+}

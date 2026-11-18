@@ -1,0 +1,1 @@
+{"record":{"fields":{"investigation_id":"00000000-0000-4000-8000-000000000007","project_id":"00000000-0000-4000-8000-000000000001","steps":[{"action_node_id":"00000000-0000-4000-8000-000000000016","depends_on":[],"step_id":"read-public-fixture"}],"version":"0.1.0","workflow_id":"00000000-0000-4000-8000-000000000011"},"type":"workflow_definition"},"schema_version":"0.1.0"}

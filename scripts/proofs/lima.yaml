@@ -1,0 +1,54 @@
+minimumLimaVersion: 2.3.0
+vmType: vz
+arch: aarch64
+os: Linux
+plain: true
+images:
+- location: https://cloud.debian.org/images/cloud/trixie/20261111-2659/debian-13-genericcloud-arm64-20261111-2659.raw
+  arch: aarch64
+  digest: sha512:255ed35957114b453d72cf021f70542d09dccbb9210640a220a4d0931fa80e1ea956785a7ca88b33d58b55dd4d00f0677b0016a14c99a168b6ed8e239ac98b09
+cpus: 2
+memory: 2GiB
+disk: 12GiB
+mounts: []
+portForwards: []
+networks: []
+additionalDisks: []
+blockDevices: []
+copyToHost: []
+provision: []
+probes: []
+upgradePackages: false
+propagateProxyEnv: false
+env: {}
+user:
+  name: razen-manager
+  uid: 1000
+  home: /home/razen-manager
+  shell: /bin/bash
+  passwordlessSudo: true
+ssh:
+  loadDotSSHPubKeys: false
+  forwardAgent: false
+  forwardX11: false
+  forwardX11Trusted: false
+  overVsock: false
+containerd:
+  system: false
+  user: false
+vmOpts:
+  vz:
+    diskImageFormat: raw
+    rosetta:
+      enabled: false
+      binfmt: false
+hostResolver:
+  enabled: false
+networkOpts:
+  hostLoopback: false
+nestedVirtualization: false
+tpm: false
+audio:
+  device: none
+video:
+  display: none

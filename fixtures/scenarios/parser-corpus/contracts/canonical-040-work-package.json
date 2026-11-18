@@ -1,0 +1,1 @@
+{"record":{"fields":{"case_ids":["EXIT-01","EXIT-02"],"package_id":"R0-05","requirement_ids":["FR-001","FR-013","FR-014","FR-015","FR-016","FR-018"],"requires":["R0-01","R0-02","R0-03","R0-04"],"title":"Reproducible evidence and exit review"},"type":"work_package"},"schema_version":"0.1.0"}

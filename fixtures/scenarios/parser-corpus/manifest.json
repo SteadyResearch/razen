@@ -1,0 +1,1072 @@
+{
+  "schema_version": "0.1.0",
+  "mutation_version": "0.1.0",
+  "entries": [
+    {
+      "path": "framing/runtime-started.jsonl",
+      "target": "framing",
+      "valid": true,
+      "sha256": "fb0ae538ce02435b6da7a3dcaf116c04a31c171210f4798756e5326bacfce8dc",
+      "role": "runtime",
+      "direction": "peer_to_host"
+    },
+    {
+      "path": "framing/supervisor-started.jsonl",
+      "target": "framing",
+      "valid": true,
+      "sha256": "e5f4ed7231db81655e08f99483f24d3992a941b019e61117cfbe0313475a7410",
+      "role": "supervisor",
+      "direction": "peer_to_host"
+    },
+    {
+      "path": "framing/duplicate-kind.jsonl",
+      "target": "framing",
+      "valid": false,
+      "sha256": "b1f720c46aa2801167acbc50d826a355e20d7db6e388bb9e7a2e6972d8cf4b85",
+      "role": "runtime",
+      "direction": "peer_to_host"
+    },
+    {
+      "path": "framing/unknown-protocol.jsonl",
+      "target": "framing",
+      "valid": false,
+      "sha256": "348a66da99038c3a3f75bbc3cd18efaa679705a1daadb7d284c3759613da2205",
+      "role": "runtime",
+      "direction": "peer_to_host"
+    },
+    {
+      "path": "framing/malformed.jsonl",
+      "target": "framing",
+      "valid": false,
+      "sha256": "9a96cb39141035574ede1682e100a574644e9ab106216f940cf7cfa799dede69",
+      "role": "runtime",
+      "direction": "peer_to_host"
+    },
+    {
+      "path": "contracts/project.json",
+      "target": "contracts",
+      "valid": true,
+      "sha256": "a44f2d1ee49891c143f4aa8999a250813c819b5ab39a946471e430d12a55ac6f"
+    },
+    {
+      "path": "contracts/negative-revision.json",
+      "target": "contracts",
+      "valid": false,
+      "sha256": "afc3e432398c32d64979d9ce1b66d939329bf04e7dc2e68070f254a320cef4e3"
+    },
+    {
+      "path": "contracts/duplicate-revision.json",
+      "target": "contracts",
+      "valid": false,
+      "sha256": "b890ca56d21703ab6ffc23f5e546165026268fd94deb20b8e203ab4bc1fa6277"
+    },
+    {
+      "path": "contracts/unknown-version.json",
+      "target": "contracts",
+      "valid": false,
+      "sha256": "47c41d7214949f99389f4041727ea30a123165231f780e0ac4a8e2a8bc9936da"
+    },
+    {
+      "path": "contracts/unknown-field.json",
+      "target": "contracts",
+      "valid": false,
+      "sha256": "af1db8a9dfdfbd8f7ec404f5616f55acb8ed4993d5e93fae44a8569349fbc3f0"
+    },
+    {
+      "path": "contracts/invalid-entity-id.json",
+      "target": "contracts",
+      "valid": false,
+      "sha256": "a59a8668d8c614992b999441903b8e67dfedc4e3d3ad8a46a09cc317f2aa5111"
+    },
+    {
+      "path": "contracts/canonical-000-fixture-project.json",
+      "target": "contracts",
+      "valid": true,
+      "sha256": "053fac00f01116b99bbf4fca1efbf0962bcc6ea7f7c49f2c007981a0153f422d"
+    },
+    {
+      "path": "contracts/invalid-000-fixture-project-extension.json",
+      "target": "contracts",
+      "valid": false,
+      "sha256": "857fed7a070409759903fe2254046f8fca21bcaa77b44831a3526ba4f014f4d4"
+    },
+    {
+      "path": "contracts/canonical-001-scope-policy.json",
+      "target": "contracts",
+      "valid": true,
+      "sha256": "ee16dffab0478477db4612548d077bbe6eb8b50cb11cc1f77ffd15a886f59b28"
+    },
+    {
+      "path": "contracts/invalid-001-scope-policy-extension.json",
+      "target": "contracts",
+      "valid": false,
+      "sha256": "cfef008bf628179e3d95cc94e6835e932354fe23e8d3d911704bb652d4434da4"
+    },
+    {
+      "path": "contracts/canonical-002-identity-profile.json",
+      "target": "contracts",
+      "valid": true,
+      "sha256": "98e897e6d6df42c9ab8a1b4f2a50c4bd2330b0fb762aa171f17d09777926da01"
+    },
+    {
+      "path": "contracts/invalid-002-identity-profile-extension.json",
+      "target": "contracts",
+      "valid": false,
+      "sha256": "bf7766fff9b80047d669f9c4db7a3442fce31f43ba5e0f8c666e8df66a0aed3b"
+    },
+    {
+      "path": "contracts/canonical-003-tool-descriptor.json",
+      "target": "contracts",
+      "valid": true,
+      "sha256": "3ca86115b9fe2326c15c2fe46f03a5aa7b06aca8f19b3aafb49fd36958d4f3c2"
+    },
+    {
+      "path": "contracts/invalid-003-tool-descriptor-extension.json",
+      "target": "contracts",
+      "valid": false,
+      "sha256": "c7fa05b378ab9674fcf3631d50cadedbae07430b8f8e63cc6ff640f252a1246d"
+    },
+    {
+      "path": "contracts/canonical-004-approval-grant.json",
+      "target": "contracts",
+      "valid": true,
+      "sha256": "e406f29b17b7de36d50d5aa6c0dc2c8929feb7863d7aa0887a71fabada70e188"
+    },
+    {
+      "path": "contracts/invalid-004-approval-grant-extension.json",
+      "target": "contracts",
+      "valid": false,
+      "sha256": "0b843e87bdc69a96414d54c05ed74c8427dfe56ce82174869e9af6ae7ed104a6"
+    },
+    {
+      "path": "contracts/canonical-005-approval-grant.json",
+      "target": "contracts",
+      "valid": true,
+      "sha256": "e55580a0f580a09bf568edc899348c9b1a3d7713794aeb4018d14931972963e3"
+    },
+    {
+      "path": "contracts/invalid-005-approval-grant-extension.json",
+      "target": "contracts",
+      "valid": false,
+      "sha256": "7f3babb1ff3e3353d9c04745bee8933ecabf580cc24c162ec16bc8ce5ff599cc"
+    },
+    {
+      "path": "contracts/canonical-006-budget.json",
+      "target": "contracts",
+      "valid": true,
+      "sha256": "fe8caf2fde0d4fdc5b781c166617d6b025ff5d8b03a308b207ffae6abec750b0"
+    },
+    {
+      "path": "contracts/invalid-006-budget-extension.json",
+      "target": "contracts",
+      "valid": false,
+      "sha256": "ccff4cde0c6d42ae4999b762712203416e0be2ecb07b58028e3c65d207b86c4e"
+    },
+    {
+      "path": "contracts/canonical-007-snapshot.json",
+      "target": "contracts",
+      "valid": true,
+      "sha256": "95fc2b40a5a1a14d803a34413e5b8b818d15d1b3406d46bb2208a1f13965ab2a"
+    },
+    {
+      "path": "contracts/invalid-007-snapshot-extension.json",
+      "target": "contracts",
+      "valid": false,
+      "sha256": "5020187d7fe27eea56f2b362738ab831c530bd619d2519817f3f902ebd681bf3"
+    },
+    {
+      "path": "contracts/canonical-008-artifact.json",
+      "target": "contracts",
+      "valid": true,
+      "sha256": "614c8b88c50094f59cfa8186e030c3687169615c37007359434ce87b75135729"
+    },
+    {
+      "path": "contracts/invalid-008-artifact-extension.json",
+      "target": "contracts",
+      "valid": false,
+      "sha256": "53689c9d7b22f898bb0048a6dfbbfa3fa1d008adf8dd69d3e61d7f98ecfc0bea"
+    },
+    {
+      "path": "contracts/canonical-009-artifact.json",
+      "target": "contracts",
+      "valid": true,
+      "sha256": "02d94ef6a6a3bd76a7b4f7e2a1ae9dba6da86e63c9fe7d8077bd90f833c2351f"
+    },
+    {
+      "path": "contracts/invalid-009-artifact-extension.json",
+      "target": "contracts",
+      "valid": false,
+      "sha256": "308f4cb96404cd9b2150596809caf668f511940cc3076ad1cccc7f2460c2bc03"
+    },
+    {
+      "path": "contracts/canonical-010-artifact.json",
+      "target": "contracts",
+      "valid": true,
+      "sha256": "cf84aae8c6b00b03f4a03cee23efe1383d404cb51ec4df81d197613496dea4a8"
+    },
+    {
+      "path": "contracts/invalid-010-artifact-extension.json",
+      "target": "contracts",
+      "valid": false,
+      "sha256": "90629e59a46ef99771e55ec9ab11ee4810cc1c54da68a04914e2f09cec60ac51"
+    },
+    {
+      "path": "contracts/canonical-011-evidence-ref.json",
+      "target": "contracts",
+      "valid": true,
+      "sha256": "ac4c1f4624eb08924d9f13eb5db4de2bcc35e475aca75ca34adffa73e00d0e0e"
+    },
+    {
+      "path": "contracts/invalid-011-evidence-ref-extension.json",
+      "target": "contracts",
+      "valid": false,
+      "sha256": "f55c6a51eb95711e9e220a68e2be830c0e85c93dc8b0336e54429e5639f5f69a"
+    },
+    {
+      "path": "contracts/canonical-012-evidence-ref.json",
+      "target": "contracts",
+      "valid": true,
+      "sha256": "6d1ab1e3a34e28aeb6e8f54181899cc444f4ca4c0030ab314a8a226bdf4aafe0"
+    },
+    {
+      "path": "contracts/invalid-012-evidence-ref-extension.json",
+      "target": "contracts",
+      "valid": false,
+      "sha256": "f2828d63793c20ff20eeb30047190504de6f7761d8b4d17633853b5ff29eb6d1"
+    },
+    {
+      "path": "contracts/canonical-013-patch.json",
+      "target": "contracts",
+      "valid": true,
+      "sha256": "71790818a18c1837dc78947f4d50aa025a50495bd410c1938e06d2f047438082"
+    },
+    {
+      "path": "contracts/invalid-013-patch-extension.json",
+      "target": "contracts",
+      "valid": false,
+      "sha256": "3a00cb59a17f0d586f4617ce377fa2f5d41589ea23234a9e42be235d023f0214"
+    },
+    {
+      "path": "contracts/canonical-014-observation-proposal.json",
+      "target": "contracts",
+      "valid": true,
+      "sha256": "5b437e109688363965f69ed6b79b5c84fcc6b22bd70459129128d3457c018679"
+    },
+    {
+      "path": "contracts/invalid-014-observation-proposal-extension.json",
+      "target": "contracts",
+      "valid": false,
+      "sha256": "89e7f16b0e4af64f96b044166e609112984fa963111a62aa2cb7c8173b80be62"
+    },
+    {
+      "path": "contracts/canonical-015-invocation.json",
+      "target": "contracts",
+      "valid": true,
+      "sha256": "3716a10f7a67351de41d1a60afaf2c58d0a69fd195b8303bb291bbcbeafeeeaf"
+    },
+    {
+      "path": "contracts/invalid-015-invocation-extension.json",
+      "target": "contracts",
+      "valid": false,
+      "sha256": "4f743a6634827e2b2933b257faf41e2887281c112f4b1d2341c5519862b04ce1"
+    },
+    {
+      "path": "contracts/canonical-016-invocation.json",
+      "target": "contracts",
+      "valid": true,
+      "sha256": "0babac9af7da784d50d0d55271fceebd847b25695c3d67a7e12b9e10c58c84b7"
+    },
+    {
+      "path": "contracts/invalid-016-invocation-extension.json",
+      "target": "contracts",
+      "valid": false,
+      "sha256": "8a62a3b3c8f1daea33bfa3cbdd05a5efdb4572ecd785affd1c41efa9f9f9b9db"
+    },
+    {
+      "path": "contracts/canonical-017-invocation.json",
+      "target": "contracts",
+      "valid": true,
+      "sha256": "d9545dc569a16ddb7c062df4ed45147771342de26d7e141dff4079a4e8a729c2"
+    },
+    {
+      "path": "contracts/invalid-017-invocation-extension.json",
+      "target": "contracts",
+      "valid": false,
+      "sha256": "7b9830362caed0fdb3dd95d1da823b4abdb770d60f59ecb21bf27cb034206bb6"
+    },
+    {
+      "path": "contracts/canonical-018-invocation.json",
+      "target": "contracts",
+      "valid": true,
+      "sha256": "e5b99b1b88789805f041f768ce697ba180b80e3adea320b12e41135f35f6dc3f"
+    },
+    {
+      "path": "contracts/invalid-018-invocation-extension.json",
+      "target": "contracts",
+      "valid": false,
+      "sha256": "99a2c6a239a60ceb2241c439d582f6776acc9235599bf7f4a89d8c46fa1b23dd"
+    },
+    {
+      "path": "contracts/canonical-019-invocation.json",
+      "target": "contracts",
+      "valid": true,
+      "sha256": "386236156c7b7062e50a165eb190700d7ce4433d937a21bcc86c3d7ffd67a010"
+    },
+    {
+      "path": "contracts/invalid-019-invocation-extension.json",
+      "target": "contracts",
+      "valid": false,
+      "sha256": "6b6be9394a2075c10de83457530834c8763f798cad74b84953a25ec79fe7d0fa"
+    },
+    {
+      "path": "contracts/canonical-020-invocation.json",
+      "target": "contracts",
+      "valid": true,
+      "sha256": "66d6da807805dadc343c03d7040ad141093912a3b6cbb2d2a456c61f6233294e"
+    },
+    {
+      "path": "contracts/invalid-020-invocation-extension.json",
+      "target": "contracts",
+      "valid": false,
+      "sha256": "ba0f589581835531e807b83d0627086f6ab746cca3350109c23d21436578fb52"
+    },
+    {
+      "path": "contracts/canonical-021-invocation.json",
+      "target": "contracts",
+      "valid": true,
+      "sha256": "c030a0b9fa7065779683548d95f9ecc09e0b7bc4dbd315cb17c357efb95ec6f6"
+    },
+    {
+      "path": "contracts/invalid-021-invocation-extension.json",
+      "target": "contracts",
+      "valid": false,
+      "sha256": "4bf9214a3aca8648a4300889109b12285740200a21d5387a91f1c9943e20f5bd"
+    },
+    {
+      "path": "contracts/canonical-022-invocation.json",
+      "target": "contracts",
+      "valid": true,
+      "sha256": "7679b66383596eb8ae51bd1893f4c77d58f2934be11639367b4a0b6c6f6c7f8f"
+    },
+    {
+      "path": "contracts/invalid-022-invocation-extension.json",
+      "target": "contracts",
+      "valid": false,
+      "sha256": "26558484d4c0be171920b112fa7ff4509f2d4235d49d5558f2ebedf9d0667ccb"
+    },
+    {
+      "path": "contracts/canonical-023-invocation.json",
+      "target": "contracts",
+      "valid": true,
+      "sha256": "1794d81762ddf0e96e74cc0ed373205f83de2df7d7b64e9c1a7c9746a97617de"
+    },
+    {
+      "path": "contracts/invalid-023-invocation-extension.json",
+      "target": "contracts",
+      "valid": false,
+      "sha256": "3a6fffebb040422aad0d21ede5b2ec59fdef2506188c4bf59dc9884fbe6c3a34"
+    },
+    {
+      "path": "contracts/canonical-024-invocation.json",
+      "target": "contracts",
+      "valid": true,
+      "sha256": "02046d8a67e1c467400fc58b9f81f7a82c028ba388679110f5285a260403b088"
+    },
+    {
+      "path": "contracts/invalid-024-invocation-extension.json",
+      "target": "contracts",
+      "valid": false,
+      "sha256": "e317dce297626f4d2372681271bdb4a393256e43246dcb7c48466018f667ca11"
+    },
+    {
+      "path": "contracts/canonical-025-control-state.json",
+      "target": "contracts",
+      "valid": true,
+      "sha256": "d0061debda31b306edce728b5a4f260a9e4d536a5b3f4d9d6524772db5b5cc2b"
+    },
+    {
+      "path": "contracts/invalid-025-control-state-extension.json",
+      "target": "contracts",
+      "valid": false,
+      "sha256": "b43a5e5361b1fa0a3bbbe527c790d5a09acda369c2bb9e2d90aa63afa0cdf461"
+    },
+    {
+      "path": "contracts/canonical-026-control-measurement.json",
+      "target": "contracts",
+      "valid": true,
+      "sha256": "4c470d3da34209001e76cb4aeb958d63f485a66dde835c35c620f5ca2b050cd6"
+    },
+    {
+      "path": "contracts/invalid-026-control-measurement-extension.json",
+      "target": "contracts",
+      "valid": false,
+      "sha256": "507fc75691ab9cc728fb4903a2767b4017d2060d0ce5dd239c8242c1b268130e"
+    },
+    {
+      "path": "contracts/canonical-027-event.json",
+      "target": "contracts",
+      "valid": true,
+      "sha256": "e625f2f92c8da55e73899e5da2dd10a8ff51037ac9b0e522cf1a807b440ce4b0"
+    },
+    {
+      "path": "contracts/invalid-027-event-extension.json",
+      "target": "contracts",
+      "valid": false,
+      "sha256": "e03d86820b74126e7e95b7f571a03d2c369f7ef109b42411095c002b55850df5"
+    },
+    {
+      "path": "contracts/canonical-028-checkpoint.json",
+      "target": "contracts",
+      "valid": true,
+      "sha256": "c3a2c376b4eb52ab63d36e8547839629849b547a453044c5aa3419b0d263844c"
+    },
+    {
+      "path": "contracts/invalid-028-checkpoint-extension.json",
+      "target": "contracts",
+      "valid": false,
+      "sha256": "8964e48dab0cc3aa9fef1ca43a6958897b32bcc2aa197f8f28bb77fe8af3a696"
+    },
+    {
+      "path": "contracts/canonical-029-investigation-session.json",
+      "target": "contracts",
+      "valid": true,
+      "sha256": "60b02e0becdaaa8408ad70346cce25ad95fce8a8c6571d4691fb778398ed7f56"
+    },
+    {
+      "path": "contracts/invalid-029-investigation-session-extension.json",
+      "target": "contracts",
+      "valid": false,
+      "sha256": "1240bb798cbd7453661f3e24d412abdae729de66627e040dfbadae015415973c"
+    },
+    {
+      "path": "contracts/canonical-030-asset-graph.json",
+      "target": "contracts",
+      "valid": true,
+      "sha256": "fc4fb37a66f3fef6976467767c205d14ef108e4179a8565e42ca1b335cb02d83"
+    },
+    {
+      "path": "contracts/invalid-030-asset-graph-extension.json",
+      "target": "contracts",
+      "valid": false,
+      "sha256": "368a5ae0801932abdc421d893720132409cdad342270ee1759697950610d0bd4"
+    },
+    {
+      "path": "contracts/canonical-031-investigation-graph.json",
+      "target": "contracts",
+      "valid": true,
+      "sha256": "6b054ea469fc1122ce53f3d2955ce4e9646be50048efe9d2e5a4c67b1fb5d45b"
+    },
+    {
+      "path": "contracts/invalid-031-investigation-graph-extension.json",
+      "target": "contracts",
+      "valid": false,
+      "sha256": "31948dc7d0f625bf00c88728c79bbd492726fe673bdd80352e7e8db31468388f"
+    },
+    {
+      "path": "contracts/canonical-032-workflow-definition.json",
+      "target": "contracts",
+      "valid": true,
+      "sha256": "42f21531dd8e35f978f9a5cdc15bc4514355743b3e16315fafe0b13234a96276"
+    },
+    {
+      "path": "contracts/invalid-032-workflow-definition-extension.json",
+      "target": "contracts",
+      "valid": false,
+      "sha256": "8abc816e83b0426d680fdbecdf61eef792861470fbed14edcd753f6c7d58a386"
+    },
+    {
+      "path": "contracts/canonical-033-trace.json",
+      "target": "contracts",
+      "valid": true,
+      "sha256": "e8b7e34157c68fb4bb6939874a541e57654e35b93ed3849f86f89a29ad75d782"
+    },
+    {
+      "path": "contracts/invalid-033-trace-extension.json",
+      "target": "contracts",
+      "valid": false,
+      "sha256": "8bc0402eaf88b06298c048b36c22e2fda037f7e98e9b8ea33983f9fe5edb3409"
+    },
+    {
+      "path": "contracts/canonical-034-memory-item.json",
+      "target": "contracts",
+      "valid": true,
+      "sha256": "9f55bb199349171446052d5a1bd7402d7653e2414c81fc62e19266cf907f7c2a"
+    },
+    {
+      "path": "contracts/invalid-034-memory-item-extension.json",
+      "target": "contracts",
+      "valid": false,
+      "sha256": "80725203f62ffb0f400c1e905f9153b6fee27f162ac4c0bfa667dd7e5042313a"
+    },
+    {
+      "path": "contracts/canonical-035-memory-item.json",
+      "target": "contracts",
+      "valid": true,
+      "sha256": "122c3132c378b4c5bfbf6de2e07cc41013986cdf3e2202d3c32e82af67d159fc"
+    },
+    {
+      "path": "contracts/invalid-035-memory-item-extension.json",
+      "target": "contracts",
+      "valid": false,
+      "sha256": "536c9b8b3e2ce005ae18aed883b44159c6ee0559cc01d9fdbe3fb8fd379e4b38"
+    },
+    {
+      "path": "contracts/canonical-036-work-package.json",
+      "target": "contracts",
+      "valid": true,
+      "sha256": "4679edae51c4b2f67eab1b0e0699a6c01084e6f8ffd91e32935937eb80b07c2e"
+    },
+    {
+      "path": "contracts/invalid-036-work-package-extension.json",
+      "target": "contracts",
+      "valid": false,
+      "sha256": "a15c1a4d02f2034dcc20ee1642613b03c5a439d8edb1406c99accd9960bffeab"
+    },
+    {
+      "path": "contracts/canonical-037-work-package.json",
+      "target": "contracts",
+      "valid": true,
+      "sha256": "a43b43ef3d7a425e975fb55010d99b436183c9c73180e56d54aace0c0b2ca801"
+    },
+    {
+      "path": "contracts/invalid-037-work-package-extension.json",
+      "target": "contracts",
+      "valid": false,
+      "sha256": "3181d4c27783e8c9540c402f8352ded1b88a3d28132f7aaaddde9e4acf388520"
+    },
+    {
+      "path": "contracts/canonical-038-work-package.json",
+      "target": "contracts",
+      "valid": true,
+      "sha256": "e00873ed87816f5dee70aedb00e03601595067225a45b336ffc94453c352033a"
+    },
+    {
+      "path": "contracts/invalid-038-work-package-extension.json",
+      "target": "contracts",
+      "valid": false,
+      "sha256": "969d50730f64f813c90ec7cd97261907880ebb29ebec7d0dff1a19052286926d"
+    },
+    {
+      "path": "contracts/canonical-039-work-package.json",
+      "target": "contracts",
+      "valid": true,
+      "sha256": "36be421f1a2f4c369a33080fc42cacf898452a39bb1f87f00b5f15aeb4021030"
+    },
+    {
+      "path": "contracts/invalid-039-work-package-extension.json",
+      "target": "contracts",
+      "valid": false,
+      "sha256": "b1ce2ba35c01b9a3d81a343ce9e85c043bc9b710477d9ee5288a981ddbbbe0d6"
+    },
+    {
+      "path": "contracts/canonical-040-work-package.json",
+      "target": "contracts",
+      "valid": true,
+      "sha256": "5d0ad4991d91715d4299a4a6f15091200fc023473f900ba5c7da5485ef052ed9"
+    },
+    {
+      "path": "contracts/invalid-040-work-package-extension.json",
+      "target": "contracts",
+      "valid": false,
+      "sha256": "59614b99a069e25597f3cc78464e2d74b346e5895b1abe5e7bd642288ec43ec3"
+    },
+    {
+      "path": "contracts/canonical-041-proof-case.json",
+      "target": "contracts",
+      "valid": true,
+      "sha256": "201dfb2bb559c23636d46f281c53931b47e6fe1d74531adb1a440626437b3ebc"
+    },
+    {
+      "path": "contracts/invalid-041-proof-case-extension.json",
+      "target": "contracts",
+      "valid": false,
+      "sha256": "b3294869ff41d041dd7180096f7af0e6e95673a1981f534e8f5367fc3db5767d"
+    },
+    {
+      "path": "contracts/canonical-042-proof-case.json",
+      "target": "contracts",
+      "valid": true,
+      "sha256": "e4946168924346a3b9909db4a5b2d69e2c2679e9130e26afeaa13a2d9e28a6e3"
+    },
+    {
+      "path": "contracts/invalid-042-proof-case-extension.json",
+      "target": "contracts",
+      "valid": false,
+      "sha256": "5556b747255c98ce321ef151081a3ccbb14ab36ed3850f624253f559b4eb854f"
+    },
+    {
+      "path": "contracts/canonical-043-proof-case.json",
+      "target": "contracts",
+      "valid": true,
+      "sha256": "94ae5829eafd9751eaa8b1f10a349a7c32bf54011cb095b57e6ab0b5f4ef8ee7"
+    },
+    {
+      "path": "contracts/invalid-043-proof-case-extension.json",
+      "target": "contracts",
+      "valid": false,
+      "sha256": "567d947479115ba1c37c68b770112c6045d1eaf5e064aa8f559476d35a7d777c"
+    },
+    {
+      "path": "contracts/canonical-044-proof-case.json",
+      "target": "contracts",
+      "valid": true,
+      "sha256": "b19d31e4a14c20664f6346f2477354f6874edd5447ebb2490d19bc676f69fa3c"
+    },
+    {
+      "path": "contracts/invalid-044-proof-case-extension.json",
+      "target": "contracts",
+      "valid": false,
+      "sha256": "f8d1f1696a2016d1a9690d3f8b23f4d332cdd92e44668f772b2fd022cb8e4e3d"
+    },
+    {
+      "path": "contracts/canonical-045-proof-case.json",
+      "target": "contracts",
+      "valid": true,
+      "sha256": "8c5b255fd5ceaf2e866de8f689789efdddbad1a2725da49880709eada2ef9feb"
+    },
+    {
+      "path": "contracts/invalid-045-proof-case-extension.json",
+      "target": "contracts",
+      "valid": false,
+      "sha256": "405acebc26fea0ee8581343a608efb5a1e04cb57b5c1029eeb324a7204d3dbe6"
+    },
+    {
+      "path": "contracts/canonical-046-proof-case.json",
+      "target": "contracts",
+      "valid": true,
+      "sha256": "c0f5edb9d415ed975eb6bdd19c493cdbf35ded1360abb8fd44c6265461d98299"
+    },
+    {
+      "path": "contracts/invalid-046-proof-case-extension.json",
+      "target": "contracts",
+      "valid": false,
+      "sha256": "c863175543762d6ae002ef361ed4a77966a7bd6e175dbf8cfb5bfc82c173deea"
+    },
+    {
+      "path": "contracts/canonical-047-proof-case.json",
+      "target": "contracts",
+      "valid": true,
+      "sha256": "2759b12bce01550ea68095e8ae61da92152302049b6f2f25886e6f6701198ed1"
+    },
+    {
+      "path": "contracts/invalid-047-proof-case-extension.json",
+      "target": "contracts",
+      "valid": false,
+      "sha256": "9d98fb400158e20945c219d1ea7c454e43086a136fcc48619dbd7355c70a0bca"
+    },
+    {
+      "path": "contracts/canonical-048-proof-case.json",
+      "target": "contracts",
+      "valid": true,
+      "sha256": "cfad68eeaf3300da6f3eb038e06053e060d1a8e51186bc0bd9363a1e0b08b69e"
+    },
+    {
+      "path": "contracts/invalid-048-proof-case-extension.json",
+      "target": "contracts",
+      "valid": false,
+      "sha256": "4745b7a92c5e15cac05c6dd421c64f4298e4d2f8cf2a4070a9b12c02c31b5e23"
+    },
+    {
+      "path": "contracts/canonical-049-proof-case.json",
+      "target": "contracts",
+      "valid": true,
+      "sha256": "aebab35f7c7a2a6806d7b3d20fb33c838b230edb2563da63e9ea05bf9ab3be79"
+    },
+    {
+      "path": "contracts/invalid-049-proof-case-extension.json",
+      "target": "contracts",
+      "valid": false,
+      "sha256": "387f8c3ffe587cca8c66b9e29baed7ee270d2eb91d38b7e18cd232c7f1aba766"
+    },
+    {
+      "path": "contracts/canonical-050-proof-case.json",
+      "target": "contracts",
+      "valid": true,
+      "sha256": "072b63d0418abf84d760ea8128ade8165214f8a9f4a1f8ef0e3ac2801e0ecbb8"
+    },
+    {
+      "path": "contracts/invalid-050-proof-case-extension.json",
+      "target": "contracts",
+      "valid": false,
+      "sha256": "0108d951656f227b9a9d1ded722715b1817de7594f63c1f67ce405c2fe072b57"
+    },
+    {
+      "path": "contracts/canonical-051-proof-case.json",
+      "target": "contracts",
+      "valid": true,
+      "sha256": "3b393be1ab5159a20c33f0d3709eb5d4ef82384a0fd81b219184bd7205d4625a"
+    },
+    {
+      "path": "contracts/invalid-051-proof-case-extension.json",
+      "target": "contracts",
+      "valid": false,
+      "sha256": "0f517ac149586340320fb08cd443ed4b5df6816f381b1994d005bdbeb15c2aa0"
+    },
+    {
+      "path": "contracts/canonical-052-proof-case.json",
+      "target": "contracts",
+      "valid": true,
+      "sha256": "750eb0b50faaea7431752d1774c454266bff0d7a1826e187e5b60aa04445d0c8"
+    },
+    {
+      "path": "contracts/invalid-052-proof-case-extension.json",
+      "target": "contracts",
+      "valid": false,
+      "sha256": "0e1779e4a35921bce1a6c70336d5f0d7b14ef038f427ee9b22333e847c2400de"
+    },
+    {
+      "path": "contracts/canonical-053-proof-case.json",
+      "target": "contracts",
+      "valid": true,
+      "sha256": "4ed7ebd0f088b06e3e8794ce7ed90d0b1bf4ba97fad48f2ef5e31de59a3bc061"
+    },
+    {
+      "path": "contracts/invalid-053-proof-case-extension.json",
+      "target": "contracts",
+      "valid": false,
+      "sha256": "132425a0b30c9c3480eacb64d9e0d313a3e5bbc07ee357085fb5442ed4189cab"
+    },
+    {
+      "path": "contracts/canonical-054-proof-case.json",
+      "target": "contracts",
+      "valid": true,
+      "sha256": "b8b853e411295b6154c602a7e1115e51b232a7bbdc3091689f64ada4d1ce60a4"
+    },
+    {
+      "path": "contracts/invalid-054-proof-case-extension.json",
+      "target": "contracts",
+      "valid": false,
+      "sha256": "999baf6f2f789d77583abf66522cae2e800e8d72d36e6ce116afc8391132292c"
+    },
+    {
+      "path": "contracts/canonical-055-proof-case.json",
+      "target": "contracts",
+      "valid": true,
+      "sha256": "7ffe1eae15dd482e5255fed6eaedf6d0d46314f18e004edab4cbfd2ed69dd728"
+    },
+    {
+      "path": "contracts/invalid-055-proof-case-extension.json",
+      "target": "contracts",
+      "valid": false,
+      "sha256": "59d0bcb5be486ad038d42671e2869994e9f6d25f66100ef7c23414a2aa8bd4f0"
+    },
+    {
+      "path": "contracts/canonical-056-proof-case.json",
+      "target": "contracts",
+      "valid": true,
+      "sha256": "150459cdde02d24de05b2f458b862e95b2175f842c3b8b383212629f73878dcb"
+    },
+    {
+      "path": "contracts/invalid-056-proof-case-extension.json",
+      "target": "contracts",
+      "valid": false,
+      "sha256": "c0ff835f3ccf5f19addaa2267139b1ee8b6a7754ace3cac8a9fad61f6e1761fc"
+    },
+    {
+      "path": "contracts/canonical-057-proof-case.json",
+      "target": "contracts",
+      "valid": true,
+      "sha256": "e24573cef67f022e3ff528b2eb2c6cb9c0e1dec3c8d40377cc9894eba6bd2daf"
+    },
+    {
+      "path": "contracts/invalid-057-proof-case-extension.json",
+      "target": "contracts",
+      "valid": false,
+      "sha256": "984fe0ce4e7dd5d4357772ed6c4bf1cf879fb727f54c088cd30ea367fb259d57"
+    },
+    {
+      "path": "contracts/canonical-058-proof-case.json",
+      "target": "contracts",
+      "valid": true,
+      "sha256": "9cbfda315169d3d8f4c0d18bfb3a46357619ba3fd8240144b45ec6c87bf1ea7e"
+    },
+    {
+      "path": "contracts/invalid-058-proof-case-extension.json",
+      "target": "contracts",
+      "valid": false,
+      "sha256": "a2ad93c72262664e0743a0bf96803e676dafc2b81a6b51501d30a8cc3d253726"
+    },
+    {
+      "path": "contracts/canonical-059-proof-case.json",
+      "target": "contracts",
+      "valid": true,
+      "sha256": "ec873e6442715c9f8cc1fccf5ce8e0493a2d3b3940c05a59a4b8abe1fd80f1dd"
+    },
+    {
+      "path": "contracts/invalid-059-proof-case-extension.json",
+      "target": "contracts",
+      "valid": false,
+      "sha256": "4727d61d3527f84952970c1a696ab6c16d64f21ebd2cb1842ef55f10ae30ca65"
+    },
+    {
+      "path": "contracts/canonical-060-proof-case.json",
+      "target": "contracts",
+      "valid": true,
+      "sha256": "6c8b412525295f105c57c433a879c459577bc2938eaffcb9bfa2f68f92e19a74"
+    },
+    {
+      "path": "contracts/invalid-060-proof-case-extension.json",
+      "target": "contracts",
+      "valid": false,
+      "sha256": "83f29ae50cec0de0ea3f5539cd2c34e4e9ef24a0f8136cd52f8eda4959b1a7e5"
+    },
+    {
+      "path": "contracts/canonical-061-proof-case.json",
+      "target": "contracts",
+      "valid": true,
+      "sha256": "c3d65e12a68c9ed7fa332aa70cd5b6e9efc96af2a88814b7ba91c301c48b24f4"
+    },
+    {
+      "path": "contracts/invalid-061-proof-case-extension.json",
+      "target": "contracts",
+      "valid": false,
+      "sha256": "7af367f931de9e88f4778805f32555952310bd7561c967f32e5951f40bef6d37"
+    },
+    {
+      "path": "contracts/canonical-062-proof-case.json",
+      "target": "contracts",
+      "valid": true,
+      "sha256": "ed1ba7fcdba2fe6aa8a276488c1bb25ba55d7ffccd0aac5f992111dd4640cb7f"
+    },
+    {
+      "path": "contracts/invalid-062-proof-case-extension.json",
+      "target": "contracts",
+      "valid": false,
+      "sha256": "99810938047cefcbe5fb9c7b0430506ccb256548994f9b90dff1f5d9489d12ea"
+    },
+    {
+      "path": "contracts/canonical-063-proof-case.json",
+      "target": "contracts",
+      "valid": true,
+      "sha256": "b6635f9a8709da231c73666aedadd9e426c69700fda3f91b9a75d82c104f2bb9"
+    },
+    {
+      "path": "contracts/invalid-063-proof-case-extension.json",
+      "target": "contracts",
+      "valid": false,
+      "sha256": "9ec2885ee3ecddfc5f1193d287ed284016292b7eacc863f16d974f8e9d07f5ee"
+    },
+    {
+      "path": "contracts/canonical-064-proof-case.json",
+      "target": "contracts",
+      "valid": true,
+      "sha256": "7c33ce3f87fda5168e204dfeac3e0ddea2d88d32aeeb98879c3408c2fc2ff8de"
+    },
+    {
+      "path": "contracts/invalid-064-proof-case-extension.json",
+      "target": "contracts",
+      "valid": false,
+      "sha256": "61e93a96d9cc48d0ba15e83367a77de6d77a7f205a7948e9d1b559f67adcb211"
+    },
+    {
+      "path": "contracts/canonical-065-proof-case.json",
+      "target": "contracts",
+      "valid": true,
+      "sha256": "9a290f33e39b43d68e7791e3b4b396db6252fe48c87214e7264b58746c26aa55"
+    },
+    {
+      "path": "contracts/invalid-065-proof-case-extension.json",
+      "target": "contracts",
+      "valid": false,
+      "sha256": "83149697fdf16fa24ac89a672c0a441c4c7bd586da4be3e13065bf80bedbe4c3"
+    },
+    {
+      "path": "contracts/canonical-066-proof-case.json",
+      "target": "contracts",
+      "valid": true,
+      "sha256": "84990792884e0573b8d7f372264a2917ee90802200eede068f41c6f66110b703"
+    },
+    {
+      "path": "contracts/invalid-066-proof-case-extension.json",
+      "target": "contracts",
+      "valid": false,
+      "sha256": "ff33c20f3ce7ed79a6b55b56f9a7a60d25120d258446e6d09b09774758079626"
+    },
+    {
+      "path": "contracts/canonical-067-proof-case.json",
+      "target": "contracts",
+      "valid": true,
+      "sha256": "480a8c10ff628521be6a0ef3b3d05ac37771c8c4a38b8018932d76e0da80693f"
+    },
+    {
+      "path": "contracts/invalid-067-proof-case-extension.json",
+      "target": "contracts",
+      "valid": false,
+      "sha256": "867ebbe4f0d4227784d30d87d0344f696bfc4bdb8a7a26a05385288c11779ffb"
+    },
+    {
+      "path": "contracts/canonical-068-proof-case.json",
+      "target": "contracts",
+      "valid": true,
+      "sha256": "3936c9d37cd7604e24c62c463ee70bbafae5da41848a0599049e2c38c2f8a2f6"
+    },
+    {
+      "path": "contracts/invalid-068-proof-case-extension.json",
+      "target": "contracts",
+      "valid": false,
+      "sha256": "771fc25f6f37f20da03109ca635e820de0f5423aebe6bad617c79d935826a4ef"
+    },
+    {
+      "path": "contracts/canonical-069-proof-case.json",
+      "target": "contracts",
+      "valid": true,
+      "sha256": "41f9953f0e986b731f9ea6eaf03db98604599712ed38d09de6f624a5ab6f7732"
+    },
+    {
+      "path": "contracts/invalid-069-proof-case-extension.json",
+      "target": "contracts",
+      "valid": false,
+      "sha256": "dd30209766e4077ac4959d47c2141a6e8188628127de9a127a47f4db83d62b6b"
+    },
+    {
+      "path": "contracts/canonical-070-proof-case.json",
+      "target": "contracts",
+      "valid": true,
+      "sha256": "1eb7f2d17d5c83fc43ea27d9b10e345def373d97f991f520ef64601355942c12"
+    },
+    {
+      "path": "contracts/invalid-070-proof-case-extension.json",
+      "target": "contracts",
+      "valid": false,
+      "sha256": "b20b900a1fa96eb2a0601d2095442586318a44d2d5a6fa040aff437460ca85ad"
+    },
+    {
+      "path": "contracts/canonical-071-proof-case.json",
+      "target": "contracts",
+      "valid": true,
+      "sha256": "511ae5e4f9a0f0c9a88cc6e292a80d264b43457e0025ef39c335028957f0385a"
+    },
+    {
+      "path": "contracts/invalid-071-proof-case-extension.json",
+      "target": "contracts",
+      "valid": false,
+      "sha256": "f24b738bf28aeab0ab2107ff3d74ccb88c78c7b7daab70ae666c9288c2cdeb53"
+    },
+    {
+      "path": "contracts/canonical-072-proof-case.json",
+      "target": "contracts",
+      "valid": true,
+      "sha256": "3004e8b35bc8cc084d18c988999125649095e1f6c7aa5070621b2782b0e9c5d1"
+    },
+    {
+      "path": "contracts/invalid-072-proof-case-extension.json",
+      "target": "contracts",
+      "valid": false,
+      "sha256": "63b432477331c2d3317fc664b56b5dcc2147996c629f9357f7dbe29341b98966"
+    },
+    {
+      "path": "contracts/canonical-073-proof-case.json",
+      "target": "contracts",
+      "valid": true,
+      "sha256": "07d72ba35c76fce22728cb6c1656caadc76b81754faa5bd4c390ec3fdc2cd1e4"
+    },
+    {
+      "path": "contracts/invalid-073-proof-case-extension.json",
+      "target": "contracts",
+      "valid": false,
+      "sha256": "8ea7b36cf7b1623b6021216538c6bc054975c28b0279f45e1031d78520ae6526"
+    },
+    {
+      "path": "contracts/canonical-074-proof-case.json",
+      "target": "contracts",
+      "valid": true,
+      "sha256": "56ae2ecb668e82e041b7312c5096d708413b7fc54d58ac77a81c7f5ca038980c"
+    },
+    {
+      "path": "contracts/invalid-074-proof-case-extension.json",
+      "target": "contracts",
+      "valid": false,
+      "sha256": "76b21060a4ae7f9f38e9ea8da9a868fea33f813623ed2e11c4cae0ebd9c28361"
+    },
+    {
+      "path": "contracts/canonical-075-proof-case.json",
+      "target": "contracts",
+      "valid": true,
+      "sha256": "7fd9488797d314c4a3d7a2c42dcda579c89ba5a444108ab470c5ef8a08b5ebf7"
+    },
+    {
+      "path": "contracts/invalid-075-proof-case-extension.json",
+      "target": "contracts",
+      "valid": false,
+      "sha256": "bb7b58073a73fdbe489d92595be1a620d6a6cfb9fc08c91a4bc02b159fc6fd88"
+    },
+    {
+      "path": "contracts/canonical-076-proof-result.json",
+      "target": "contracts",
+      "valid": true,
+      "sha256": "2ee066ec7758c7e1168928513ceb24fb27fcb47eebe50e4bcdca8dc0937a9520"
+    },
+    {
+      "path": "contracts/invalid-076-proof-result-extension.json",
+      "target": "contracts",
+      "valid": false,
+      "sha256": "90637ba7629308ddd62f2057a45de602e1bff3acb6f868d8b7e09b3878f2c7d7"
+    },
+    {
+      "path": "contracts/preauthorization-null-grant.json",
+      "target": "contracts",
+      "valid": false,
+      "sha256": "5d4a49e83e685a26a55d3d5cd986968f4b3b44500f1c73ebd4b32c19f8ae3d02"
+    },
+    {
+      "path": "contracts/preauthorization-forged-grant.json",
+      "target": "contracts",
+      "valid": false,
+      "sha256": "7ab2d1e9c342dfe11f488370bea590e68be42b704b4d0bb86d4d6bde09565158"
+    },
+    {
+      "path": "contracts/cancelled-before-forged-grant.json",
+      "target": "contracts",
+      "valid": false,
+      "sha256": "0345a194bd654b7eb4e7ff87c04b061fb25b2268df8a408df08cf3a4f1d8d392"
+    },
+    {
+      "path": "contracts/reserved-null-grant.json",
+      "target": "contracts",
+      "valid": false,
+      "sha256": "628770a3da7227df41265d92f8035546d08692c0bbf3ee5f7ab71752a65c50ff"
+    },
+    {
+      "path": "contracts/reserved-missing-grant.json",
+      "target": "contracts",
+      "valid": false,
+      "sha256": "dd1394045ad841ce5fdfb7ac549fef18421139efe52c34face6c53981241abd3"
+    },
+    {
+      "path": "contracts/cancelled-after-missing-grant.json",
+      "target": "contracts",
+      "valid": false,
+      "sha256": "97136588340bbf4a5afac7774ea041cd9e4d66b6c5013a2b78879348616f1193"
+    },
+    {
+      "path": "contracts/outcome-unknown-cannot-be-resent.json",
+      "target": "contracts",
+      "valid": false,
+      "sha256": "2e6f1bc7b062e04734bf5004431831fc218a44ca380566760feb0018fb406885"
+    },
+    {
+      "path": "contracts/artifact-reference-forbids-revision.json",
+      "target": "contracts",
+      "valid": false,
+      "sha256": "9dbd006cd51fb89ac552048097bdb73ff95f3d984b4e90f8bb6d0d971bc50819"
+    },
+    {
+      "path": "contracts/artifact-reference-forbids-null-revision.json",
+      "target": "contracts",
+      "valid": false,
+      "sha256": "a6b6932f2665fbe9db5fbf2e8021c6531e5c2fcf5bfe75d66cb88a4d880f5b44"
+    },
+    {
+      "path": "contracts/evidence-range-forbids-null.json",
+      "target": "contracts",
+      "valid": false,
+      "sha256": "2ee27819e24f88a456c1453d9d6469853478625a485292e058b8a24fb76922f4"
+    },
+    {
+      "path": "contracts/evidence-range-must-be-paired.json",
+      "target": "contracts",
+      "valid": false,
+      "sha256": "831bf91159a5cf535d155a5bbbc1b1e02c784f2c0a6c97760f890d441e1d9f38"
+    }
+  ]
+}

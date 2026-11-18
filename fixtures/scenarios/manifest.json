@@ -1,0 +1,917 @@
+{
+  "schema_version": "0.1.0",
+  "fixture_catalog": "fixtures/scenarios/approved-fixtures.json",
+  "packages": [
+    {
+      "package_id": "R0-01",
+      "title": "Shared contracts",
+      "requires": [],
+      "requirement_ids": [
+        "FR-002",
+        "FR-003",
+        "FR-004",
+        "FR-017"
+      ],
+      "case_ids": [
+        "CON-01",
+        "CON-02",
+        "CON-03",
+        "CON-04",
+        "CON-05"
+      ]
+    },
+    {
+      "package_id": "R0-02",
+      "title": "Authorized transport and TLS",
+      "requires": [
+        "R0-01"
+      ],
+      "requirement_ids": [
+        "FR-004",
+        "FR-005",
+        "FR-006",
+        "FR-014",
+        "FR-017",
+        "FR-018"
+      ],
+      "case_ids": [
+        "NET-01",
+        "NET-02",
+        "NET-03",
+        "NET-04",
+        "NET-05",
+        "NET-06",
+        "NET-07",
+        "NET-08"
+      ]
+    },
+    {
+      "package_id": "R0-03",
+      "title": "Public component containment",
+      "requires": [
+        "R0-01"
+      ],
+      "requirement_ids": [
+        "FR-006",
+        "FR-007",
+        "FR-008",
+        "FR-014",
+        "FR-017"
+      ],
+      "case_ids": [
+        "CMP-01",
+        "CMP-02",
+        "CMP-03",
+        "CMP-04",
+        "CMP-05",
+        "CMP-06",
+        "CMP-07"
+      ]
+    },
+    {
+      "package_id": "R0-04",
+      "title": "Controlled runtime and durable recovery",
+      "requires": [
+        "R0-01"
+      ],
+      "requirement_ids": [
+        "FR-004",
+        "FR-006",
+        "FR-009",
+        "FR-010",
+        "FR-011",
+        "FR-012",
+        "FR-014",
+        "FR-016",
+        "FR-017",
+        "FR-018"
+      ],
+      "case_ids": [
+        "RUN-01",
+        "RUN-02",
+        "RUN-03",
+        "RUN-04",
+        "RUN-05",
+        "RUN-06",
+        "RUN-07",
+        "RUN-08",
+        "REC-01",
+        "REC-02",
+        "REC-03",
+        "REC-04",
+        "REC-05"
+      ]
+    },
+    {
+      "package_id": "R0-05",
+      "title": "Reproducible evidence and exit review",
+      "requires": [
+        "R0-01",
+        "R0-02",
+        "R0-03",
+        "R0-04"
+      ],
+      "requirement_ids": [
+        "FR-001",
+        "FR-013",
+        "FR-014",
+        "FR-015",
+        "FR-016",
+        "FR-018"
+      ],
+      "case_ids": [
+        "EXIT-01",
+        "EXIT-02"
+      ]
+    }
+  ],
+  "cases": [
+    {
+      "case_id": "CON-01",
+      "package_id": "R0-01",
+      "description": "Valid project, scope, descriptor, snapshot, strict snapshot/artifact evidence references, event, invocation, and checkpoint examples round-trip with stable references and versions",
+      "fixture_refs": [
+        "fixtures/scenarios/contracts.json"
+      ],
+      "expected": {
+        "round_trip": true,
+        "stable_references": true,
+        "evidence_variants": true
+      },
+      "mandatory": true,
+      "requirement_ids": [
+        "FR-002",
+        "FR-017"
+      ],
+      "success_ids": [
+        "SC-001"
+      ]
+    },
+    {
+      "case_id": "CON-02",
+      "package_id": "R0-01",
+      "description": "Invalid/unknown versions, extra or duplicate fields, malformed IDs, oversized frames, invalid numeric/range values are rejected before allocation/effect beyond limits; bounded seeded mutation of checked-in valid/invalid byte corpus exercises the real framing codec and typed contract parser, asserting valid-record round-trip/invariants and explicit invalid-input rejection, with saved counterexample replay",
+      "fixture_refs": [
+        "fixtures/scenarios/contracts.json"
+      ],
+      "expected": {
+        "invalid_rejected": true,
+        "framing_fuzz": true,
+        "typed_fuzz": true,
+        "complete_budget": true,
+        "replayable": true
+      },
+      "mandatory": true,
+      "requirement_ids": [
+        "FR-002",
+        "FR-004"
+      ],
+      "success_ids": [
+        "SC-001",
+        "SC-002"
+      ]
+    },
+    {
+      "case_id": "CON-03",
+      "package_id": "R0-01",
+      "description": "Stale patches, hash mismatch, foreign-project evidence and unauthorized identity references are rejected; original evidence remains unchanged",
+      "fixture_refs": [
+        "fixtures/scenarios/contracts.json"
+      ],
+      "expected": {
+        "stale_rejected": true,
+        "foreign_rejected": true,
+        "original_unchanged": true
+      },
+      "mandatory": true,
+      "requirement_ids": [
+        "FR-002",
+        "FR-004"
+      ],
+      "success_ids": [
+        "SC-002"
+      ]
+    },
+    {
+      "case_id": "CON-04",
+      "package_id": "R0-01",
+      "description": "Harness and simulated-runtime consumers obtain identical denials for equivalent calls; revoked grants and child scope/quota escalation cannot admit effects",
+      "fixture_refs": [
+        "fixtures/scenarios/contracts.json"
+      ],
+      "expected": {
+        "consumer_equivalence": true,
+        "revocation_enforced": true,
+        "child_scope_bounded": true,
+        "aggregate_quota": true
+      },
+      "mandatory": true,
+      "requirement_ids": [
+        "FR-004",
+        "FR-017"
+      ],
+      "success_ids": [
+        "SC-002"
+      ]
+    },
+    {
+      "case_id": "CON-05",
+      "package_id": "R0-01",
+      "description": "Four distinct asset/investigation/DAG/trace contracts link correctly; user/session memory examples prefilter ownership and reject third levels/cross-session access",
+      "fixture_refs": [
+        "fixtures/scenarios/contracts.json"
+      ],
+      "expected": {
+        "graphs_distinct": true,
+        "ownership_filtered": true,
+        "two_memory_levels": true,
+        "promotion_bounded": true
+      },
+      "mandatory": true,
+      "requirement_ids": [
+        "FR-003"
+      ],
+      "success_ids": [
+        "SC-001",
+        "SC-002"
+      ]
+    },
+    {
+      "case_id": "NET-01",
+      "package_id": "R0-02",
+      "description": "Plain HTTP/1.1 forwarding succeeds with expected method, target, legal duplicate headers, binary body, and captured references",
+      "fixture_refs": [
+        "fixtures/scenarios/transport.json"
+      ],
+      "expected": {
+        "forwarded": true,
+        "headers_preserved": true,
+        "body_exact": true,
+        "capture_referenced": true
+      },
+      "mandatory": true,
+      "requirement_ids": [
+        "FR-005",
+        "FR-017"
+      ],
+      "success_ids": [
+        "SC-003"
+      ]
+    },
+    {
+      "case_id": "NET-02",
+      "package_id": "R0-02",
+      "description": "CONNECT establishes an authorized opaque TLS tunnel; receiver bytes are correct and no inspection claim is made",
+      "fixture_refs": [
+        "fixtures/scenarios/transport.json"
+      ],
+      "expected": {
+        "forwarded": true,
+        "body_exact": true,
+        "opaque_tunnel": true
+      },
+      "mandatory": true,
+      "requirement_ids": [
+        "FR-005",
+        "FR-006"
+      ],
+      "success_ids": [
+        "SC-003"
+      ]
+    },
+    {
+      "case_id": "NET-03",
+      "package_id": "R0-02",
+      "description": "HTTPS HTTP/1.1 interception succeeds with client-local fixture root and independently verified upstream trust; no verification bypass or OS trust change",
+      "fixture_refs": [
+        "fixtures/scenarios/transport.json"
+      ],
+      "expected": {
+        "forwarded": true,
+        "upstream_verified": true,
+        "isolated_trust": true,
+        "trust_unchanged": true
+      },
+      "mandatory": true,
+      "requirement_ids": [
+        "FR-005",
+        "FR-006"
+      ],
+      "success_ids": [
+        "SC-002",
+        "SC-003"
+      ]
+    },
+    {
+      "case_id": "NET-04",
+      "package_id": "R0-02",
+      "description": "HTTPS HTTP/2 interception forwards H2 on both legs with ALPN evidence, two concurrent streams, semantic headers and exact unchanged bodies; no H1 downgrade counted as H2",
+      "fixture_refs": [
+        "fixtures/scenarios/transport.json"
+      ],
+      "expected": {
+        "forwarded": true,
+        "h2_both_legs": true,
+        "concurrent_streams": true,
+        "body_exact": true
+      },
+      "mandatory": true,
+      "requirement_ids": [
+        "FR-005"
+      ],
+      "success_ids": [
+        "SC-003"
+      ]
+    },
+    {
+      "case_id": "NET-05",
+      "package_id": "R0-02",
+      "description": "Exclusions, redirect pivots, DNS changes, mapped addresses, and ungranted loopback/private ports deny actual connections; reachable controlled receivers observe zero prohibited effects",
+      "fixture_refs": [
+        "fixtures/scenarios/transport.json"
+      ],
+      "expected": {
+        "scope_rechecked": true,
+        "pivots_denied": true,
+        "healthy_observer": true,
+        "zero_forbidden_arrivals": true
+      },
+      "mandatory": true,
+      "requirement_ids": [
+        "FR-004",
+        "FR-005"
+      ],
+      "success_ids": [
+        "SC-002",
+        "SC-003"
+      ]
+    },
+    {
+      "case_id": "NET-06",
+      "package_id": "R0-02",
+      "description": "Invalid upstream certificates and mismatched CONNECT/SNI/request authorities fail explicitly; client trust can be removed; before/after OS trust records match; secrets/key-log markers absent from prohibited outputs",
+      "fixture_refs": [
+        "fixtures/scenarios/transport.json"
+      ],
+      "expected": {
+        "invalid_tls_rejected": true,
+        "authorities_match": true,
+        "trust_unchanged": true,
+        "secrets_absent": true
+      },
+      "mandatory": true,
+      "requirement_ids": [
+        "FR-005",
+        "FR-006",
+        "FR-017"
+      ],
+      "success_ids": [
+        "SC-002",
+        "SC-003"
+      ]
+    },
+    {
+      "case_id": "NET-07",
+      "package_id": "R0-02",
+      "description": "Oversized/truncated bodies and unsupported protocols/encodings produce their declared bounded behavior; no incomplete replacement, silent corruption, or unsupported inspection claim",
+      "fixture_refs": [
+        "fixtures/scenarios/transport.json"
+      ],
+      "expected": {
+        "body_bounded": true,
+        "representation_explicit": true,
+        "invalid_rejected": true,
+        "no_partial_replacement": true
+      },
+      "mandatory": true,
+      "requirement_ids": [
+        "FR-005",
+        "FR-018"
+      ],
+      "success_ids": [
+        "SC-003"
+      ]
+    },
+    {
+      "case_id": "NET-08",
+      "package_id": "R0-02",
+      "description": "Resetting one H2 stream does not corrupt a concurrent valid stream; limits and visible per-stream errors remain attributable",
+      "fixture_refs": [
+        "fixtures/scenarios/transport.json"
+      ],
+      "expected": {
+        "stream_reset": true,
+        "valid_stream_survives": true,
+        "errors_attributed": true
+      },
+      "mandatory": true,
+      "requirement_ids": [
+        "FR-005",
+        "FR-014"
+      ],
+      "success_ids": [
+        "SC-003"
+      ]
+    },
+    {
+      "case_id": "CMP-01",
+      "package_id": "R0-03",
+      "description": "Component built against the public WIT reads permitted chunks and proposes valid ranges without private engine APIs; unchanged input body remains byte-identical",
+      "fixture_refs": [
+        "fixtures/scenarios/components.json"
+      ],
+      "expected": {
+        "public_wit": true,
+        "bounded_read": true,
+        "valid_proposal": true,
+        "original_unchanged": true
+      },
+      "mandatory": true,
+      "requirement_ids": [
+        "FR-007",
+        "FR-017"
+      ],
+      "success_ids": [
+        "SC-001",
+        "SC-004"
+      ]
+    },
+    {
+      "case_id": "CMP-02",
+      "package_id": "R0-03",
+      "description": "Infinite guest computation is interrupted by configured fuel/epochs/deadline, not by waiting for the guest to cooperate",
+      "fixture_refs": [
+        "fixtures/scenarios/components.json"
+      ],
+      "expected": {
+        "execution_interrupted": true,
+        "deadline_met": true
+      },
+      "mandatory": true,
+      "requirement_ids": [
+        "FR-008"
+      ],
+      "success_ids": [
+        "SC-004"
+      ]
+    },
+    {
+      "case_id": "CMP-03",
+      "package_id": "R0-03",
+      "description": "Excess memory/table/instance growth hits hard per-Store guest limits; simultaneous invocation attempts across distinct component Stores/runners saturate the engine-wide `max_concurrent_invocations` cap and immediately return structured `budget_exhausted` without starting extra work or unbounded queuing; engine/control remain responsive; measured runner RSS behavior is recorded without claiming a hard OS cap",
+      "fixture_refs": [
+        "fixtures/scenarios/components.json"
+      ],
+      "expected": {
+        "memory_bounded": true,
+        "aggregate_invocations_bounded": true,
+        "control_ack": true,
+        "rss_observed": true
+      },
+      "mandatory": true,
+      "requirement_ids": [
+        "FR-008",
+        "FR-014"
+      ],
+      "success_ids": [
+        "SC-004"
+      ]
+    },
+    {
+      "case_id": "CMP-04",
+      "package_id": "R0-03",
+      "description": "Oversized/invalid observation lists, overflowed offsets, stale snapshots and foreign-project references fail with explicit validated errors",
+      "fixture_refs": [
+        "fixtures/scenarios/components.json"
+      ],
+      "expected": {
+        "invalid_rejected": true,
+        "stale_rejected": true,
+        "foreign_rejected": true,
+        "output_bounded": true
+      },
+      "mandatory": true,
+      "requirement_ids": [
+        "FR-007",
+        "FR-008"
+      ],
+      "success_ids": [
+        "SC-002",
+        "SC-004"
+      ]
+    },
+    {
+      "case_id": "CMP-05",
+      "package_id": "R0-03",
+      "description": "A blocked host body-read operation through the actual broker hits its independent `host_call_deadline_ms`/cancellation even when fuel/epoch interruption alone cannot stop it; concurrent trusted native fixture calls through that broker saturate engine-wide `max_concurrent_host_calls` across component Stores/runners and immediately return structured `budget_exhausted` without performing extra work or unbounded queuing; control remains responsive",
+      "fixture_refs": [
+        "fixtures/scenarios/components.json"
+      ],
+      "expected": {
+        "host_call_deadline": true,
+        "aggregate_host_calls_bounded": true,
+        "control_ack": true
+      },
+      "mandatory": true,
+      "requirement_ids": [
+        "FR-008"
+      ],
+      "success_ids": [
+        "SC-004"
+      ]
+    },
+    {
+      "case_id": "CMP-06",
+      "package_id": "R0-03",
+      "description": "Ungranted filesystem/socket/environment/credential imports and access attempts fail; no host directories, CA private keys, or credentials are disclosed",
+      "fixture_refs": [
+        "fixtures/scenarios/components.json"
+      ],
+      "expected": {
+        "ungranted_access_denied": true,
+        "secrets_absent": true
+      },
+      "mandatory": true,
+      "requirement_ids": [
+        "FR-006",
+        "FR-007",
+        "FR-008"
+      ],
+      "success_ids": [
+        "SC-002",
+        "SC-004"
+      ]
+    },
+    {
+      "case_id": "CMP-07",
+      "package_id": "R0-03",
+      "description": "After EACH CMP-02 through CMP-06 adversarial variant, including invocation/host-call saturation and success/trap/timeout/cancellation slot-release paths, all held aggregate slots are released and the engine and a fresh permitted invocation succeed; trace attributes the original failure rather than returning empty success",
+      "fixture_refs": [
+        "fixtures/scenarios/components.json"
+      ],
+      "expected": {
+        "all_variants_observed": true,
+        "slots_released": true,
+        "fresh_success": true,
+        "errors_attributed": true
+      },
+      "mandatory": true,
+      "requirement_ids": [
+        "FR-008",
+        "FR-017"
+      ],
+      "success_ids": [
+        "SC-004"
+      ]
+    },
+    {
+      "case_id": "RUN-01",
+      "package_id": "R0-04",
+      "description": "Simulated adapter starts, consumes scoped context, proposes brokered calls, emits events/results/usage, cancels and closes; separate simulated model boundary makes zero external calls",
+      "fixture_refs": [
+        "fixtures/scenarios/runtime.json"
+      ],
+      "expected": {
+        "runtime_lifecycle": true,
+        "brokered_calls": true,
+        "model_separate": true,
+        "zero_model_egress": true
+      },
+      "mandatory": true,
+      "requirement_ids": [
+        "FR-009",
+        "FR-017"
+      ],
+      "success_ids": [
+        "SC-001",
+        "SC-002"
+      ]
+    },
+    {
+      "case_id": "RUN-02",
+      "package_id": "R0-04",
+      "description": "Effective VM/global configuration, image/version/provision hashes, UID, namespaces, seccomp and controllers are attested; contaminated/missing settings block launch without native fallback",
+      "fixture_refs": [
+        "fixtures/scenarios/runtime.json"
+      ],
+      "expected": {
+        "effective_config_attested": true,
+        "mandatory_isolation": true,
+        "contamination_rejected": true,
+        "no_fallback": true
+      },
+      "mandatory": true,
+      "requirement_ids": [
+        "FR-010",
+        "FR-018"
+      ],
+      "success_ids": [
+        "SC-002",
+        "SC-004"
+      ]
+    },
+    {
+      "case_id": "RUN-03",
+      "package_id": "R0-04",
+      "description": "Workload and fork/exec descendants perform real denied reads of host/management/other-invocation canaries and credential paths; a granted snapshot remains readable",
+      "fixture_refs": [
+        "fixtures/scenarios/runtime.json"
+      ],
+      "expected": {
+        "actual_attempts": true,
+        "descendants_restricted": true,
+        "granted_read": true,
+        "secrets_absent": true
+      },
+      "mandatory": true,
+      "requirement_ids": [
+        "FR-006",
+        "FR-010"
+      ],
+      "success_ids": [
+        "SC-002",
+        "SC-004"
+      ]
+    },
+    {
+      "case_id": "RUN-04",
+      "package_id": "R0-04",
+      "description": "Actual IPv4/IPv6 TCP/UDP/DNS, loopback/gateway/target/model, Unix-manager-socket and AF_VSOCK attempts are blocked; reachable observers see zero unauthorized arrivals; inherited descriptors grant no escape",
+      "fixture_refs": [
+        "fixtures/scenarios/runtime.json"
+      ],
+      "expected": {
+        "actual_attempts": true,
+        "descendants_restricted": true,
+        "healthy_observer": true,
+        "zero_forbidden_arrivals": true,
+        "descriptors_closed": true
+      },
+      "mandatory": true,
+      "requirement_ids": [
+        "FR-004",
+        "FR-010"
+      ],
+      "success_ids": [
+        "SC-002",
+        "SC-004"
+      ]
+    },
+    {
+      "case_id": "RUN-05",
+      "package_id": "R0-04",
+      "description": "Fork/thread, memory, tmpfs and output floods meet cgroup/size/deadline policy; privilege/namespace/cgroup/descriptor escape attempts fail; host survives and the next valid invocation succeeds",
+      "fixture_refs": [
+        "fixtures/scenarios/runtime.json"
+      ],
+      "expected": {
+        "actual_attempts": true,
+        "descendants_restricted": true,
+        "resource_limits": true,
+        "fresh_success": true
+      },
+      "mandatory": true,
+      "requirement_ids": [
+        "FR-010",
+        "FR-014"
+      ],
+      "success_ids": [
+        "SC-004"
+      ]
+    },
+    {
+      "case_id": "RUN-06",
+      "package_id": "R0-04",
+      "description": "With runtime reads/output blocked and cancellation ignored, host activates/acknowledges the barrier by the profile deadline, denies all later stale calls, and observes child-cgroup termination or recorded VM-stop escalation",
+      "fixture_refs": [
+        "fixtures/scenarios/runtime.json"
+      ],
+      "expected": {
+        "ten_control_samples": true,
+        "control_ack": true,
+        "no_stale_admissions": true,
+        "contained": true
+      },
+      "mandatory": true,
+      "requirement_ids": [
+        "FR-011",
+        "FR-017"
+      ],
+      "success_ids": [
+        "SC-004",
+        "SC-005"
+      ]
+    },
+    {
+      "case_id": "RUN-07",
+      "package_id": "R0-04",
+      "description": "Duplicate and late events/results keep original causality/revision, deduplicate effects, and never reactivate obsolete pending work or expand quota",
+      "fixture_refs": [
+        "fixtures/scenarios/runtime.json"
+      ],
+      "expected": {
+        "events_deduplicated": true,
+        "causality_preserved": true,
+        "late_work_denied": true,
+        "aggregate_quota": true
+      },
+      "mandatory": true,
+      "requirement_ids": [
+        "FR-004",
+        "FR-011",
+        "FR-012"
+      ],
+      "success_ids": [
+        "SC-002",
+        "SC-005"
+      ]
+    },
+    {
+      "case_id": "RUN-08",
+      "package_id": "R0-04",
+      "description": "Killing host/SSH transport expires the independent guest lease, terminates descendants, and prevents orphan effects; killing only SSH is not accepted as termination evidence",
+      "fixture_refs": [
+        "fixtures/scenarios/runtime.json"
+      ],
+      "expected": {
+        "host_transport_lost": true,
+        "lease_expired": true,
+        "descendants_terminated": true,
+        "contained": true
+      },
+      "mandatory": true,
+      "requirement_ids": [
+        "FR-010",
+        "FR-011",
+        "FR-012"
+      ],
+      "success_ids": [
+        "SC-004",
+        "SC-005"
+      ]
+    },
+    {
+      "case_id": "REC-01",
+      "package_id": "R0-04",
+      "description": "SIGKILL at both before_reservation_commit and after_reservation_commit (before final admission) restores prior consumption, reconciles/releases any durable unspent reservation, and observes zero receiver POSTs before/after restart without dispatching the old command",
+      "fixture_refs": [
+        "fixtures/scenarios/runtime.json"
+      ],
+      "expected": {
+        "reservation_seams": true,
+        "consumption_preserved": true,
+        "reservation_reconciled": true,
+        "zero_resends": true
+      },
+      "mandatory": true,
+      "requirement_ids": [
+        "FR-012"
+      ],
+      "success_ids": [
+        "SC-005"
+      ]
+    },
+    {
+      "case_id": "REC-02",
+      "package_id": "R0-04",
+      "description": "SIGKILL at after_sending_commit (before dispatch) and after_receiver_increment (before completion commit) restores `outcome_unknown` even for zero arrivals, preserves consumption, performs only authorized read-only reconciliation, and causes zero additional POSTs",
+      "fixture_refs": [
+        "fixtures/scenarios/runtime.json"
+      ],
+      "expected": {
+        "sending_seams": true,
+        "unknown_restored": true,
+        "consumption_preserved": true,
+        "read_only_reconciliation": true,
+        "zero_resends": true
+      },
+      "mandatory": true,
+      "requirement_ids": [
+        "FR-012",
+        "FR-017"
+      ],
+      "success_ids": [
+        "SC-005"
+      ]
+    },
+    {
+      "case_id": "REC-03",
+      "package_id": "R0-04",
+      "description": "SIGKILL after completion commit, duplicate events, and old lease messages do not duplicate an effect or reset budget; evidence/result references remain consistent",
+      "fixture_refs": [
+        "fixtures/scenarios/runtime.json"
+      ],
+      "expected": {
+        "completion_restored": true,
+        "events_deduplicated": true,
+        "consumption_preserved": true,
+        "zero_resends": true
+      },
+      "mandatory": true,
+      "requirement_ids": [
+        "FR-012",
+        "FR-017"
+      ],
+      "success_ids": [
+        "SC-005"
+      ]
+    },
+    {
+      "case_id": "REC-04",
+      "package_id": "R0-04",
+      "description": "Scope/grant/control changes while the engine is down invalidate incompatible restored work; current versions and identities are checked before any new effect",
+      "fixture_refs": [
+        "fixtures/scenarios/runtime.json"
+      ],
+      "expected": {
+        "current_authority": true,
+        "current_versions": true,
+        "stale_work_denied": true
+      },
+      "mandatory": true,
+      "requirement_ids": [
+        "FR-004",
+        "FR-011",
+        "FR-012"
+      ],
+      "success_ids": [
+        "SC-002",
+        "SC-005"
+      ]
+    },
+    {
+      "case_id": "REC-05",
+      "package_id": "R0-04",
+      "description": "Full disk, failed sync, damaged ledger, or incompatible checkpoint blocks new admission with visible partial evidence; unknown effects are not guessed safe or blindly resent",
+      "fixture_refs": [
+        "fixtures/scenarios/runtime.json"
+      ],
+      "expected": {
+        "storage_faults": true,
+        "admission_closed": true,
+        "partial_evidence": true,
+        "zero_resends": true
+      },
+      "mandatory": true,
+      "requirement_ids": [
+        "FR-012",
+        "FR-016",
+        "FR-018"
+      ],
+      "success_ids": [
+        "SC-005",
+        "SC-007"
+      ]
+    },
+    {
+      "case_id": "EXIT-01",
+      "package_id": "R0-05",
+      "description": "Version/decision register records authoritative stable observations, exact resolved pins/checksums/licenses, pilot/TLS/backend/language/persistence choices, hardware/profile, raw measurements and rerun instructions",
+      "fixture_refs": [
+        "fixtures/scenarios/manifest.json"
+      ],
+      "expected": {
+        "stable_pins": true,
+        "provenance": true,
+        "licenses_recorded": true,
+        "decisions_recorded": true,
+        "raw_measurements": true
+      },
+      "mandatory": true,
+      "requirement_ids": [
+        "FR-013",
+        "FR-014",
+        "FR-015",
+        "FR-016"
+      ],
+      "success_ids": [
+        "SC-006"
+      ]
+    },
+    {
+      "case_id": "EXIT-02",
+      "package_id": "R0-05",
+      "description": "All five packages and mandatory cases are accounted for with consistent immutable evidence; failed/blocked/unexecuted cases, missing approval or evidence, changed hashes, and unsupported required modes prevent a passing approved exit; no later-phase product/spec is claimed",
+      "fixture_refs": [
+        "fixtures/scenarios/manifest.json"
+      ],
+      "expected": {
+        "complete_inventory": true,
+        "packet_integrity": true,
+        "failure_blocks_exit": true,
+        "approval_required": true,
+        "r0_only": true
+      },
+      "mandatory": true,
+      "requirement_ids": [
+        "FR-001",
+        "FR-016",
+        "FR-018"
+      ],
+      "success_ids": [
+        "SC-001",
+        "SC-007"
+      ]
+    }
+  ]
+}

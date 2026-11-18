@@ -1,0 +1,19 @@
+{
+  "schema_version": "0.1.0",
+  "backend": "lima-vz-plain-bubblewrap-cgroup-v2",
+  "cases": ["RUN-01", "RUN-02", "RUN-03", "RUN-04", "RUN-05", "RUN-06", "RUN-07", "RUN-08"],
+  "filesystem_variants": ["host_canary", "manager_canary", "other_invocation", "credential"],
+  "network_variants": ["ipv4_tcp", "ipv6_tcp", "ipv4_udp", "ipv6_udp", "dns", "loopback", "gateway", "target", "model", "unix", "vsock", "inherited_fd"],
+  "resource_variants": ["fork", "thread", "memory", "cpu", "tmpfs", "output", "privilege", "namespace", "cgroup", "descriptor"],
+  "orphan_variants": ["host_sigkill", "ssh_sigkill"],
+  "actors": ["parent", "exec_descendant"],
+  "healthy_successor": "snapshot_control",
+  "runtime_fixtures": ["runtime", "runtime_blocked"],
+  "network_observers": ["ipv4_tcp", "ipv6_tcp", "ipv4_udp", "ipv6_udp", "dns", "unix", "vsock", "gateway_target_model"],
+  "runtime_capabilities": ["brokered_calls", "events", "results", "usage", "cancellation", "closure"],
+  "model_provider": "offline-simulated",
+  "external_model_requests": 0,
+  "native_pause": false,
+  "native_steering": false,
+  "preparation": "explicit-confirm-provision-only"
+}
