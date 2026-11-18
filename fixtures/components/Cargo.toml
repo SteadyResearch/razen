@@ -1,0 +1,25 @@
+[workspace]
+resolver = "3"
+
+[package]
+name = "razen-component-fixtures"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.100"
+publish = false
+
+[lib]
+path = "src/lib.rs"
+crate-type = ["cdylib"]
+
+[features]
+default = []
+fixture-valid = []
+fixture-loop = []
+fixture-grow = []
+fixture-output = []
+fixture-host-call = []
+fixture-denied-access = []
+
+[dependencies]
+wit-bindgen = { version = "=0.63.0", default-features = false, features = ["macros", "realloc", "std"] }

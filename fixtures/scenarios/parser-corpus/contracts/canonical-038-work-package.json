@@ -1,0 +1,1 @@
+{"record":{"fields":{"case_ids":["CMP-01","CMP-02","CMP-03","CMP-04","CMP-05","CMP-06","CMP-07"],"package_id":"R0-03","requirement_ids":["FR-006","FR-007","FR-008","FR-014","FR-017"],"requires":["R0-01"],"title":"Public component containment"},"type":"work_package"},"schema_version":"0.1.0"}

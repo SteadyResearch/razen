@@ -1,0 +1,1 @@
+{"record":{"fields":{"case_id":"CON-01","elapsed_us":0,"evidence_refs":[],"expected":{"evidence_variants":true,"round_trip":true,"stable_references":true},"observed":{},"run_id":"00000000-0000-4000-8000-000000000006","status":"unexecuted","unknown_extension":true,"usage":{"bytes":0,"cpu_us":0,"elapsed_us":0,"units":0}},"type":"proof_result"},"schema_version":"0.1.0"}

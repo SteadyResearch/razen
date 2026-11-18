@@ -1,0 +1,1 @@
+{"record":{"fields":{"case_ids":["NET-01","NET-02","NET-03","NET-04","NET-05","NET-06","NET-07","NET-08"],"package_id":"R0-02","requirement_ids":["FR-004","FR-005","FR-006","FR-014","FR-017","FR-018"],"requires":["R0-01"],"title":"Authorized transport and TLS"},"type":"work_package"},"schema_version":"0.1.0"}

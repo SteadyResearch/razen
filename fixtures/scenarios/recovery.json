@@ -1,0 +1,26 @@
+{
+  "schema_version": "0.1.0",
+  "fixture_id": "recovery-scenarios",
+  "receiver_protocol": "razen.fixture-receiver/0.1.0",
+  "worker_protocol": "razen.recovery-worker/0.1.0",
+  "seams": [
+    "before_reservation_commit",
+    "after_reservation_commit",
+    "after_sending_commit",
+    "after_receiver_increment",
+    "after_completion_commit"
+  ],
+  "authority_changes": ["scope", "grant_revoked", "grant_expired", "control", "identity", "contract_version"],
+  "storage_faults": ["sqlite_full", "injected_sync_eio", "damaged_ledger", "incompatible_checkpoint"],
+  "storage_classification": {
+    "sqlite_full": "Real SQLITE_FULL through canonical connection max_page_count; not physical host-volume exhaustion",
+    "injected_sync_eio": "Owned-child exact SQLite inode fsync/F_FULLFSYNC EIO; not a physical storage device failure",
+    "damaged_ledger": "Controlled corruption of the owned SQLite header; reopening must not reinitialize",
+    "incompatible_checkpoint": "Controlled unsupported checkpoint schema version; reopening must not repair"
+  },
+  "prior_consumption_units": 1,
+  "target_reservation_units": 4,
+  "scenario_budget_units": 64,
+  "reconciliation_method": "GET",
+  "automatic_post_replay": false
+}

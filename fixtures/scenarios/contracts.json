@@ -1,0 +1,3254 @@
+{
+  "schema_version": "0.1.0",
+  "histories": [
+    {
+      "schema_version": "0.1.0",
+      "initial": {
+        "invocation_id": "00000000-0000-4000-8000-000000000065",
+        "run_id": "00000000-0000-4000-8000-000000000006",
+        "project_id": "00000000-0000-4000-8000-000000000001",
+        "investigation_id": "00000000-0000-4000-8000-000000000007",
+        "session_id": "00000000-0000-4000-8000-000000000008",
+        "actor_ref": "00000000-0000-4000-8000-000000000009",
+        "tool_id": "traffic.snapshot.read",
+        "tool_version": "0.1.0",
+        "provider_digest": "37935cf6b607eb60be2f098c5aa1f8752cd84524e3d5106c7ac7988eb4058117",
+        "input_ref": "00000000-0000-4000-8000-00000000000c",
+        "input_sha256": "7cf95a2d76084ceb37d62c9f453718dd14fa175fdefc908bda15ebd51c1dd8eb",
+        "input_revision": 1,
+        "control_revision": 1,
+        "scope_revision": 1,
+        "identity_id": "00000000-0000-4000-8000-000000000004",
+        "budget_id": "00000000-0000-4000-8000-000000000005",
+        "attempt": 1,
+        "causation_id": "00000000-0000-4000-8000-00000000001e",
+        "deduplication_key": "fixture.proposed.101",
+        "state": "proposed",
+        "usage": {
+          "units": 0,
+          "bytes": 0,
+          "cpu_us": 0,
+          "elapsed_us": 0
+        }
+      },
+      "transitions": []
+    },
+    {
+      "schema_version": "0.1.0",
+      "initial": {
+        "invocation_id": "00000000-0000-4000-8000-000000000066",
+        "run_id": "00000000-0000-4000-8000-000000000006",
+        "project_id": "00000000-0000-4000-8000-000000000001",
+        "investigation_id": "00000000-0000-4000-8000-000000000007",
+        "session_id": "00000000-0000-4000-8000-000000000008",
+        "actor_ref": "00000000-0000-4000-8000-000000000009",
+        "tool_id": "traffic.snapshot.read",
+        "tool_version": "0.1.0",
+        "provider_digest": "37935cf6b607eb60be2f098c5aa1f8752cd84524e3d5106c7ac7988eb4058117",
+        "input_ref": "00000000-0000-4000-8000-00000000000c",
+        "input_sha256": "7cf95a2d76084ceb37d62c9f453718dd14fa175fdefc908bda15ebd51c1dd8eb",
+        "input_revision": 1,
+        "control_revision": 1,
+        "scope_revision": 1,
+        "identity_id": "00000000-0000-4000-8000-000000000004",
+        "budget_id": "00000000-0000-4000-8000-000000000005",
+        "attempt": 1,
+        "causation_id": "00000000-0000-4000-8000-00000000001e",
+        "deduplication_key": "fixture.rejected.102",
+        "state": "proposed",
+        "usage": {
+          "units": 0,
+          "bytes": 0,
+          "cpu_us": 0,
+          "elapsed_us": 0
+        }
+      },
+      "transitions": [
+        {
+          "invocation": {
+            "invocation_id": "00000000-0000-4000-8000-000000000066",
+            "run_id": "00000000-0000-4000-8000-000000000006",
+            "project_id": "00000000-0000-4000-8000-000000000001",
+            "investigation_id": "00000000-0000-4000-8000-000000000007",
+            "session_id": "00000000-0000-4000-8000-000000000008",
+            "actor_ref": "00000000-0000-4000-8000-000000000009",
+            "tool_id": "traffic.snapshot.read",
+            "tool_version": "0.1.0",
+            "provider_digest": "37935cf6b607eb60be2f098c5aa1f8752cd84524e3d5106c7ac7988eb4058117",
+            "input_ref": "00000000-0000-4000-8000-00000000000c",
+            "input_sha256": "7cf95a2d76084ceb37d62c9f453718dd14fa175fdefc908bda15ebd51c1dd8eb",
+            "input_revision": 1,
+            "control_revision": 1,
+            "scope_revision": 1,
+            "identity_id": "00000000-0000-4000-8000-000000000004",
+            "budget_id": "00000000-0000-4000-8000-000000000005",
+            "attempt": 1,
+            "causation_id": "00000000-0000-4000-8000-00000000001e",
+            "deduplication_key": "fixture.rejected.102",
+            "state": "rejected",
+            "usage": {
+              "units": 0,
+              "bytes": 0,
+              "cpu_us": 0,
+              "elapsed_us": 0
+            },
+            "error": {
+              "code": "permission_denied",
+              "message": "Synthetic schema example, not an executed outcome",
+              "invocation_id": "00000000-0000-4000-8000-000000000066",
+              "retryability": "never",
+              "diagnostic_refs": []
+            }
+          },
+          "recorded_at": "2026-11-16T13:00:00Z"
+        }
+      ]
+    },
+    {
+      "schema_version": "0.1.0",
+      "initial": {
+        "invocation_id": "00000000-0000-4000-8000-000000000067",
+        "run_id": "00000000-0000-4000-8000-000000000006",
+        "project_id": "00000000-0000-4000-8000-000000000001",
+        "investigation_id": "00000000-0000-4000-8000-000000000007",
+        "session_id": "00000000-0000-4000-8000-000000000008",
+        "actor_ref": "00000000-0000-4000-8000-000000000009",
+        "tool_id": "traffic.snapshot.read",
+        "tool_version": "0.1.0",
+        "provider_digest": "37935cf6b607eb60be2f098c5aa1f8752cd84524e3d5106c7ac7988eb4058117",
+        "input_ref": "00000000-0000-4000-8000-00000000000c",
+        "input_sha256": "7cf95a2d76084ceb37d62c9f453718dd14fa175fdefc908bda15ebd51c1dd8eb",
+        "input_revision": 1,
+        "control_revision": 1,
+        "scope_revision": 1,
+        "identity_id": "00000000-0000-4000-8000-000000000004",
+        "budget_id": "00000000-0000-4000-8000-000000000005",
+        "attempt": 1,
+        "causation_id": "00000000-0000-4000-8000-00000000001e",
+        "deduplication_key": "fixture.waiting_approval.103",
+        "state": "proposed",
+        "usage": {
+          "units": 0,
+          "bytes": 0,
+          "cpu_us": 0,
+          "elapsed_us": 0
+        }
+      },
+      "transitions": [
+        {
+          "invocation": {
+            "invocation_id": "00000000-0000-4000-8000-000000000067",
+            "run_id": "00000000-0000-4000-8000-000000000006",
+            "project_id": "00000000-0000-4000-8000-000000000001",
+            "investigation_id": "00000000-0000-4000-8000-000000000007",
+            "session_id": "00000000-0000-4000-8000-000000000008",
+            "actor_ref": "00000000-0000-4000-8000-000000000009",
+            "tool_id": "traffic.snapshot.read",
+            "tool_version": "0.1.0",
+            "provider_digest": "37935cf6b607eb60be2f098c5aa1f8752cd84524e3d5106c7ac7988eb4058117",
+            "input_ref": "00000000-0000-4000-8000-00000000000c",
+            "input_sha256": "7cf95a2d76084ceb37d62c9f453718dd14fa175fdefc908bda15ebd51c1dd8eb",
+            "input_revision": 1,
+            "control_revision": 1,
+            "scope_revision": 1,
+            "identity_id": "00000000-0000-4000-8000-000000000004",
+            "budget_id": "00000000-0000-4000-8000-000000000005",
+            "attempt": 1,
+            "causation_id": "00000000-0000-4000-8000-00000000001e",
+            "deduplication_key": "fixture.waiting_approval.103",
+            "state": "waiting_approval",
+            "usage": {
+              "units": 0,
+              "bytes": 0,
+              "cpu_us": 0,
+              "elapsed_us": 0
+            }
+          },
+          "recorded_at": "2026-11-16T13:00:00Z"
+        }
+      ]
+    },
+    {
+      "schema_version": "0.1.0",
+      "initial": {
+        "invocation_id": "00000000-0000-4000-8000-000000000068",
+        "run_id": "00000000-0000-4000-8000-000000000006",
+        "project_id": "00000000-0000-4000-8000-000000000001",
+        "investigation_id": "00000000-0000-4000-8000-000000000007",
+        "session_id": "00000000-0000-4000-8000-000000000008",
+        "actor_ref": "00000000-0000-4000-8000-000000000009",
+        "tool_id": "traffic.snapshot.read",
+        "tool_version": "0.1.0",
+        "provider_digest": "37935cf6b607eb60be2f098c5aa1f8752cd84524e3d5106c7ac7988eb4058117",
+        "input_ref": "00000000-0000-4000-8000-00000000000c",
+        "input_sha256": "7cf95a2d76084ceb37d62c9f453718dd14fa175fdefc908bda15ebd51c1dd8eb",
+        "input_revision": 1,
+        "control_revision": 1,
+        "scope_revision": 1,
+        "identity_id": "00000000-0000-4000-8000-000000000004",
+        "budget_id": "00000000-0000-4000-8000-000000000005",
+        "attempt": 1,
+        "causation_id": "00000000-0000-4000-8000-00000000001e",
+        "deduplication_key": "fixture.reserved.104",
+        "state": "proposed",
+        "usage": {
+          "units": 0,
+          "bytes": 0,
+          "cpu_us": 0,
+          "elapsed_us": 0
+        }
+      },
+      "transitions": [
+        {
+          "invocation": {
+            "invocation_id": "00000000-0000-4000-8000-000000000068",
+            "run_id": "00000000-0000-4000-8000-000000000006",
+            "project_id": "00000000-0000-4000-8000-000000000001",
+            "investigation_id": "00000000-0000-4000-8000-000000000007",
+            "session_id": "00000000-0000-4000-8000-000000000008",
+            "actor_ref": "00000000-0000-4000-8000-000000000009",
+            "tool_id": "traffic.snapshot.read",
+            "tool_version": "0.1.0",
+            "provider_digest": "37935cf6b607eb60be2f098c5aa1f8752cd84524e3d5106c7ac7988eb4058117",
+            "input_ref": "00000000-0000-4000-8000-00000000000c",
+            "input_sha256": "7cf95a2d76084ceb37d62c9f453718dd14fa175fdefc908bda15ebd51c1dd8eb",
+            "input_revision": 1,
+            "control_revision": 1,
+            "scope_revision": 1,
+            "identity_id": "00000000-0000-4000-8000-000000000004",
+            "budget_id": "00000000-0000-4000-8000-000000000005",
+            "attempt": 1,
+            "causation_id": "00000000-0000-4000-8000-00000000001e",
+            "deduplication_key": "fixture.reserved.104",
+            "state": "reserved",
+            "usage": {
+              "units": 0,
+              "bytes": 0,
+              "cpu_us": 0,
+              "elapsed_us": 0
+            },
+            "grant_id": "00000000-0000-4000-8000-000000000028"
+          },
+          "recorded_at": "2026-11-16T13:00:00Z",
+          "admission_grant": {
+            "grant_id": "00000000-0000-4000-8000-000000000028",
+            "project_id": "00000000-0000-4000-8000-000000000001",
+            "tool_id": "traffic.snapshot.read",
+            "tool_version": "0.1.0",
+            "provider_digest": "37935cf6b607eb60be2f098c5aa1f8752cd84524e3d5106c7ac7988eb4058117",
+            "scope_revision": 1,
+            "identity_id": "00000000-0000-4000-8000-000000000004",
+            "bounded_input_sha256": "7cf95a2d76084ceb37d62c9f453718dd14fa175fdefc908bda15ebd51c1dd8eb",
+            "limits": {
+              "units": 10,
+              "bytes": 65536,
+              "cpu_us": 1000000,
+              "elapsed_us": 1000000
+            },
+            "expires_at": "2099-01-01T00:00:00Z",
+            "revoked": false
+          }
+        }
+      ]
+    },
+    {
+      "schema_version": "0.1.0",
+      "initial": {
+        "invocation_id": "00000000-0000-4000-8000-000000000069",
+        "run_id": "00000000-0000-4000-8000-000000000006",
+        "project_id": "00000000-0000-4000-8000-000000000001",
+        "investigation_id": "00000000-0000-4000-8000-000000000007",
+        "session_id": "00000000-0000-4000-8000-000000000008",
+        "actor_ref": "00000000-0000-4000-8000-000000000009",
+        "tool_id": "traffic.snapshot.read",
+        "tool_version": "0.1.0",
+        "provider_digest": "37935cf6b607eb60be2f098c5aa1f8752cd84524e3d5106c7ac7988eb4058117",
+        "input_ref": "00000000-0000-4000-8000-00000000000c",
+        "input_sha256": "7cf95a2d76084ceb37d62c9f453718dd14fa175fdefc908bda15ebd51c1dd8eb",
+        "input_revision": 1,
+        "control_revision": 1,
+        "scope_revision": 1,
+        "identity_id": "00000000-0000-4000-8000-000000000004",
+        "budget_id": "00000000-0000-4000-8000-000000000005",
+        "attempt": 1,
+        "causation_id": "00000000-0000-4000-8000-00000000001e",
+        "deduplication_key": "fixture.sending.105",
+        "state": "proposed",
+        "usage": {
+          "units": 0,
+          "bytes": 0,
+          "cpu_us": 0,
+          "elapsed_us": 0
+        }
+      },
+      "transitions": [
+        {
+          "invocation": {
+            "invocation_id": "00000000-0000-4000-8000-000000000069",
+            "run_id": "00000000-0000-4000-8000-000000000006",
+            "project_id": "00000000-0000-4000-8000-000000000001",
+            "investigation_id": "00000000-0000-4000-8000-000000000007",
+            "session_id": "00000000-0000-4000-8000-000000000008",
+            "actor_ref": "00000000-0000-4000-8000-000000000009",
+            "tool_id": "traffic.snapshot.read",
+            "tool_version": "0.1.0",
+            "provider_digest": "37935cf6b607eb60be2f098c5aa1f8752cd84524e3d5106c7ac7988eb4058117",
+            "input_ref": "00000000-0000-4000-8000-00000000000c",
+            "input_sha256": "7cf95a2d76084ceb37d62c9f453718dd14fa175fdefc908bda15ebd51c1dd8eb",
+            "input_revision": 1,
+            "control_revision": 1,
+            "scope_revision": 1,
+            "identity_id": "00000000-0000-4000-8000-000000000004",
+            "budget_id": "00000000-0000-4000-8000-000000000005",
+            "attempt": 1,
+            "causation_id": "00000000-0000-4000-8000-00000000001e",
+            "deduplication_key": "fixture.sending.105",
+            "state": "reserved",
+            "usage": {
+              "units": 0,
+              "bytes": 0,
+              "cpu_us": 0,
+              "elapsed_us": 0
+            },
+            "grant_id": "00000000-0000-4000-8000-000000000028"
+          },
+          "recorded_at": "2026-11-16T13:00:00Z",
+          "admission_grant": {
+            "grant_id": "00000000-0000-4000-8000-000000000028",
+            "project_id": "00000000-0000-4000-8000-000000000001",
+            "tool_id": "traffic.snapshot.read",
+            "tool_version": "0.1.0",
+            "provider_digest": "37935cf6b607eb60be2f098c5aa1f8752cd84524e3d5106c7ac7988eb4058117",
+            "scope_revision": 1,
+            "identity_id": "00000000-0000-4000-8000-000000000004",
+            "bounded_input_sha256": "7cf95a2d76084ceb37d62c9f453718dd14fa175fdefc908bda15ebd51c1dd8eb",
+            "limits": {
+              "units": 10,
+              "bytes": 65536,
+              "cpu_us": 1000000,
+              "elapsed_us": 1000000
+            },
+            "expires_at": "2099-01-01T00:00:00Z",
+            "revoked": false
+          }
+        },
+        {
+          "invocation": {
+            "invocation_id": "00000000-0000-4000-8000-000000000069",
+            "run_id": "00000000-0000-4000-8000-000000000006",
+            "project_id": "00000000-0000-4000-8000-000000000001",
+            "investigation_id": "00000000-0000-4000-8000-000000000007",
+            "session_id": "00000000-0000-4000-8000-000000000008",
+            "actor_ref": "00000000-0000-4000-8000-000000000009",
+            "tool_id": "traffic.snapshot.read",
+            "tool_version": "0.1.0",
+            "provider_digest": "37935cf6b607eb60be2f098c5aa1f8752cd84524e3d5106c7ac7988eb4058117",
+            "input_ref": "00000000-0000-4000-8000-00000000000c",
+            "input_sha256": "7cf95a2d76084ceb37d62c9f453718dd14fa175fdefc908bda15ebd51c1dd8eb",
+            "input_revision": 1,
+            "control_revision": 1,
+            "scope_revision": 1,
+            "identity_id": "00000000-0000-4000-8000-000000000004",
+            "budget_id": "00000000-0000-4000-8000-000000000005",
+            "attempt": 1,
+            "causation_id": "00000000-0000-4000-8000-00000000001e",
+            "deduplication_key": "fixture.sending.105",
+            "state": "sending",
+            "usage": {
+              "units": 0,
+              "bytes": 0,
+              "cpu_us": 0,
+              "elapsed_us": 0
+            },
+            "grant_id": "00000000-0000-4000-8000-000000000028"
+          },
+          "recorded_at": "2026-11-16T13:00:01Z",
+          "admission_grant": {
+            "grant_id": "00000000-0000-4000-8000-000000000028",
+            "project_id": "00000000-0000-4000-8000-000000000001",
+            "tool_id": "traffic.snapshot.read",
+            "tool_version": "0.1.0",
+            "provider_digest": "37935cf6b607eb60be2f098c5aa1f8752cd84524e3d5106c7ac7988eb4058117",
+            "scope_revision": 1,
+            "identity_id": "00000000-0000-4000-8000-000000000004",
+            "bounded_input_sha256": "7cf95a2d76084ceb37d62c9f453718dd14fa175fdefc908bda15ebd51c1dd8eb",
+            "limits": {
+              "units": 10,
+              "bytes": 65536,
+              "cpu_us": 1000000,
+              "elapsed_us": 1000000
+            },
+            "expires_at": "2099-01-01T00:00:00Z",
+            "revoked": false
+          }
+        }
+      ]
+    },
+    {
+      "schema_version": "0.1.0",
+      "initial": {
+        "invocation_id": "00000000-0000-4000-8000-00000000006a",
+        "run_id": "00000000-0000-4000-8000-000000000006",
+        "project_id": "00000000-0000-4000-8000-000000000001",
+        "investigation_id": "00000000-0000-4000-8000-000000000007",
+        "session_id": "00000000-0000-4000-8000-000000000008",
+        "actor_ref": "00000000-0000-4000-8000-000000000009",
+        "tool_id": "traffic.snapshot.read",
+        "tool_version": "0.1.0",
+        "provider_digest": "37935cf6b607eb60be2f098c5aa1f8752cd84524e3d5106c7ac7988eb4058117",
+        "input_ref": "00000000-0000-4000-8000-00000000000c",
+        "input_sha256": "7cf95a2d76084ceb37d62c9f453718dd14fa175fdefc908bda15ebd51c1dd8eb",
+        "input_revision": 1,
+        "control_revision": 1,
+        "scope_revision": 1,
+        "identity_id": "00000000-0000-4000-8000-000000000004",
+        "budget_id": "00000000-0000-4000-8000-000000000005",
+        "attempt": 1,
+        "causation_id": "00000000-0000-4000-8000-00000000001e",
+        "deduplication_key": "fixture.completed.106",
+        "state": "proposed",
+        "usage": {
+          "units": 0,
+          "bytes": 0,
+          "cpu_us": 0,
+          "elapsed_us": 0
+        }
+      },
+      "transitions": [
+        {
+          "invocation": {
+            "invocation_id": "00000000-0000-4000-8000-00000000006a",
+            "run_id": "00000000-0000-4000-8000-000000000006",
+            "project_id": "00000000-0000-4000-8000-000000000001",
+            "investigation_id": "00000000-0000-4000-8000-000000000007",
+            "session_id": "00000000-0000-4000-8000-000000000008",
+            "actor_ref": "00000000-0000-4000-8000-000000000009",
+            "tool_id": "traffic.snapshot.read",
+            "tool_version": "0.1.0",
+            "provider_digest": "37935cf6b607eb60be2f098c5aa1f8752cd84524e3d5106c7ac7988eb4058117",
+            "input_ref": "00000000-0000-4000-8000-00000000000c",
+            "input_sha256": "7cf95a2d76084ceb37d62c9f453718dd14fa175fdefc908bda15ebd51c1dd8eb",
+            "input_revision": 1,
+            "control_revision": 1,
+            "scope_revision": 1,
+            "identity_id": "00000000-0000-4000-8000-000000000004",
+            "budget_id": "00000000-0000-4000-8000-000000000005",
+            "attempt": 1,
+            "causation_id": "00000000-0000-4000-8000-00000000001e",
+            "deduplication_key": "fixture.completed.106",
+            "state": "reserved",
+            "usage": {
+              "units": 0,
+              "bytes": 0,
+              "cpu_us": 0,
+              "elapsed_us": 0
+            },
+            "grant_id": "00000000-0000-4000-8000-000000000028"
+          },
+          "recorded_at": "2026-11-16T13:00:00Z",
+          "admission_grant": {
+            "grant_id": "00000000-0000-4000-8000-000000000028",
+            "project_id": "00000000-0000-4000-8000-000000000001",
+            "tool_id": "traffic.snapshot.read",
+            "tool_version": "0.1.0",
+            "provider_digest": "37935cf6b607eb60be2f098c5aa1f8752cd84524e3d5106c7ac7988eb4058117",
+            "scope_revision": 1,
+            "identity_id": "00000000-0000-4000-8000-000000000004",
+            "bounded_input_sha256": "7cf95a2d76084ceb37d62c9f453718dd14fa175fdefc908bda15ebd51c1dd8eb",
+            "limits": {
+              "units": 10,
+              "bytes": 65536,
+              "cpu_us": 1000000,
+              "elapsed_us": 1000000
+            },
+            "expires_at": "2099-01-01T00:00:00Z",
+            "revoked": false
+          }
+        },
+        {
+          "invocation": {
+            "invocation_id": "00000000-0000-4000-8000-00000000006a",
+            "run_id": "00000000-0000-4000-8000-000000000006",
+            "project_id": "00000000-0000-4000-8000-000000000001",
+            "investigation_id": "00000000-0000-4000-8000-000000000007",
+            "session_id": "00000000-0000-4000-8000-000000000008",
+            "actor_ref": "00000000-0000-4000-8000-000000000009",
+            "tool_id": "traffic.snapshot.read",
+            "tool_version": "0.1.0",
+            "provider_digest": "37935cf6b607eb60be2f098c5aa1f8752cd84524e3d5106c7ac7988eb4058117",
+            "input_ref": "00000000-0000-4000-8000-00000000000c",
+            "input_sha256": "7cf95a2d76084ceb37d62c9f453718dd14fa175fdefc908bda15ebd51c1dd8eb",
+            "input_revision": 1,
+            "control_revision": 1,
+            "scope_revision": 1,
+            "identity_id": "00000000-0000-4000-8000-000000000004",
+            "budget_id": "00000000-0000-4000-8000-000000000005",
+            "attempt": 1,
+            "causation_id": "00000000-0000-4000-8000-00000000001e",
+            "deduplication_key": "fixture.completed.106",
+            "state": "sending",
+            "usage": {
+              "units": 0,
+              "bytes": 0,
+              "cpu_us": 0,
+              "elapsed_us": 0
+            },
+            "grant_id": "00000000-0000-4000-8000-000000000028"
+          },
+          "recorded_at": "2026-11-16T13:00:01Z",
+          "admission_grant": {
+            "grant_id": "00000000-0000-4000-8000-000000000028",
+            "project_id": "00000000-0000-4000-8000-000000000001",
+            "tool_id": "traffic.snapshot.read",
+            "tool_version": "0.1.0",
+            "provider_digest": "37935cf6b607eb60be2f098c5aa1f8752cd84524e3d5106c7ac7988eb4058117",
+            "scope_revision": 1,
+            "identity_id": "00000000-0000-4000-8000-000000000004",
+            "bounded_input_sha256": "7cf95a2d76084ceb37d62c9f453718dd14fa175fdefc908bda15ebd51c1dd8eb",
+            "limits": {
+              "units": 10,
+              "bytes": 65536,
+              "cpu_us": 1000000,
+              "elapsed_us": 1000000
+            },
+            "expires_at": "2099-01-01T00:00:00Z",
+            "revoked": false
+          }
+        },
+        {
+          "invocation": {
+            "invocation_id": "00000000-0000-4000-8000-00000000006a",
+            "run_id": "00000000-0000-4000-8000-000000000006",
+            "project_id": "00000000-0000-4000-8000-000000000001",
+            "investigation_id": "00000000-0000-4000-8000-000000000007",
+            "session_id": "00000000-0000-4000-8000-000000000008",
+            "actor_ref": "00000000-0000-4000-8000-000000000009",
+            "tool_id": "traffic.snapshot.read",
+            "tool_version": "0.1.0",
+            "provider_digest": "37935cf6b607eb60be2f098c5aa1f8752cd84524e3d5106c7ac7988eb4058117",
+            "input_ref": "00000000-0000-4000-8000-00000000000c",
+            "input_sha256": "7cf95a2d76084ceb37d62c9f453718dd14fa175fdefc908bda15ebd51c1dd8eb",
+            "input_revision": 1,
+            "control_revision": 1,
+            "scope_revision": 1,
+            "identity_id": "00000000-0000-4000-8000-000000000004",
+            "budget_id": "00000000-0000-4000-8000-000000000005",
+            "attempt": 1,
+            "causation_id": "00000000-0000-4000-8000-00000000001e",
+            "deduplication_key": "fixture.completed.106",
+            "state": "completed",
+            "usage": {
+              "units": 1,
+              "bytes": 21,
+              "cpu_us": 1,
+              "elapsed_us": 10
+            },
+            "grant_id": "00000000-0000-4000-8000-000000000028",
+            "output_ref": "00000000-0000-4000-8000-00000000000b"
+          },
+          "recorded_at": "2026-11-16T13:00:02Z"
+        }
+      ]
+    },
+    {
+      "schema_version": "0.1.0",
+      "initial": {
+        "invocation_id": "00000000-0000-4000-8000-00000000006b",
+        "run_id": "00000000-0000-4000-8000-000000000006",
+        "project_id": "00000000-0000-4000-8000-000000000001",
+        "investigation_id": "00000000-0000-4000-8000-000000000007",
+        "session_id": "00000000-0000-4000-8000-000000000008",
+        "actor_ref": "00000000-0000-4000-8000-000000000009",
+        "tool_id": "traffic.snapshot.read",
+        "tool_version": "0.1.0",
+        "provider_digest": "37935cf6b607eb60be2f098c5aa1f8752cd84524e3d5106c7ac7988eb4058117",
+        "input_ref": "00000000-0000-4000-8000-00000000000c",
+        "input_sha256": "7cf95a2d76084ceb37d62c9f453718dd14fa175fdefc908bda15ebd51c1dd8eb",
+        "input_revision": 1,
+        "control_revision": 1,
+        "scope_revision": 1,
+        "identity_id": "00000000-0000-4000-8000-000000000004",
+        "budget_id": "00000000-0000-4000-8000-000000000005",
+        "attempt": 1,
+        "causation_id": "00000000-0000-4000-8000-00000000001e",
+        "deduplication_key": "fixture.failed.107",
+        "state": "proposed",
+        "usage": {
+          "units": 0,
+          "bytes": 0,
+          "cpu_us": 0,
+          "elapsed_us": 0
+        }
+      },
+      "transitions": [
+        {
+          "invocation": {
+            "invocation_id": "00000000-0000-4000-8000-00000000006b",
+            "run_id": "00000000-0000-4000-8000-000000000006",
+            "project_id": "00000000-0000-4000-8000-000000000001",
+            "investigation_id": "00000000-0000-4000-8000-000000000007",
+            "session_id": "00000000-0000-4000-8000-000000000008",
+            "actor_ref": "00000000-0000-4000-8000-000000000009",
+            "tool_id": "traffic.snapshot.read",
+            "tool_version": "0.1.0",
+            "provider_digest": "37935cf6b607eb60be2f098c5aa1f8752cd84524e3d5106c7ac7988eb4058117",
+            "input_ref": "00000000-0000-4000-8000-00000000000c",
+            "input_sha256": "7cf95a2d76084ceb37d62c9f453718dd14fa175fdefc908bda15ebd51c1dd8eb",
+            "input_revision": 1,
+            "control_revision": 1,
+            "scope_revision": 1,
+            "identity_id": "00000000-0000-4000-8000-000000000004",
+            "budget_id": "00000000-0000-4000-8000-000000000005",
+            "attempt": 1,
+            "causation_id": "00000000-0000-4000-8000-00000000001e",
+            "deduplication_key": "fixture.failed.107",
+            "state": "reserved",
+            "usage": {
+              "units": 0,
+              "bytes": 0,
+              "cpu_us": 0,
+              "elapsed_us": 0
+            },
+            "grant_id": "00000000-0000-4000-8000-000000000028"
+          },
+          "recorded_at": "2026-11-16T13:00:00Z",
+          "admission_grant": {
+            "grant_id": "00000000-0000-4000-8000-000000000028",
+            "project_id": "00000000-0000-4000-8000-000000000001",
+            "tool_id": "traffic.snapshot.read",
+            "tool_version": "0.1.0",
+            "provider_digest": "37935cf6b607eb60be2f098c5aa1f8752cd84524e3d5106c7ac7988eb4058117",
+            "scope_revision": 1,
+            "identity_id": "00000000-0000-4000-8000-000000000004",
+            "bounded_input_sha256": "7cf95a2d76084ceb37d62c9f453718dd14fa175fdefc908bda15ebd51c1dd8eb",
+            "limits": {
+              "units": 10,
+              "bytes": 65536,
+              "cpu_us": 1000000,
+              "elapsed_us": 1000000
+            },
+            "expires_at": "2099-01-01T00:00:00Z",
+            "revoked": false
+          }
+        },
+        {
+          "invocation": {
+            "invocation_id": "00000000-0000-4000-8000-00000000006b",
+            "run_id": "00000000-0000-4000-8000-000000000006",
+            "project_id": "00000000-0000-4000-8000-000000000001",
+            "investigation_id": "00000000-0000-4000-8000-000000000007",
+            "session_id": "00000000-0000-4000-8000-000000000008",
+            "actor_ref": "00000000-0000-4000-8000-000000000009",
+            "tool_id": "traffic.snapshot.read",
+            "tool_version": "0.1.0",
+            "provider_digest": "37935cf6b607eb60be2f098c5aa1f8752cd84524e3d5106c7ac7988eb4058117",
+            "input_ref": "00000000-0000-4000-8000-00000000000c",
+            "input_sha256": "7cf95a2d76084ceb37d62c9f453718dd14fa175fdefc908bda15ebd51c1dd8eb",
+            "input_revision": 1,
+            "control_revision": 1,
+            "scope_revision": 1,
+            "identity_id": "00000000-0000-4000-8000-000000000004",
+            "budget_id": "00000000-0000-4000-8000-000000000005",
+            "attempt": 1,
+            "causation_id": "00000000-0000-4000-8000-00000000001e",
+            "deduplication_key": "fixture.failed.107",
+            "state": "sending",
+            "usage": {
+              "units": 0,
+              "bytes": 0,
+              "cpu_us": 0,
+              "elapsed_us": 0
+            },
+            "grant_id": "00000000-0000-4000-8000-000000000028"
+          },
+          "recorded_at": "2026-11-16T13:00:01Z",
+          "admission_grant": {
+            "grant_id": "00000000-0000-4000-8000-000000000028",
+            "project_id": "00000000-0000-4000-8000-000000000001",
+            "tool_id": "traffic.snapshot.read",
+            "tool_version": "0.1.0",
+            "provider_digest": "37935cf6b607eb60be2f098c5aa1f8752cd84524e3d5106c7ac7988eb4058117",
+            "scope_revision": 1,
+            "identity_id": "00000000-0000-4000-8000-000000000004",
+            "bounded_input_sha256": "7cf95a2d76084ceb37d62c9f453718dd14fa175fdefc908bda15ebd51c1dd8eb",
+            "limits": {
+              "units": 10,
+              "bytes": 65536,
+              "cpu_us": 1000000,
+              "elapsed_us": 1000000
+            },
+            "expires_at": "2099-01-01T00:00:00Z",
+            "revoked": false
+          }
+        },
+        {
+          "invocation": {
+            "invocation_id": "00000000-0000-4000-8000-00000000006b",
+            "run_id": "00000000-0000-4000-8000-000000000006",
+            "project_id": "00000000-0000-4000-8000-000000000001",
+            "investigation_id": "00000000-0000-4000-8000-000000000007",
+            "session_id": "00000000-0000-4000-8000-000000000008",
+            "actor_ref": "00000000-0000-4000-8000-000000000009",
+            "tool_id": "traffic.snapshot.read",
+            "tool_version": "0.1.0",
+            "provider_digest": "37935cf6b607eb60be2f098c5aa1f8752cd84524e3d5106c7ac7988eb4058117",
+            "input_ref": "00000000-0000-4000-8000-00000000000c",
+            "input_sha256": "7cf95a2d76084ceb37d62c9f453718dd14fa175fdefc908bda15ebd51c1dd8eb",
+            "input_revision": 1,
+            "control_revision": 1,
+            "scope_revision": 1,
+            "identity_id": "00000000-0000-4000-8000-000000000004",
+            "budget_id": "00000000-0000-4000-8000-000000000005",
+            "attempt": 1,
+            "causation_id": "00000000-0000-4000-8000-00000000001e",
+            "deduplication_key": "fixture.failed.107",
+            "state": "failed",
+            "usage": {
+              "units": 1,
+              "bytes": 0,
+              "cpu_us": 1,
+              "elapsed_us": 10
+            },
+            "grant_id": "00000000-0000-4000-8000-000000000028",
+            "error": {
+              "code": "invalid_input",
+              "message": "Synthetic schema example, not an executed outcome",
+              "invocation_id": "00000000-0000-4000-8000-00000000006b",
+              "retryability": "never",
+              "diagnostic_refs": []
+            }
+          },
+          "recorded_at": "2026-11-16T13:00:02Z"
+        }
+      ]
+    },
+    {
+      "schema_version": "0.1.0",
+      "initial": {
+        "invocation_id": "00000000-0000-4000-8000-00000000006c",
+        "run_id": "00000000-0000-4000-8000-000000000006",
+        "project_id": "00000000-0000-4000-8000-000000000001",
+        "investigation_id": "00000000-0000-4000-8000-000000000007",
+        "session_id": "00000000-0000-4000-8000-000000000008",
+        "actor_ref": "00000000-0000-4000-8000-000000000009",
+        "tool_id": "traffic.snapshot.read",
+        "tool_version": "0.1.0",
+        "provider_digest": "37935cf6b607eb60be2f098c5aa1f8752cd84524e3d5106c7ac7988eb4058117",
+        "input_ref": "00000000-0000-4000-8000-00000000000c",
+        "input_sha256": "7cf95a2d76084ceb37d62c9f453718dd14fa175fdefc908bda15ebd51c1dd8eb",
+        "input_revision": 1,
+        "control_revision": 1,
+        "scope_revision": 1,
+        "identity_id": "00000000-0000-4000-8000-000000000004",
+        "budget_id": "00000000-0000-4000-8000-000000000005",
+        "attempt": 1,
+        "causation_id": "00000000-0000-4000-8000-00000000001e",
+        "deduplication_key": "fixture.outcome_unknown.108",
+        "state": "proposed",
+        "usage": {
+          "units": 0,
+          "bytes": 0,
+          "cpu_us": 0,
+          "elapsed_us": 0
+        }
+      },
+      "transitions": [
+        {
+          "invocation": {
+            "invocation_id": "00000000-0000-4000-8000-00000000006c",
+            "run_id": "00000000-0000-4000-8000-000000000006",
+            "project_id": "00000000-0000-4000-8000-000000000001",
+            "investigation_id": "00000000-0000-4000-8000-000000000007",
+            "session_id": "00000000-0000-4000-8000-000000000008",
+            "actor_ref": "00000000-0000-4000-8000-000000000009",
+            "tool_id": "traffic.snapshot.read",
+            "tool_version": "0.1.0",
+            "provider_digest": "37935cf6b607eb60be2f098c5aa1f8752cd84524e3d5106c7ac7988eb4058117",
+            "input_ref": "00000000-0000-4000-8000-00000000000c",
+            "input_sha256": "7cf95a2d76084ceb37d62c9f453718dd14fa175fdefc908bda15ebd51c1dd8eb",
+            "input_revision": 1,
+            "control_revision": 1,
+            "scope_revision": 1,
+            "identity_id": "00000000-0000-4000-8000-000000000004",
+            "budget_id": "00000000-0000-4000-8000-000000000005",
+            "attempt": 1,
+            "causation_id": "00000000-0000-4000-8000-00000000001e",
+            "deduplication_key": "fixture.outcome_unknown.108",
+            "state": "reserved",
+            "usage": {
+              "units": 0,
+              "bytes": 0,
+              "cpu_us": 0,
+              "elapsed_us": 0
+            },
+            "grant_id": "00000000-0000-4000-8000-000000000028"
+          },
+          "recorded_at": "2026-11-16T13:00:00Z",
+          "admission_grant": {
+            "grant_id": "00000000-0000-4000-8000-000000000028",
+            "project_id": "00000000-0000-4000-8000-000000000001",
+            "tool_id": "traffic.snapshot.read",
+            "tool_version": "0.1.0",
+            "provider_digest": "37935cf6b607eb60be2f098c5aa1f8752cd84524e3d5106c7ac7988eb4058117",
+            "scope_revision": 1,
+            "identity_id": "00000000-0000-4000-8000-000000000004",
+            "bounded_input_sha256": "7cf95a2d76084ceb37d62c9f453718dd14fa175fdefc908bda15ebd51c1dd8eb",
+            "limits": {
+              "units": 10,
+              "bytes": 65536,
+              "cpu_us": 1000000,
+              "elapsed_us": 1000000
+            },
+            "expires_at": "2099-01-01T00:00:00Z",
+            "revoked": false
+          }
+        },
+        {
+          "invocation": {
+            "invocation_id": "00000000-0000-4000-8000-00000000006c",
+            "run_id": "00000000-0000-4000-8000-000000000006",
+            "project_id": "00000000-0000-4000-8000-000000000001",
+            "investigation_id": "00000000-0000-4000-8000-000000000007",
+            "session_id": "00000000-0000-4000-8000-000000000008",
+            "actor_ref": "00000000-0000-4000-8000-000000000009",
+            "tool_id": "traffic.snapshot.read",
+            "tool_version": "0.1.0",
+            "provider_digest": "37935cf6b607eb60be2f098c5aa1f8752cd84524e3d5106c7ac7988eb4058117",
+            "input_ref": "00000000-0000-4000-8000-00000000000c",
+            "input_sha256": "7cf95a2d76084ceb37d62c9f453718dd14fa175fdefc908bda15ebd51c1dd8eb",
+            "input_revision": 1,
+            "control_revision": 1,
+            "scope_revision": 1,
+            "identity_id": "00000000-0000-4000-8000-000000000004",
+            "budget_id": "00000000-0000-4000-8000-000000000005",
+            "attempt": 1,
+            "causation_id": "00000000-0000-4000-8000-00000000001e",
+            "deduplication_key": "fixture.outcome_unknown.108",
+            "state": "sending",
+            "usage": {
+              "units": 0,
+              "bytes": 0,
+              "cpu_us": 0,
+              "elapsed_us": 0
+            },
+            "grant_id": "00000000-0000-4000-8000-000000000028"
+          },
+          "recorded_at": "2026-11-16T13:00:01Z",
+          "admission_grant": {
+            "grant_id": "00000000-0000-4000-8000-000000000028",
+            "project_id": "00000000-0000-4000-8000-000000000001",
+            "tool_id": "traffic.snapshot.read",
+            "tool_version": "0.1.0",
+            "provider_digest": "37935cf6b607eb60be2f098c5aa1f8752cd84524e3d5106c7ac7988eb4058117",
+            "scope_revision": 1,
+            "identity_id": "00000000-0000-4000-8000-000000000004",
+            "bounded_input_sha256": "7cf95a2d76084ceb37d62c9f453718dd14fa175fdefc908bda15ebd51c1dd8eb",
+            "limits": {
+              "units": 10,
+              "bytes": 65536,
+              "cpu_us": 1000000,
+              "elapsed_us": 1000000
+            },
+            "expires_at": "2099-01-01T00:00:00Z",
+            "revoked": false
+          }
+        },
+        {
+          "invocation": {
+            "invocation_id": "00000000-0000-4000-8000-00000000006c",
+            "run_id": "00000000-0000-4000-8000-000000000006",
+            "project_id": "00000000-0000-4000-8000-000000000001",
+            "investigation_id": "00000000-0000-4000-8000-000000000007",
+            "session_id": "00000000-0000-4000-8000-000000000008",
+            "actor_ref": "00000000-0000-4000-8000-000000000009",
+            "tool_id": "traffic.snapshot.read",
+            "tool_version": "0.1.0",
+            "provider_digest": "37935cf6b607eb60be2f098c5aa1f8752cd84524e3d5106c7ac7988eb4058117",
+            "input_ref": "00000000-0000-4000-8000-00000000000c",
+            "input_sha256": "7cf95a2d76084ceb37d62c9f453718dd14fa175fdefc908bda15ebd51c1dd8eb",
+            "input_revision": 1,
+            "control_revision": 1,
+            "scope_revision": 1,
+            "identity_id": "00000000-0000-4000-8000-000000000004",
+            "budget_id": "00000000-0000-4000-8000-000000000005",
+            "attempt": 1,
+            "causation_id": "00000000-0000-4000-8000-00000000001e",
+            "deduplication_key": "fixture.outcome_unknown.108",
+            "state": "outcome_unknown",
+            "usage": {
+              "units": 1,
+              "bytes": 0,
+              "cpu_us": 1,
+              "elapsed_us": 10
+            },
+            "grant_id": "00000000-0000-4000-8000-000000000028",
+            "error": {
+              "code": "outcome_unknown",
+              "message": "Synthetic schema example, not an executed outcome",
+              "invocation_id": "00000000-0000-4000-8000-00000000006c",
+              "retryability": "reconcile",
+              "diagnostic_refs": []
+            }
+          },
+          "recorded_at": "2026-11-16T13:00:02Z"
+        }
+      ]
+    },
+    {
+      "schema_version": "0.1.0",
+      "initial": {
+        "invocation_id": "00000000-0000-4000-8000-00000000006d",
+        "run_id": "00000000-0000-4000-8000-000000000006",
+        "project_id": "00000000-0000-4000-8000-000000000001",
+        "investigation_id": "00000000-0000-4000-8000-000000000007",
+        "session_id": "00000000-0000-4000-8000-000000000008",
+        "actor_ref": "00000000-0000-4000-8000-000000000009",
+        "tool_id": "traffic.snapshot.read",
+        "tool_version": "0.1.0",
+        "provider_digest": "37935cf6b607eb60be2f098c5aa1f8752cd84524e3d5106c7ac7988eb4058117",
+        "input_ref": "00000000-0000-4000-8000-00000000000c",
+        "input_sha256": "7cf95a2d76084ceb37d62c9f453718dd14fa175fdefc908bda15ebd51c1dd8eb",
+        "input_revision": 1,
+        "control_revision": 1,
+        "scope_revision": 1,
+        "identity_id": "00000000-0000-4000-8000-000000000004",
+        "budget_id": "00000000-0000-4000-8000-000000000005",
+        "attempt": 1,
+        "causation_id": "00000000-0000-4000-8000-00000000001e",
+        "deduplication_key": "fixture.cancelled-before.109",
+        "state": "proposed",
+        "usage": {
+          "units": 0,
+          "bytes": 0,
+          "cpu_us": 0,
+          "elapsed_us": 0
+        }
+      },
+      "transitions": [
+        {
+          "invocation": {
+            "invocation_id": "00000000-0000-4000-8000-00000000006d",
+            "run_id": "00000000-0000-4000-8000-000000000006",
+            "project_id": "00000000-0000-4000-8000-000000000001",
+            "investigation_id": "00000000-0000-4000-8000-000000000007",
+            "session_id": "00000000-0000-4000-8000-000000000008",
+            "actor_ref": "00000000-0000-4000-8000-000000000009",
+            "tool_id": "traffic.snapshot.read",
+            "tool_version": "0.1.0",
+            "provider_digest": "37935cf6b607eb60be2f098c5aa1f8752cd84524e3d5106c7ac7988eb4058117",
+            "input_ref": "00000000-0000-4000-8000-00000000000c",
+            "input_sha256": "7cf95a2d76084ceb37d62c9f453718dd14fa175fdefc908bda15ebd51c1dd8eb",
+            "input_revision": 1,
+            "control_revision": 1,
+            "scope_revision": 1,
+            "identity_id": "00000000-0000-4000-8000-000000000004",
+            "budget_id": "00000000-0000-4000-8000-000000000005",
+            "attempt": 1,
+            "causation_id": "00000000-0000-4000-8000-00000000001e",
+            "deduplication_key": "fixture.cancelled-before.109",
+            "state": "waiting_approval",
+            "usage": {
+              "units": 0,
+              "bytes": 0,
+              "cpu_us": 0,
+              "elapsed_us": 0
+            }
+          },
+          "recorded_at": "2026-11-16T13:00:00Z"
+        },
+        {
+          "invocation": {
+            "invocation_id": "00000000-0000-4000-8000-00000000006d",
+            "run_id": "00000000-0000-4000-8000-000000000006",
+            "project_id": "00000000-0000-4000-8000-000000000001",
+            "investigation_id": "00000000-0000-4000-8000-000000000007",
+            "session_id": "00000000-0000-4000-8000-000000000008",
+            "actor_ref": "00000000-0000-4000-8000-000000000009",
+            "tool_id": "traffic.snapshot.read",
+            "tool_version": "0.1.0",
+            "provider_digest": "37935cf6b607eb60be2f098c5aa1f8752cd84524e3d5106c7ac7988eb4058117",
+            "input_ref": "00000000-0000-4000-8000-00000000000c",
+            "input_sha256": "7cf95a2d76084ceb37d62c9f453718dd14fa175fdefc908bda15ebd51c1dd8eb",
+            "input_revision": 1,
+            "control_revision": 1,
+            "scope_revision": 1,
+            "identity_id": "00000000-0000-4000-8000-000000000004",
+            "budget_id": "00000000-0000-4000-8000-000000000005",
+            "attempt": 1,
+            "causation_id": "00000000-0000-4000-8000-00000000001e",
+            "deduplication_key": "fixture.cancelled-before.109",
+            "state": "cancelled",
+            "usage": {
+              "units": 0,
+              "bytes": 0,
+              "cpu_us": 0,
+              "elapsed_us": 0
+            },
+            "error": {
+              "code": "cancelled",
+              "message": "Synthetic schema example, not an executed outcome",
+              "invocation_id": "00000000-0000-4000-8000-00000000006d",
+              "retryability": "never",
+              "diagnostic_refs": []
+            }
+          },
+          "recorded_at": "2026-11-16T13:00:01Z"
+        }
+      ]
+    },
+    {
+      "schema_version": "0.1.0",
+      "initial": {
+        "invocation_id": "00000000-0000-4000-8000-00000000006e",
+        "run_id": "00000000-0000-4000-8000-000000000006",
+        "project_id": "00000000-0000-4000-8000-000000000001",
+        "investigation_id": "00000000-0000-4000-8000-000000000007",
+        "session_id": "00000000-0000-4000-8000-000000000008",
+        "actor_ref": "00000000-0000-4000-8000-000000000009",
+        "tool_id": "traffic.snapshot.read",
+        "tool_version": "0.1.0",
+        "provider_digest": "37935cf6b607eb60be2f098c5aa1f8752cd84524e3d5106c7ac7988eb4058117",
+        "input_ref": "00000000-0000-4000-8000-00000000000c",
+        "input_sha256": "7cf95a2d76084ceb37d62c9f453718dd14fa175fdefc908bda15ebd51c1dd8eb",
+        "input_revision": 1,
+        "control_revision": 1,
+        "scope_revision": 1,
+        "identity_id": "00000000-0000-4000-8000-000000000004",
+        "budget_id": "00000000-0000-4000-8000-000000000005",
+        "attempt": 1,
+        "causation_id": "00000000-0000-4000-8000-00000000001e",
+        "deduplication_key": "fixture.cancelled-after.110",
+        "state": "proposed",
+        "usage": {
+          "units": 0,
+          "bytes": 0,
+          "cpu_us": 0,
+          "elapsed_us": 0
+        }
+      },
+      "transitions": [
+        {
+          "invocation": {
+            "invocation_id": "00000000-0000-4000-8000-00000000006e",
+            "run_id": "00000000-0000-4000-8000-000000000006",
+            "project_id": "00000000-0000-4000-8000-000000000001",
+            "investigation_id": "00000000-0000-4000-8000-000000000007",
+            "session_id": "00000000-0000-4000-8000-000000000008",
+            "actor_ref": "00000000-0000-4000-8000-000000000009",
+            "tool_id": "traffic.snapshot.read",
+            "tool_version": "0.1.0",
+            "provider_digest": "37935cf6b607eb60be2f098c5aa1f8752cd84524e3d5106c7ac7988eb4058117",
+            "input_ref": "00000000-0000-4000-8000-00000000000c",
+            "input_sha256": "7cf95a2d76084ceb37d62c9f453718dd14fa175fdefc908bda15ebd51c1dd8eb",
+            "input_revision": 1,
+            "control_revision": 1,
+            "scope_revision": 1,
+            "identity_id": "00000000-0000-4000-8000-000000000004",
+            "budget_id": "00000000-0000-4000-8000-000000000005",
+            "attempt": 1,
+            "causation_id": "00000000-0000-4000-8000-00000000001e",
+            "deduplication_key": "fixture.cancelled-after.110",
+            "state": "reserved",
+            "usage": {
+              "units": 0,
+              "bytes": 0,
+              "cpu_us": 0,
+              "elapsed_us": 0
+            },
+            "grant_id": "00000000-0000-4000-8000-000000000029"
+          },
+          "recorded_at": "2026-11-16T13:00:00Z",
+          "admission_grant": {
+            "grant_id": "00000000-0000-4000-8000-000000000029",
+            "project_id": "00000000-0000-4000-8000-000000000001",
+            "tool_id": "traffic.snapshot.read",
+            "tool_version": "0.1.0",
+            "provider_digest": "37935cf6b607eb60be2f098c5aa1f8752cd84524e3d5106c7ac7988eb4058117",
+            "scope_revision": 1,
+            "identity_id": "00000000-0000-4000-8000-000000000004",
+            "bounded_input_sha256": "7cf95a2d76084ceb37d62c9f453718dd14fa175fdefc908bda15ebd51c1dd8eb",
+            "limits": {
+              "units": 10,
+              "bytes": 65536,
+              "cpu_us": 1000000,
+              "elapsed_us": 1000000
+            },
+            "expires_at": "2026-11-16T14:00:00Z",
+            "revoked": false
+          }
+        },
+        {
+          "invocation": {
+            "invocation_id": "00000000-0000-4000-8000-00000000006e",
+            "run_id": "00000000-0000-4000-8000-000000000006",
+            "project_id": "00000000-0000-4000-8000-000000000001",
+            "investigation_id": "00000000-0000-4000-8000-000000000007",
+            "session_id": "00000000-0000-4000-8000-000000000008",
+            "actor_ref": "00000000-0000-4000-8000-000000000009",
+            "tool_id": "traffic.snapshot.read",
+            "tool_version": "0.1.0",
+            "provider_digest": "37935cf6b607eb60be2f098c5aa1f8752cd84524e3d5106c7ac7988eb4058117",
+            "input_ref": "00000000-0000-4000-8000-00000000000c",
+            "input_sha256": "7cf95a2d76084ceb37d62c9f453718dd14fa175fdefc908bda15ebd51c1dd8eb",
+            "input_revision": 1,
+            "control_revision": 1,
+            "scope_revision": 1,
+            "identity_id": "00000000-0000-4000-8000-000000000004",
+            "budget_id": "00000000-0000-4000-8000-000000000005",
+            "attempt": 1,
+            "causation_id": "00000000-0000-4000-8000-00000000001e",
+            "deduplication_key": "fixture.cancelled-after.110",
+            "state": "cancelled",
+            "usage": {
+              "units": 0,
+              "bytes": 0,
+              "cpu_us": 0,
+              "elapsed_us": 0
+            },
+            "grant_id": "00000000-0000-4000-8000-000000000029",
+            "error": {
+              "code": "cancelled",
+              "message": "Synthetic schema example, not an executed outcome",
+              "invocation_id": "00000000-0000-4000-8000-00000000006e",
+              "retryability": "never",
+              "diagnostic_refs": []
+            }
+          },
+          "recorded_at": "2026-11-16T13:00:01Z"
+        }
+      ]
+    }
+  ],
+  "records": [
+    {
+      "schema_version": "0.1.0",
+      "record": {
+        "type": "fixture_project",
+        "fields": {
+          "project_id": "00000000-0000-4000-8000-000000000001",
+          "user_id": "00000000-0000-4000-8000-000000000002",
+          "scope_policy_id": "00000000-0000-4000-8000-000000000003",
+          "revision": 1
+        }
+      }
+    },
+    {
+      "schema_version": "0.1.0",
+      "record": {
+        "type": "scope_policy",
+        "fields": {
+          "scope_policy_id": "00000000-0000-4000-8000-000000000003",
+          "project_id": "00000000-0000-4000-8000-000000000001",
+          "revision": 1,
+          "allowed_destinations": [
+            {
+              "scheme": "https",
+              "host": "target.razen.invalid",
+              "port": 443,
+              "path": {
+                "kind": "prefix",
+                "value": "/approved/"
+              },
+              "resolved_addresses": [
+                "127.0.0.1"
+              ]
+            }
+          ],
+          "exclusions": []
+        }
+      }
+    },
+    {
+      "schema_version": "0.1.0",
+      "record": {
+        "type": "identity_profile",
+        "fields": {
+          "identity_id": "00000000-0000-4000-8000-000000000004",
+          "project_id": "00000000-0000-4000-8000-000000000001",
+          "secret_ref_names": [
+            "fixture-credential"
+          ]
+        }
+      }
+    },
+    {
+      "schema_version": "0.1.0",
+      "record": {
+        "type": "tool_descriptor",
+        "fields": {
+          "tool_id": "traffic.snapshot.read",
+          "version": "0.1.0",
+          "input_contract": "snapshot-read-input",
+          "output_contract": "snapshot-read-output",
+          "effect": "local_read",
+          "permissions": [
+            "snapshot.read"
+          ],
+          "limits": {
+            "units": 10,
+            "bytes": 65536,
+            "cpu_us": 1000000,
+            "elapsed_us": 1000000
+          },
+          "retry_class": "safe_read"
+        }
+      }
+    },
+    {
+      "schema_version": "0.1.0",
+      "record": {
+        "type": "approval_grant",
+        "fields": {
+          "grant_id": "00000000-0000-4000-8000-000000000028",
+          "project_id": "00000000-0000-4000-8000-000000000001",
+          "tool_id": "traffic.snapshot.read",
+          "tool_version": "0.1.0",
+          "provider_digest": "37935cf6b607eb60be2f098c5aa1f8752cd84524e3d5106c7ac7988eb4058117",
+          "scope_revision": 1,
+          "identity_id": "00000000-0000-4000-8000-000000000004",
+          "bounded_input_sha256": "7cf95a2d76084ceb37d62c9f453718dd14fa175fdefc908bda15ebd51c1dd8eb",
+          "limits": {
+            "units": 10,
+            "bytes": 65536,
+            "cpu_us": 1000000,
+            "elapsed_us": 1000000
+          },
+          "expires_at": "2099-01-01T00:00:00Z",
+          "revoked": false
+        }
+      }
+    },
+    {
+      "schema_version": "0.1.0",
+      "record": {
+        "type": "approval_grant",
+        "fields": {
+          "grant_id": "00000000-0000-4000-8000-000000000029",
+          "project_id": "00000000-0000-4000-8000-000000000001",
+          "tool_id": "traffic.snapshot.read",
+          "tool_version": "0.1.0",
+          "provider_digest": "37935cf6b607eb60be2f098c5aa1f8752cd84524e3d5106c7ac7988eb4058117",
+          "scope_revision": 1,
+          "identity_id": "00000000-0000-4000-8000-000000000004",
+          "bounded_input_sha256": "7cf95a2d76084ceb37d62c9f453718dd14fa175fdefc908bda15ebd51c1dd8eb",
+          "limits": {
+            "units": 10,
+            "bytes": 65536,
+            "cpu_us": 1000000,
+            "elapsed_us": 1000000
+          },
+          "expires_at": "2026-11-16T14:00:00Z",
+          "revoked": true
+        }
+      }
+    },
+    {
+      "schema_version": "0.1.0",
+      "record": {
+        "type": "budget",
+        "fields": {
+          "budget_id": "00000000-0000-4000-8000-000000000005",
+          "limit": 100,
+          "consumed": 0,
+          "reserved": 0,
+          "revision": 0
+        }
+      }
+    },
+    {
+      "schema_version": "0.1.0",
+      "record": {
+        "type": "snapshot",
+        "fields": {
+          "snapshot_id": "00000000-0000-4000-8000-00000000000a",
+          "project_id": "00000000-0000-4000-8000-000000000001",
+          "revision": 1,
+          "sha256": "dcce14860cca030bfc9ecbf85fcce43ca1f766030bd654487efeca7c7f75b681",
+          "length_bytes": 21,
+          "body_ref": "00000000-0000-4000-8000-00000000000b",
+          "representation": "http1_body",
+          "headers": [
+            {
+              "name": "x-fixture",
+              "value": "one"
+            },
+            {
+              "name": "x-fixture",
+              "value": "two"
+            },
+            {
+              "name": "content-length",
+              "value": "21"
+            }
+          ],
+          "truncated": false
+        }
+      }
+    },
+    {
+      "schema_version": "0.1.0",
+      "record": {
+        "type": "artifact",
+        "fields": {
+          "artifact_id": "00000000-0000-4000-8000-00000000000b",
+          "project_id": "00000000-0000-4000-8000-000000000001",
+          "kind": "fixture-body",
+          "relative_path": "evidence/canonical-body.bin",
+          "sha256": "dcce14860cca030bfc9ecbf85fcce43ca1f766030bd654487efeca7c7f75b681",
+          "length_bytes": 21,
+          "origin_invocation_id": "00000000-0000-4000-8000-00000000006a",
+          "redaction_status": "original"
+        }
+      }
+    },
+    {
+      "schema_version": "0.1.0",
+      "record": {
+        "type": "artifact",
+        "fields": {
+          "artifact_id": "00000000-0000-4000-8000-00000000000c",
+          "project_id": "00000000-0000-4000-8000-000000000001",
+          "kind": "tool-input",
+          "relative_path": "evidence/canonical-input.json",
+          "sha256": "7cf95a2d76084ceb37d62c9f453718dd14fa175fdefc908bda15ebd51c1dd8eb",
+          "length_bytes": 93,
+          "origin_invocation_id": "00000000-0000-4000-8000-00000000006a",
+          "redaction_status": "original"
+        }
+      }
+    },
+    {
+      "schema_version": "0.1.0",
+      "record": {
+        "type": "artifact",
+        "fields": {
+          "artifact_id": "00000000-0000-4000-8000-000000000019",
+          "project_id": "00000000-0000-4000-8000-000000000001",
+          "kind": "instruction",
+          "relative_path": "evidence/canonical-instruction.txt",
+          "sha256": "5eaa8f91eb1b4cf3b1bc6fc7c176e853a05704567fd05be44a9c1913ba5a7fbe",
+          "length_bytes": 40,
+          "origin_invocation_id": "00000000-0000-4000-8000-00000000006a",
+          "redaction_status": "original"
+        }
+      }
+    },
+    {
+      "schema_version": "0.1.0",
+      "record": {
+        "type": "evidence_ref",
+        "fields": {
+          "snapshot_id": "00000000-0000-4000-8000-00000000000a",
+          "revision": 1,
+          "sha256": "dcce14860cca030bfc9ecbf85fcce43ca1f766030bd654487efeca7c7f75b681",
+          "range_start": 0,
+          "range_end": 4
+        }
+      }
+    },
+    {
+      "schema_version": "0.1.0",
+      "record": {
+        "type": "evidence_ref",
+        "fields": {
+          "artifact_id": "00000000-0000-4000-8000-00000000000b",
+          "sha256": "dcce14860cca030bfc9ecbf85fcce43ca1f766030bd654487efeca7c7f75b681",
+          "range_start": 1,
+          "range_end": 4
+        }
+      }
+    },
+    {
+      "schema_version": "0.1.0",
+      "record": {
+        "type": "patch",
+        "fields": {
+          "patch_id": "00000000-0000-4000-8000-00000000000e",
+          "project_id": "00000000-0000-4000-8000-000000000001",
+          "base_snapshot_id": "00000000-0000-4000-8000-00000000000a",
+          "base_revision": 1,
+          "base_sha256": "dcce14860cca030bfc9ecbf85fcce43ca1f766030bd654487efeca7c7f75b681",
+          "operations": [
+            {
+              "op": "replace_headers",
+              "headers": [
+                {
+                  "name": "x-fixture",
+                  "value": "one"
+                },
+                {
+                  "name": "x-fixture",
+                  "value": "two"
+                },
+                {
+                  "name": "content-length",
+                  "value": "21"
+                }
+              ]
+            }
+          ],
+          "actor_ref": "00000000-0000-4000-8000-000000000009"
+        }
+      }
+    },
+    {
+      "schema_version": "0.1.0",
+      "record": {
+        "type": "observation_proposal",
+        "fields": {
+          "proposal_id": "00000000-0000-4000-8000-00000000000d",
+          "project_id": "00000000-0000-4000-8000-000000000001",
+          "rule_id": "fixture.public-byte-observation",
+          "title": "Public fixture bytes are referenced",
+          "evidence_refs": [
+            {
+              "snapshot_id": "00000000-0000-4000-8000-00000000000a",
+              "revision": 1,
+              "sha256": "dcce14860cca030bfc9ecbf85fcce43ca1f766030bd654487efeca7c7f75b681",
+              "range_start": 0,
+              "range_end": 4
+            }
+          ],
+          "actor_ref": "00000000-0000-4000-8000-000000000009",
+          "status": "proposed"
+        }
+      }
+    },
+    {
+      "schema_version": "0.1.0",
+      "record": {
+        "type": "invocation",
+        "fields": {
+          "invocation_id": "00000000-0000-4000-8000-000000000065",
+          "run_id": "00000000-0000-4000-8000-000000000006",
+          "project_id": "00000000-0000-4000-8000-000000000001",
+          "investigation_id": "00000000-0000-4000-8000-000000000007",
+          "session_id": "00000000-0000-4000-8000-000000000008",
+          "actor_ref": "00000000-0000-4000-8000-000000000009",
+          "tool_id": "traffic.snapshot.read",
+          "tool_version": "0.1.0",
+          "provider_digest": "37935cf6b607eb60be2f098c5aa1f8752cd84524e3d5106c7ac7988eb4058117",
+          "input_ref": "00000000-0000-4000-8000-00000000000c",
+          "input_sha256": "7cf95a2d76084ceb37d62c9f453718dd14fa175fdefc908bda15ebd51c1dd8eb",
+          "input_revision": 1,
+          "control_revision": 1,
+          "scope_revision": 1,
+          "identity_id": "00000000-0000-4000-8000-000000000004",
+          "budget_id": "00000000-0000-4000-8000-000000000005",
+          "attempt": 1,
+          "causation_id": "00000000-0000-4000-8000-00000000001e",
+          "deduplication_key": "fixture.proposed.101",
+          "state": "proposed",
+          "usage": {
+            "units": 0,
+            "bytes": 0,
+            "cpu_us": 0,
+            "elapsed_us": 0
+          }
+        }
+      }
+    },
+    {
+      "schema_version": "0.1.0",
+      "record": {
+        "type": "invocation",
+        "fields": {
+          "invocation_id": "00000000-0000-4000-8000-000000000066",
+          "run_id": "00000000-0000-4000-8000-000000000006",
+          "project_id": "00000000-0000-4000-8000-000000000001",
+          "investigation_id": "00000000-0000-4000-8000-000000000007",
+          "session_id": "00000000-0000-4000-8000-000000000008",
+          "actor_ref": "00000000-0000-4000-8000-000000000009",
+          "tool_id": "traffic.snapshot.read",
+          "tool_version": "0.1.0",
+          "provider_digest": "37935cf6b607eb60be2f098c5aa1f8752cd84524e3d5106c7ac7988eb4058117",
+          "input_ref": "00000000-0000-4000-8000-00000000000c",
+          "input_sha256": "7cf95a2d76084ceb37d62c9f453718dd14fa175fdefc908bda15ebd51c1dd8eb",
+          "input_revision": 1,
+          "control_revision": 1,
+          "scope_revision": 1,
+          "identity_id": "00000000-0000-4000-8000-000000000004",
+          "budget_id": "00000000-0000-4000-8000-000000000005",
+          "attempt": 1,
+          "causation_id": "00000000-0000-4000-8000-00000000001e",
+          "deduplication_key": "fixture.rejected.102",
+          "state": "rejected",
+          "usage": {
+            "units": 0,
+            "bytes": 0,
+            "cpu_us": 0,
+            "elapsed_us": 0
+          },
+          "error": {
+            "code": "permission_denied",
+            "message": "Synthetic schema example, not an executed outcome",
+            "invocation_id": "00000000-0000-4000-8000-000000000066",
+            "retryability": "never",
+            "diagnostic_refs": []
+          }
+        }
+      }
+    },
+    {
+      "schema_version": "0.1.0",
+      "record": {
+        "type": "invocation",
+        "fields": {
+          "invocation_id": "00000000-0000-4000-8000-000000000067",
+          "run_id": "00000000-0000-4000-8000-000000000006",
+          "project_id": "00000000-0000-4000-8000-000000000001",
+          "investigation_id": "00000000-0000-4000-8000-000000000007",
+          "session_id": "00000000-0000-4000-8000-000000000008",
+          "actor_ref": "00000000-0000-4000-8000-000000000009",
+          "tool_id": "traffic.snapshot.read",
+          "tool_version": "0.1.0",
+          "provider_digest": "37935cf6b607eb60be2f098c5aa1f8752cd84524e3d5106c7ac7988eb4058117",
+          "input_ref": "00000000-0000-4000-8000-00000000000c",
+          "input_sha256": "7cf95a2d76084ceb37d62c9f453718dd14fa175fdefc908bda15ebd51c1dd8eb",
+          "input_revision": 1,
+          "control_revision": 1,
+          "scope_revision": 1,
+          "identity_id": "00000000-0000-4000-8000-000000000004",
+          "budget_id": "00000000-0000-4000-8000-000000000005",
+          "attempt": 1,
+          "causation_id": "00000000-0000-4000-8000-00000000001e",
+          "deduplication_key": "fixture.waiting_approval.103",
+          "state": "waiting_approval",
+          "usage": {
+            "units": 0,
+            "bytes": 0,
+            "cpu_us": 0,
+            "elapsed_us": 0
+          }
+        }
+      }
+    },
+    {
+      "schema_version": "0.1.0",
+      "record": {
+        "type": "invocation",
+        "fields": {
+          "invocation_id": "00000000-0000-4000-8000-000000000068",
+          "run_id": "00000000-0000-4000-8000-000000000006",
+          "project_id": "00000000-0000-4000-8000-000000000001",
+          "investigation_id": "00000000-0000-4000-8000-000000000007",
+          "session_id": "00000000-0000-4000-8000-000000000008",
+          "actor_ref": "00000000-0000-4000-8000-000000000009",
+          "tool_id": "traffic.snapshot.read",
+          "tool_version": "0.1.0",
+          "provider_digest": "37935cf6b607eb60be2f098c5aa1f8752cd84524e3d5106c7ac7988eb4058117",
+          "input_ref": "00000000-0000-4000-8000-00000000000c",
+          "input_sha256": "7cf95a2d76084ceb37d62c9f453718dd14fa175fdefc908bda15ebd51c1dd8eb",
+          "input_revision": 1,
+          "control_revision": 1,
+          "scope_revision": 1,
+          "identity_id": "00000000-0000-4000-8000-000000000004",
+          "budget_id": "00000000-0000-4000-8000-000000000005",
+          "attempt": 1,
+          "causation_id": "00000000-0000-4000-8000-00000000001e",
+          "deduplication_key": "fixture.reserved.104",
+          "state": "reserved",
+          "usage": {
+            "units": 0,
+            "bytes": 0,
+            "cpu_us": 0,
+            "elapsed_us": 0
+          },
+          "grant_id": "00000000-0000-4000-8000-000000000028"
+        }
+      }
+    },
+    {
+      "schema_version": "0.1.0",
+      "record": {
+        "type": "invocation",
+        "fields": {
+          "invocation_id": "00000000-0000-4000-8000-000000000069",
+          "run_id": "00000000-0000-4000-8000-000000000006",
+          "project_id": "00000000-0000-4000-8000-000000000001",
+          "investigation_id": "00000000-0000-4000-8000-000000000007",
+          "session_id": "00000000-0000-4000-8000-000000000008",
+          "actor_ref": "00000000-0000-4000-8000-000000000009",
+          "tool_id": "traffic.snapshot.read",
+          "tool_version": "0.1.0",
+          "provider_digest": "37935cf6b607eb60be2f098c5aa1f8752cd84524e3d5106c7ac7988eb4058117",
+          "input_ref": "00000000-0000-4000-8000-00000000000c",
+          "input_sha256": "7cf95a2d76084ceb37d62c9f453718dd14fa175fdefc908bda15ebd51c1dd8eb",
+          "input_revision": 1,
+          "control_revision": 1,
+          "scope_revision": 1,
+          "identity_id": "00000000-0000-4000-8000-000000000004",
+          "budget_id": "00000000-0000-4000-8000-000000000005",
+          "attempt": 1,
+          "causation_id": "00000000-0000-4000-8000-00000000001e",
+          "deduplication_key": "fixture.sending.105",
+          "state": "sending",
+          "usage": {
+            "units": 0,
+            "bytes": 0,
+            "cpu_us": 0,
+            "elapsed_us": 0
+          },
+          "grant_id": "00000000-0000-4000-8000-000000000028"
+        }
+      }
+    },
+    {
+      "schema_version": "0.1.0",
+      "record": {
+        "type": "invocation",
+        "fields": {
+          "invocation_id": "00000000-0000-4000-8000-00000000006a",
+          "run_id": "00000000-0000-4000-8000-000000000006",
+          "project_id": "00000000-0000-4000-8000-000000000001",
+          "investigation_id": "00000000-0000-4000-8000-000000000007",
+          "session_id": "00000000-0000-4000-8000-000000000008",
+          "actor_ref": "00000000-0000-4000-8000-000000000009",
+          "tool_id": "traffic.snapshot.read",
+          "tool_version": "0.1.0",
+          "provider_digest": "37935cf6b607eb60be2f098c5aa1f8752cd84524e3d5106c7ac7988eb4058117",
+          "input_ref": "00000000-0000-4000-8000-00000000000c",
+          "input_sha256": "7cf95a2d76084ceb37d62c9f453718dd14fa175fdefc908bda15ebd51c1dd8eb",
+          "input_revision": 1,
+          "control_revision": 1,
+          "scope_revision": 1,
+          "identity_id": "00000000-0000-4000-8000-000000000004",
+          "budget_id": "00000000-0000-4000-8000-000000000005",
+          "attempt": 1,
+          "causation_id": "00000000-0000-4000-8000-00000000001e",
+          "deduplication_key": "fixture.completed.106",
+          "state": "completed",
+          "usage": {
+            "units": 1,
+            "bytes": 21,
+            "cpu_us": 1,
+            "elapsed_us": 10
+          },
+          "grant_id": "00000000-0000-4000-8000-000000000028",
+          "output_ref": "00000000-0000-4000-8000-00000000000b"
+        }
+      }
+    },
+    {
+      "schema_version": "0.1.0",
+      "record": {
+        "type": "invocation",
+        "fields": {
+          "invocation_id": "00000000-0000-4000-8000-00000000006b",
+          "run_id": "00000000-0000-4000-8000-000000000006",
+          "project_id": "00000000-0000-4000-8000-000000000001",
+          "investigation_id": "00000000-0000-4000-8000-000000000007",
+          "session_id": "00000000-0000-4000-8000-000000000008",
+          "actor_ref": "00000000-0000-4000-8000-000000000009",
+          "tool_id": "traffic.snapshot.read",
+          "tool_version": "0.1.0",
+          "provider_digest": "37935cf6b607eb60be2f098c5aa1f8752cd84524e3d5106c7ac7988eb4058117",
+          "input_ref": "00000000-0000-4000-8000-00000000000c",
+          "input_sha256": "7cf95a2d76084ceb37d62c9f453718dd14fa175fdefc908bda15ebd51c1dd8eb",
+          "input_revision": 1,
+          "control_revision": 1,
+          "scope_revision": 1,
+          "identity_id": "00000000-0000-4000-8000-000000000004",
+          "budget_id": "00000000-0000-4000-8000-000000000005",
+          "attempt": 1,
+          "causation_id": "00000000-0000-4000-8000-00000000001e",
+          "deduplication_key": "fixture.failed.107",
+          "state": "failed",
+          "usage": {
+            "units": 1,
+            "bytes": 0,
+            "cpu_us": 1,
+            "elapsed_us": 10
+          },
+          "grant_id": "00000000-0000-4000-8000-000000000028",
+          "error": {
+            "code": "invalid_input",
+            "message": "Synthetic schema example, not an executed outcome",
+            "invocation_id": "00000000-0000-4000-8000-00000000006b",
+            "retryability": "never",
+            "diagnostic_refs": []
+          }
+        }
+      }
+    },
+    {
+      "schema_version": "0.1.0",
+      "record": {
+        "type": "invocation",
+        "fields": {
+          "invocation_id": "00000000-0000-4000-8000-00000000006c",
+          "run_id": "00000000-0000-4000-8000-000000000006",
+          "project_id": "00000000-0000-4000-8000-000000000001",
+          "investigation_id": "00000000-0000-4000-8000-000000000007",
+          "session_id": "00000000-0000-4000-8000-000000000008",
+          "actor_ref": "00000000-0000-4000-8000-000000000009",
+          "tool_id": "traffic.snapshot.read",
+          "tool_version": "0.1.0",
+          "provider_digest": "37935cf6b607eb60be2f098c5aa1f8752cd84524e3d5106c7ac7988eb4058117",
+          "input_ref": "00000000-0000-4000-8000-00000000000c",
+          "input_sha256": "7cf95a2d76084ceb37d62c9f453718dd14fa175fdefc908bda15ebd51c1dd8eb",
+          "input_revision": 1,
+          "control_revision": 1,
+          "scope_revision": 1,
+          "identity_id": "00000000-0000-4000-8000-000000000004",
+          "budget_id": "00000000-0000-4000-8000-000000000005",
+          "attempt": 1,
+          "causation_id": "00000000-0000-4000-8000-00000000001e",
+          "deduplication_key": "fixture.outcome_unknown.108",
+          "state": "outcome_unknown",
+          "usage": {
+            "units": 1,
+            "bytes": 0,
+            "cpu_us": 1,
+            "elapsed_us": 10
+          },
+          "grant_id": "00000000-0000-4000-8000-000000000028",
+          "error": {
+            "code": "outcome_unknown",
+            "message": "Synthetic schema example, not an executed outcome",
+            "invocation_id": "00000000-0000-4000-8000-00000000006c",
+            "retryability": "reconcile",
+            "diagnostic_refs": []
+          }
+        }
+      }
+    },
+    {
+      "schema_version": "0.1.0",
+      "record": {
+        "type": "invocation",
+        "fields": {
+          "invocation_id": "00000000-0000-4000-8000-00000000006d",
+          "run_id": "00000000-0000-4000-8000-000000000006",
+          "project_id": "00000000-0000-4000-8000-000000000001",
+          "investigation_id": "00000000-0000-4000-8000-000000000007",
+          "session_id": "00000000-0000-4000-8000-000000000008",
+          "actor_ref": "00000000-0000-4000-8000-000000000009",
+          "tool_id": "traffic.snapshot.read",
+          "tool_version": "0.1.0",
+          "provider_digest": "37935cf6b607eb60be2f098c5aa1f8752cd84524e3d5106c7ac7988eb4058117",
+          "input_ref": "00000000-0000-4000-8000-00000000000c",
+          "input_sha256": "7cf95a2d76084ceb37d62c9f453718dd14fa175fdefc908bda15ebd51c1dd8eb",
+          "input_revision": 1,
+          "control_revision": 1,
+          "scope_revision": 1,
+          "identity_id": "00000000-0000-4000-8000-000000000004",
+          "budget_id": "00000000-0000-4000-8000-000000000005",
+          "attempt": 1,
+          "causation_id": "00000000-0000-4000-8000-00000000001e",
+          "deduplication_key": "fixture.cancelled-before.109",
+          "state": "cancelled",
+          "usage": {
+            "units": 0,
+            "bytes": 0,
+            "cpu_us": 0,
+            "elapsed_us": 0
+          },
+          "error": {
+            "code": "cancelled",
+            "message": "Synthetic schema example, not an executed outcome",
+            "invocation_id": "00000000-0000-4000-8000-00000000006d",
+            "retryability": "never",
+            "diagnostic_refs": []
+          }
+        }
+      }
+    },
+    {
+      "schema_version": "0.1.0",
+      "record": {
+        "type": "invocation",
+        "fields": {
+          "invocation_id": "00000000-0000-4000-8000-00000000006e",
+          "run_id": "00000000-0000-4000-8000-000000000006",
+          "project_id": "00000000-0000-4000-8000-000000000001",
+          "investigation_id": "00000000-0000-4000-8000-000000000007",
+          "session_id": "00000000-0000-4000-8000-000000000008",
+          "actor_ref": "00000000-0000-4000-8000-000000000009",
+          "tool_id": "traffic.snapshot.read",
+          "tool_version": "0.1.0",
+          "provider_digest": "37935cf6b607eb60be2f098c5aa1f8752cd84524e3d5106c7ac7988eb4058117",
+          "input_ref": "00000000-0000-4000-8000-00000000000c",
+          "input_sha256": "7cf95a2d76084ceb37d62c9f453718dd14fa175fdefc908bda15ebd51c1dd8eb",
+          "input_revision": 1,
+          "control_revision": 1,
+          "scope_revision": 1,
+          "identity_id": "00000000-0000-4000-8000-000000000004",
+          "budget_id": "00000000-0000-4000-8000-000000000005",
+          "attempt": 1,
+          "causation_id": "00000000-0000-4000-8000-00000000001e",
+          "deduplication_key": "fixture.cancelled-after.110",
+          "state": "cancelled",
+          "usage": {
+            "units": 0,
+            "bytes": 0,
+            "cpu_us": 0,
+            "elapsed_us": 0
+          },
+          "grant_id": "00000000-0000-4000-8000-000000000029",
+          "error": {
+            "code": "cancelled",
+            "message": "Synthetic schema example, not an executed outcome",
+            "invocation_id": "00000000-0000-4000-8000-00000000006e",
+            "retryability": "never",
+            "diagnostic_refs": []
+          }
+        }
+      }
+    },
+    {
+      "schema_version": "0.1.0",
+      "record": {
+        "type": "control_state",
+        "fields": {
+          "investigation_id": "00000000-0000-4000-8000-000000000007",
+          "revision": 1,
+          "mode": "running",
+          "admission_open": true,
+          "instruction_ref": "00000000-0000-4000-8000-000000000019"
+        }
+      }
+    },
+    {
+      "schema_version": "0.1.0",
+      "record": {
+        "type": "control_measurement",
+        "fields": {
+          "request_id": "00000000-0000-4000-8000-00000000001e",
+          "clock_epoch_id": "00000000-0000-4000-8000-00000000001f",
+          "received_us": 0,
+          "barrier_active_us": 100,
+          "acknowledged_us": 150,
+          "affected_revision": 1,
+          "late_admissions": 0
+        }
+      }
+    },
+    {
+      "schema_version": "0.1.0",
+      "record": {
+        "type": "event",
+        "fields": {
+          "event_id": "00000000-0000-4000-8000-000000000017",
+          "schema_version": "0.1.0",
+          "project_id": "00000000-0000-4000-8000-000000000001",
+          "aggregate_id": "00000000-0000-4000-8000-00000000000a",
+          "aggregate_sequence": 1,
+          "event_type": "fixture.schema-example",
+          "timestamp": "2026-11-16T13:00:00Z",
+          "correlation_id": "00000000-0000-4000-8000-00000000001e",
+          "causation_id": "00000000-0000-4000-8000-000000000009",
+          "control_revision": 1,
+          "data_refs": [
+            "00000000-0000-4000-8000-00000000000a",
+            "00000000-0000-4000-8000-00000000000d"
+          ],
+          "published": false
+        }
+      }
+    },
+    {
+      "schema_version": "0.1.0",
+      "record": {
+        "type": "checkpoint",
+        "fields": {
+          "checkpoint_id": "00000000-0000-4000-8000-000000000018",
+          "run_id": "00000000-0000-4000-8000-000000000006",
+          "schema_version": "0.1.0",
+          "control_revision": 1,
+          "scope_revision": 1,
+          "budget_refs": [
+            "00000000-0000-4000-8000-000000000005"
+          ],
+          "invocation_refs": [
+            "00000000-0000-4000-8000-000000000065",
+            "00000000-0000-4000-8000-000000000066",
+            "00000000-0000-4000-8000-000000000067",
+            "00000000-0000-4000-8000-000000000068",
+            "00000000-0000-4000-8000-000000000069",
+            "00000000-0000-4000-8000-00000000006a",
+            "00000000-0000-4000-8000-00000000006b",
+            "00000000-0000-4000-8000-00000000006c",
+            "00000000-0000-4000-8000-00000000006d",
+            "00000000-0000-4000-8000-00000000006e"
+          ],
+          "lease_refs": [],
+          "event_cursors": {
+            "00000000-0000-4000-8000-00000000000a": 1
+          },
+          "created_at": "2026-11-16T13:00:00Z"
+        }
+      }
+    },
+    {
+      "schema_version": "0.1.0",
+      "record": {
+        "type": "investigation_session",
+        "fields": {
+          "investigation_id": "00000000-0000-4000-8000-000000000007",
+          "goal": "Compare schema-only public fixture observations",
+          "control_revision": 1,
+          "session_id": "00000000-0000-4000-8000-000000000008",
+          "user_id": "00000000-0000-4000-8000-000000000002",
+          "branch_refs": [
+            "00000000-0000-4000-8000-000000000016"
+          ],
+          "evidence_refs": [
+            {
+              "snapshot_id": "00000000-0000-4000-8000-00000000000a",
+              "revision": 1,
+              "sha256": "dcce14860cca030bfc9ecbf85fcce43ca1f766030bd654487efeca7c7f75b681",
+              "range_start": 0,
+              "range_end": 4
+            }
+          ]
+        }
+      }
+    },
+    {
+      "schema_version": "0.1.0",
+      "record": {
+        "type": "asset_graph",
+        "fields": {
+          "graph_id": "00000000-0000-4000-8000-00000000000f",
+          "project_id": "00000000-0000-4000-8000-000000000001",
+          "assets": [
+            {
+              "asset_id": "00000000-0000-4000-8000-000000000013",
+              "kind": "host",
+              "identity": "target.razen.invalid",
+              "version": "fixture-v1"
+            },
+            {
+              "asset_id": "00000000-0000-4000-8000-000000000014",
+              "kind": "service",
+              "identity": "public-fixture-service",
+              "version": "fixture-v1"
+            }
+          ],
+          "relations": [
+            {
+              "relation_id": "00000000-0000-4000-8000-000000000015",
+              "from_asset_id": "00000000-0000-4000-8000-000000000013",
+              "to_asset_id": "00000000-0000-4000-8000-000000000014",
+              "kind": "contains",
+              "provenance_refs": [
+                {
+                  "snapshot_id": "00000000-0000-4000-8000-00000000000a",
+                  "revision": 1,
+                  "sha256": "dcce14860cca030bfc9ecbf85fcce43ca1f766030bd654487efeca7c7f75b681",
+                  "range_start": 0,
+                  "range_end": 4
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "schema_version": "0.1.0",
+      "record": {
+        "type": "investigation_graph",
+        "fields": {
+          "graph_id": "00000000-0000-4000-8000-000000000010",
+          "project_id": "00000000-0000-4000-8000-000000000001",
+          "investigation_id": "00000000-0000-4000-8000-000000000007",
+          "nodes": [
+            {
+              "node_id": "00000000-0000-4000-8000-000000000016",
+              "kind": "action",
+              "label": "Read approved public fixture bytes",
+              "asset_refs": [
+                "00000000-0000-4000-8000-000000000014"
+              ],
+              "evidence_refs": [
+                {
+                  "snapshot_id": "00000000-0000-4000-8000-00000000000a",
+                  "revision": 1,
+                  "sha256": "dcce14860cca030bfc9ecbf85fcce43ca1f766030bd654487efeca7c7f75b681",
+                  "range_start": 0,
+                  "range_end": 4
+                }
+              ]
+            }
+          ],
+          "relations": []
+        }
+      }
+    },
+    {
+      "schema_version": "0.1.0",
+      "record": {
+        "type": "workflow_definition",
+        "fields": {
+          "workflow_id": "00000000-0000-4000-8000-000000000011",
+          "project_id": "00000000-0000-4000-8000-000000000001",
+          "investigation_id": "00000000-0000-4000-8000-000000000007",
+          "version": "0.1.0",
+          "steps": [
+            {
+              "step_id": "read-public-fixture",
+              "action_node_id": "00000000-0000-4000-8000-000000000016",
+              "depends_on": []
+            }
+          ]
+        }
+      }
+    },
+    {
+      "schema_version": "0.1.0",
+      "record": {
+        "type": "trace",
+        "fields": {
+          "trace_id": "00000000-0000-4000-8000-000000000012",
+          "project_id": "00000000-0000-4000-8000-000000000001",
+          "investigation_id": "00000000-0000-4000-8000-000000000007",
+          "session_id": "00000000-0000-4000-8000-000000000008",
+          "workflow_id": "00000000-0000-4000-8000-000000000011",
+          "workflow_version": "0.1.0",
+          "entries": [
+            {
+              "invocation_id": "00000000-0000-4000-8000-00000000006a",
+              "step_id": "read-public-fixture",
+              "action_node_id": "00000000-0000-4000-8000-000000000016",
+              "actor_ref": "00000000-0000-4000-8000-000000000009",
+              "sequence": 1,
+              "evidence_refs": [
+                {
+                  "snapshot_id": "00000000-0000-4000-8000-00000000000a",
+                  "revision": 1,
+                  "sha256": "dcce14860cca030bfc9ecbf85fcce43ca1f766030bd654487efeca7c7f75b681",
+                  "range_start": 0,
+                  "range_end": 4
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "schema_version": "0.1.0",
+      "record": {
+        "type": "memory_item",
+        "fields": {
+          "memory_id": "00000000-0000-4000-8000-00000000001a",
+          "level": "session",
+          "user_id": "00000000-0000-4000-8000-000000000002",
+          "session_id": "00000000-0000-4000-8000-000000000008",
+          "kind": "lesson",
+          "content_ref": "00000000-0000-4000-8000-00000000000b",
+          "origin_ref": "00000000-0000-4000-8000-00000000000d",
+          "status": "active",
+          "valid_until": "2099-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "schema_version": "0.1.0",
+      "record": {
+        "type": "memory_item",
+        "fields": {
+          "memory_id": "00000000-0000-4000-8000-00000000001b",
+          "level": "user",
+          "user_id": "00000000-0000-4000-8000-000000000002",
+          "kind": "lesson",
+          "content_ref": "00000000-0000-4000-8000-000000000019",
+          "origin_ref": "00000000-0000-4000-8000-00000000000d",
+          "status": "active",
+          "valid_until": "2099-01-01T00:00:00Z",
+          "promotion_source_id": "00000000-0000-4000-8000-00000000001a"
+        }
+      }
+    },
+    {
+      "schema_version": "0.1.0",
+      "record": {
+        "type": "work_package",
+        "fields": {
+          "package_id": "R0-01",
+          "title": "Shared contracts",
+          "requires": [],
+          "requirement_ids": [
+            "FR-002",
+            "FR-003",
+            "FR-004",
+            "FR-017"
+          ],
+          "case_ids": [
+            "CON-01",
+            "CON-02",
+            "CON-03",
+            "CON-04",
+            "CON-05"
+          ]
+        }
+      }
+    },
+    {
+      "schema_version": "0.1.0",
+      "record": {
+        "type": "work_package",
+        "fields": {
+          "package_id": "R0-02",
+          "title": "Authorized transport and TLS",
+          "requires": [
+            "R0-01"
+          ],
+          "requirement_ids": [
+            "FR-004",
+            "FR-005",
+            "FR-006",
+            "FR-014",
+            "FR-017",
+            "FR-018"
+          ],
+          "case_ids": [
+            "NET-01",
+            "NET-02",
+            "NET-03",
+            "NET-04",
+            "NET-05",
+            "NET-06",
+            "NET-07",
+            "NET-08"
+          ]
+        }
+      }
+    },
+    {
+      "schema_version": "0.1.0",
+      "record": {
+        "type": "work_package",
+        "fields": {
+          "package_id": "R0-03",
+          "title": "Public component containment",
+          "requires": [
+            "R0-01"
+          ],
+          "requirement_ids": [
+            "FR-006",
+            "FR-007",
+            "FR-008",
+            "FR-014",
+            "FR-017"
+          ],
+          "case_ids": [
+            "CMP-01",
+            "CMP-02",
+            "CMP-03",
+            "CMP-04",
+            "CMP-05",
+            "CMP-06",
+            "CMP-07"
+          ]
+        }
+      }
+    },
+    {
+      "schema_version": "0.1.0",
+      "record": {
+        "type": "work_package",
+        "fields": {
+          "package_id": "R0-04",
+          "title": "Controlled runtime and durable recovery",
+          "requires": [
+            "R0-01"
+          ],
+          "requirement_ids": [
+            "FR-004",
+            "FR-006",
+            "FR-009",
+            "FR-010",
+            "FR-011",
+            "FR-012",
+            "FR-014",
+            "FR-016",
+            "FR-017",
+            "FR-018"
+          ],
+          "case_ids": [
+            "RUN-01",
+            "RUN-02",
+            "RUN-03",
+            "RUN-04",
+            "RUN-05",
+            "RUN-06",
+            "RUN-07",
+            "RUN-08",
+            "REC-01",
+            "REC-02",
+            "REC-03",
+            "REC-04",
+            "REC-05"
+          ]
+        }
+      }
+    },
+    {
+      "schema_version": "0.1.0",
+      "record": {
+        "type": "work_package",
+        "fields": {
+          "package_id": "R0-05",
+          "title": "Reproducible evidence and exit review",
+          "requires": [
+            "R0-01",
+            "R0-02",
+            "R0-03",
+            "R0-04"
+          ],
+          "requirement_ids": [
+            "FR-001",
+            "FR-013",
+            "FR-014",
+            "FR-015",
+            "FR-016",
+            "FR-018"
+          ],
+          "case_ids": [
+            "EXIT-01",
+            "EXIT-02"
+          ]
+        }
+      }
+    },
+    {
+      "schema_version": "0.1.0",
+      "record": {
+        "type": "proof_case",
+        "fields": {
+          "case_id": "CON-01",
+          "package_id": "R0-01",
+          "description": "Valid project, scope, descriptor, snapshot, strict snapshot/artifact evidence references, event, invocation, and checkpoint examples round-trip with stable references and versions",
+          "fixture_refs": [
+            "fixtures/scenarios/contracts.json"
+          ],
+          "expected": {
+            "round_trip": true,
+            "stable_references": true,
+            "evidence_variants": true
+          },
+          "mandatory": true,
+          "requirement_ids": [
+            "FR-002",
+            "FR-017"
+          ],
+          "success_ids": [
+            "SC-001"
+          ]
+        }
+      }
+    },
+    {
+      "schema_version": "0.1.0",
+      "record": {
+        "type": "proof_case",
+        "fields": {
+          "case_id": "CON-02",
+          "package_id": "R0-01",
+          "description": "Invalid/unknown versions, extra or duplicate fields, malformed IDs, oversized frames, invalid numeric/range values are rejected before allocation/effect beyond limits; bounded seeded mutation of checked-in valid/invalid byte corpus exercises the real framing codec and typed contract parser, asserting valid-record round-trip/invariants and explicit invalid-input rejection, with saved counterexample replay",
+          "fixture_refs": [
+            "fixtures/scenarios/contracts.json"
+          ],
+          "expected": {
+            "invalid_rejected": true,
+            "framing_fuzz": true,
+            "typed_fuzz": true,
+            "complete_budget": true,
+            "replayable": true
+          },
+          "mandatory": true,
+          "requirement_ids": [
+            "FR-002",
+            "FR-004"
+          ],
+          "success_ids": [
+            "SC-001",
+            "SC-002"
+          ]
+        }
+      }
+    },
+    {
+      "schema_version": "0.1.0",
+      "record": {
+        "type": "proof_case",
+        "fields": {
+          "case_id": "CON-03",
+          "package_id": "R0-01",
+          "description": "Stale patches, hash mismatch, foreign-project evidence and unauthorized identity references are rejected; original evidence remains unchanged",
+          "fixture_refs": [
+            "fixtures/scenarios/contracts.json"
+          ],
+          "expected": {
+            "stale_rejected": true,
+            "foreign_rejected": true,
+            "original_unchanged": true
+          },
+          "mandatory": true,
+          "requirement_ids": [
+            "FR-002",
+            "FR-004"
+          ],
+          "success_ids": [
+            "SC-002"
+          ]
+        }
+      }
+    },
+    {
+      "schema_version": "0.1.0",
+      "record": {
+        "type": "proof_case",
+        "fields": {
+          "case_id": "CON-04",
+          "package_id": "R0-01",
+          "description": "Harness and simulated-runtime consumers obtain identical denials for equivalent calls; revoked grants and child scope/quota escalation cannot admit effects",
+          "fixture_refs": [
+            "fixtures/scenarios/contracts.json"
+          ],
+          "expected": {
+            "consumer_equivalence": true,
+            "revocation_enforced": true,
+            "child_scope_bounded": true,
+            "aggregate_quota": true
+          },
+          "mandatory": true,
+          "requirement_ids": [
+            "FR-004",
+            "FR-017"
+          ],
+          "success_ids": [
+            "SC-002"
+          ]
+        }
+      }
+    },
+    {
+      "schema_version": "0.1.0",
+      "record": {
+        "type": "proof_case",
+        "fields": {
+          "case_id": "CON-05",
+          "package_id": "R0-01",
+          "description": "Four distinct asset/investigation/DAG/trace contracts link correctly; user/session memory examples prefilter ownership and reject third levels/cross-session access",
+          "fixture_refs": [
+            "fixtures/scenarios/contracts.json"
+          ],
+          "expected": {
+            "graphs_distinct": true,
+            "ownership_filtered": true,
+            "two_memory_levels": true,
+            "promotion_bounded": true
+          },
+          "mandatory": true,
+          "requirement_ids": [
+            "FR-003"
+          ],
+          "success_ids": [
+            "SC-001",
+            "SC-002"
+          ]
+        }
+      }
+    },
+    {
+      "schema_version": "0.1.0",
+      "record": {
+        "type": "proof_case",
+        "fields": {
+          "case_id": "NET-01",
+          "package_id": "R0-02",
+          "description": "Plain HTTP/1.1 forwarding succeeds with expected method, target, legal duplicate headers, binary body, and captured references",
+          "fixture_refs": [
+            "fixtures/scenarios/transport.json"
+          ],
+          "expected": {
+            "forwarded": true,
+            "headers_preserved": true,
+            "body_exact": true,
+            "capture_referenced": true
+          },
+          "mandatory": true,
+          "requirement_ids": [
+            "FR-005",
+            "FR-017"
+          ],
+          "success_ids": [
+            "SC-003"
+          ]
+        }
+      }
+    },
+    {
+      "schema_version": "0.1.0",
+      "record": {
+        "type": "proof_case",
+        "fields": {
+          "case_id": "NET-02",
+          "package_id": "R0-02",
+          "description": "CONNECT establishes an authorized opaque TLS tunnel; receiver bytes are correct and no inspection claim is made",
+          "fixture_refs": [
+            "fixtures/scenarios/transport.json"
+          ],
+          "expected": {
+            "forwarded": true,
+            "body_exact": true,
+            "opaque_tunnel": true
+          },
+          "mandatory": true,
+          "requirement_ids": [
+            "FR-005",
+            "FR-006"
+          ],
+          "success_ids": [
+            "SC-003"
+          ]
+        }
+      }
+    },
+    {
+      "schema_version": "0.1.0",
+      "record": {
+        "type": "proof_case",
+        "fields": {
+          "case_id": "NET-03",
+          "package_id": "R0-02",
+          "description": "HTTPS HTTP/1.1 interception succeeds with client-local fixture root and independently verified upstream trust; no verification bypass or OS trust change",
+          "fixture_refs": [
+            "fixtures/scenarios/transport.json"
+          ],
+          "expected": {
+            "forwarded": true,
+            "upstream_verified": true,
+            "isolated_trust": true,
+            "trust_unchanged": true
+          },
+          "mandatory": true,
+          "requirement_ids": [
+            "FR-005",
+            "FR-006"
+          ],
+          "success_ids": [
+            "SC-002",
+            "SC-003"
+          ]
+        }
+      }
+    },
+    {
+      "schema_version": "0.1.0",
+      "record": {
+        "type": "proof_case",
+        "fields": {
+          "case_id": "NET-04",
+          "package_id": "R0-02",
+          "description": "HTTPS HTTP/2 interception forwards H2 on both legs with ALPN evidence, two concurrent streams, semantic headers and exact unchanged bodies; no H1 downgrade counted as H2",
+          "fixture_refs": [
+            "fixtures/scenarios/transport.json"
+          ],
+          "expected": {
+            "forwarded": true,
+            "h2_both_legs": true,
+            "concurrent_streams": true,
+            "body_exact": true
+          },
+          "mandatory": true,
+          "requirement_ids": [
+            "FR-005"
+          ],
+          "success_ids": [
+            "SC-003"
+          ]
+        }
+      }
+    },
+    {
+      "schema_version": "0.1.0",
+      "record": {
+        "type": "proof_case",
+        "fields": {
+          "case_id": "NET-05",
+          "package_id": "R0-02",
+          "description": "Exclusions, redirect pivots, DNS changes, mapped addresses, and ungranted loopback/private ports deny actual connections; reachable controlled receivers observe zero prohibited effects",
+          "fixture_refs": [
+            "fixtures/scenarios/transport.json"
+          ],
+          "expected": {
+            "scope_rechecked": true,
+            "pivots_denied": true,
+            "healthy_observer": true,
+            "zero_forbidden_arrivals": true
+          },
+          "mandatory": true,
+          "requirement_ids": [
+            "FR-004",
+            "FR-005"
+          ],
+          "success_ids": [
+            "SC-002",
+            "SC-003"
+          ]
+        }
+      }
+    },
+    {
+      "schema_version": "0.1.0",
+      "record": {
+        "type": "proof_case",
+        "fields": {
+          "case_id": "NET-06",
+          "package_id": "R0-02",
+          "description": "Invalid upstream certificates and mismatched CONNECT/SNI/request authorities fail explicitly; client trust can be removed; before/after OS trust records match; secrets/key-log markers absent from prohibited outputs",
+          "fixture_refs": [
+            "fixtures/scenarios/transport.json"
+          ],
+          "expected": {
+            "invalid_tls_rejected": true,
+            "authorities_match": true,
+            "trust_unchanged": true,
+            "secrets_absent": true
+          },
+          "mandatory": true,
+          "requirement_ids": [
+            "FR-005",
+            "FR-006",
+            "FR-017"
+          ],
+          "success_ids": [
+            "SC-002",
+            "SC-003"
+          ]
+        }
+      }
+    },
+    {
+      "schema_version": "0.1.0",
+      "record": {
+        "type": "proof_case",
+        "fields": {
+          "case_id": "NET-07",
+          "package_id": "R0-02",
+          "description": "Oversized/truncated bodies and unsupported protocols/encodings produce their declared bounded behavior; no incomplete replacement, silent corruption, or unsupported inspection claim",
+          "fixture_refs": [
+            "fixtures/scenarios/transport.json"
+          ],
+          "expected": {
+            "body_bounded": true,
+            "representation_explicit": true,
+            "invalid_rejected": true,
+            "no_partial_replacement": true
+          },
+          "mandatory": true,
+          "requirement_ids": [
+            "FR-005",
+            "FR-018"
+          ],
+          "success_ids": [
+            "SC-003"
+          ]
+        }
+      }
+    },
+    {
+      "schema_version": "0.1.0",
+      "record": {
+        "type": "proof_case",
+        "fields": {
+          "case_id": "NET-08",
+          "package_id": "R0-02",
+          "description": "Resetting one H2 stream does not corrupt a concurrent valid stream; limits and visible per-stream errors remain attributable",
+          "fixture_refs": [
+            "fixtures/scenarios/transport.json"
+          ],
+          "expected": {
+            "stream_reset": true,
+            "valid_stream_survives": true,
+            "errors_attributed": true
+          },
+          "mandatory": true,
+          "requirement_ids": [
+            "FR-005",
+            "FR-014"
+          ],
+          "success_ids": [
+            "SC-003"
+          ]
+        }
+      }
+    },
+    {
+      "schema_version": "0.1.0",
+      "record": {
+        "type": "proof_case",
+        "fields": {
+          "case_id": "CMP-01",
+          "package_id": "R0-03",
+          "description": "Component built against the public WIT reads permitted chunks and proposes valid ranges without private engine APIs; unchanged input body remains byte-identical",
+          "fixture_refs": [
+            "fixtures/scenarios/components.json"
+          ],
+          "expected": {
+            "public_wit": true,
+            "bounded_read": true,
+            "valid_proposal": true,
+            "original_unchanged": true
+          },
+          "mandatory": true,
+          "requirement_ids": [
+            "FR-007",
+            "FR-017"
+          ],
+          "success_ids": [
+            "SC-001",
+            "SC-004"
+          ]
+        }
+      }
+    },
+    {
+      "schema_version": "0.1.0",
+      "record": {
+        "type": "proof_case",
+        "fields": {
+          "case_id": "CMP-02",
+          "package_id": "R0-03",
+          "description": "Infinite guest computation is interrupted by configured fuel/epochs/deadline, not by waiting for the guest to cooperate",
+          "fixture_refs": [
+            "fixtures/scenarios/components.json"
+          ],
+          "expected": {
+            "execution_interrupted": true,
+            "deadline_met": true
+          },
+          "mandatory": true,
+          "requirement_ids": [
+            "FR-008"
+          ],
+          "success_ids": [
+            "SC-004"
+          ]
+        }
+      }
+    },
+    {
+      "schema_version": "0.1.0",
+      "record": {
+        "type": "proof_case",
+        "fields": {
+          "case_id": "CMP-03",
+          "package_id": "R0-03",
+          "description": "Excess memory/table/instance growth hits hard per-Store guest limits; simultaneous invocation attempts across distinct component Stores/runners saturate the engine-wide `max_concurrent_invocations` cap and immediately return structured `budget_exhausted` without starting extra work or unbounded queuing; engine/control remain responsive; measured runner RSS behavior is recorded without claiming a hard OS cap",
+          "fixture_refs": [
+            "fixtures/scenarios/components.json"
+          ],
+          "expected": {
+            "memory_bounded": true,
+            "aggregate_invocations_bounded": true,
+            "control_ack": true,
+            "rss_observed": true
+          },
+          "mandatory": true,
+          "requirement_ids": [
+            "FR-008",
+            "FR-014"
+          ],
+          "success_ids": [
+            "SC-004"
+          ]
+        }
+      }
+    },
+    {
+      "schema_version": "0.1.0",
+      "record": {
+        "type": "proof_case",
+        "fields": {
+          "case_id": "CMP-04",
+          "package_id": "R0-03",
+          "description": "Oversized/invalid observation lists, overflowed offsets, stale snapshots and foreign-project references fail with explicit validated errors",
+          "fixture_refs": [
+            "fixtures/scenarios/components.json"
+          ],
+          "expected": {
+            "invalid_rejected": true,
+            "stale_rejected": true,
+            "foreign_rejected": true,
+            "output_bounded": true
+          },
+          "mandatory": true,
+          "requirement_ids": [
+            "FR-007",
+            "FR-008"
+          ],
+          "success_ids": [
+            "SC-002",
+            "SC-004"
+          ]
+        }
+      }
+    },
+    {
+      "schema_version": "0.1.0",
+      "record": {
+        "type": "proof_case",
+        "fields": {
+          "case_id": "CMP-05",
+          "package_id": "R0-03",
+          "description": "A blocked host body-read operation through the actual broker hits its independent `host_call_deadline_ms`/cancellation even when fuel/epoch interruption alone cannot stop it; concurrent trusted native fixture calls through that broker saturate engine-wide `max_concurrent_host_calls` across component Stores/runners and immediately return structured `budget_exhausted` without performing extra work or unbounded queuing; control remains responsive",
+          "fixture_refs": [
+            "fixtures/scenarios/components.json"
+          ],
+          "expected": {
+            "host_call_deadline": true,
+            "aggregate_host_calls_bounded": true,
+            "control_ack": true
+          },
+          "mandatory": true,
+          "requirement_ids": [
+            "FR-008"
+          ],
+          "success_ids": [
+            "SC-004"
+          ]
+        }
+      }
+    },
+    {
+      "schema_version": "0.1.0",
+      "record": {
+        "type": "proof_case",
+        "fields": {
+          "case_id": "CMP-06",
+          "package_id": "R0-03",
+          "description": "Ungranted filesystem/socket/environment/credential imports and access attempts fail; no host directories, CA private keys, or credentials are disclosed",
+          "fixture_refs": [
+            "fixtures/scenarios/components.json"
+          ],
+          "expected": {
+            "ungranted_access_denied": true,
+            "secrets_absent": true
+          },
+          "mandatory": true,
+          "requirement_ids": [
+            "FR-006",
+            "FR-007",
+            "FR-008"
+          ],
+          "success_ids": [
+            "SC-002",
+            "SC-004"
+          ]
+        }
+      }
+    },
+    {
+      "schema_version": "0.1.0",
+      "record": {
+        "type": "proof_case",
+        "fields": {
+          "case_id": "CMP-07",
+          "package_id": "R0-03",
+          "description": "After EACH CMP-02 through CMP-06 adversarial variant, including invocation/host-call saturation and success/trap/timeout/cancellation slot-release paths, all held aggregate slots are released and the engine and a fresh permitted invocation succeed; trace attributes the original failure rather than returning empty success",
+          "fixture_refs": [
+            "fixtures/scenarios/components.json"
+          ],
+          "expected": {
+            "all_variants_observed": true,
+            "slots_released": true,
+            "fresh_success": true,
+            "errors_attributed": true
+          },
+          "mandatory": true,
+          "requirement_ids": [
+            "FR-008",
+            "FR-017"
+          ],
+          "success_ids": [
+            "SC-004"
+          ]
+        }
+      }
+    },
+    {
+      "schema_version": "0.1.0",
+      "record": {
+        "type": "proof_case",
+        "fields": {
+          "case_id": "RUN-01",
+          "package_id": "R0-04",
+          "description": "Simulated adapter starts, consumes scoped context, proposes brokered calls, emits events/results/usage, cancels and closes; separate simulated model boundary makes zero external calls",
+          "fixture_refs": [
+            "fixtures/scenarios/runtime.json"
+          ],
+          "expected": {
+            "runtime_lifecycle": true,
+            "brokered_calls": true,
+            "model_separate": true,
+            "zero_model_egress": true
+          },
+          "mandatory": true,
+          "requirement_ids": [
+            "FR-009",
+            "FR-017"
+          ],
+          "success_ids": [
+            "SC-001",
+            "SC-002"
+          ]
+        }
+      }
+    },
+    {
+      "schema_version": "0.1.0",
+      "record": {
+        "type": "proof_case",
+        "fields": {
+          "case_id": "RUN-02",
+          "package_id": "R0-04",
+          "description": "Effective VM/global configuration, image/version/provision hashes, UID, namespaces, seccomp and controllers are attested; contaminated/missing settings block launch without native fallback",
+          "fixture_refs": [
+            "fixtures/scenarios/runtime.json"
+          ],
+          "expected": {
+            "effective_config_attested": true,
+            "mandatory_isolation": true,
+            "contamination_rejected": true,
+            "no_fallback": true
+          },
+          "mandatory": true,
+          "requirement_ids": [
+            "FR-010",
+            "FR-018"
+          ],
+          "success_ids": [
+            "SC-002",
+            "SC-004"
+          ]
+        }
+      }
+    },
+    {
+      "schema_version": "0.1.0",
+      "record": {
+        "type": "proof_case",
+        "fields": {
+          "case_id": "RUN-03",
+          "package_id": "R0-04",
+          "description": "Workload and fork/exec descendants perform real denied reads of host/management/other-invocation canaries and credential paths; a granted snapshot remains readable",
+          "fixture_refs": [
+            "fixtures/scenarios/runtime.json"
+          ],
+          "expected": {
+            "actual_attempts": true,
+            "descendants_restricted": true,
+            "granted_read": true,
+            "secrets_absent": true
+          },
+          "mandatory": true,
+          "requirement_ids": [
+            "FR-006",
+            "FR-010"
+          ],
+          "success_ids": [
+            "SC-002",
+            "SC-004"
+          ]
+        }
+      }
+    },
+    {
+      "schema_version": "0.1.0",
+      "record": {
+        "type": "proof_case",
+        "fields": {
+          "case_id": "RUN-04",
+          "package_id": "R0-04",
+          "description": "Actual IPv4/IPv6 TCP/UDP/DNS, loopback/gateway/target/model, Unix-manager-socket and AF_VSOCK attempts are blocked; reachable observers see zero unauthorized arrivals; inherited descriptors grant no escape",
+          "fixture_refs": [
+            "fixtures/scenarios/runtime.json"
+          ],
+          "expected": {
+            "actual_attempts": true,
+            "descendants_restricted": true,
+            "healthy_observer": true,
+            "zero_forbidden_arrivals": true,
+            "descriptors_closed": true
+          },
+          "mandatory": true,
+          "requirement_ids": [
+            "FR-004",
+            "FR-010"
+          ],
+          "success_ids": [
+            "SC-002",
+            "SC-004"
+          ]
+        }
+      }
+    },
+    {
+      "schema_version": "0.1.0",
+      "record": {
+        "type": "proof_case",
+        "fields": {
+          "case_id": "RUN-05",
+          "package_id": "R0-04",
+          "description": "Fork/thread, memory, tmpfs and output floods meet cgroup/size/deadline policy; privilege/namespace/cgroup/descriptor escape attempts fail; host survives and the next valid invocation succeeds",
+          "fixture_refs": [
+            "fixtures/scenarios/runtime.json"
+          ],
+          "expected": {
+            "actual_attempts": true,
+            "descendants_restricted": true,
+            "resource_limits": true,
+            "fresh_success": true
+          },
+          "mandatory": true,
+          "requirement_ids": [
+            "FR-010",
+            "FR-014"
+          ],
+          "success_ids": [
+            "SC-004"
+          ]
+        }
+      }
+    },
+    {
+      "schema_version": "0.1.0",
+      "record": {
+        "type": "proof_case",
+        "fields": {
+          "case_id": "RUN-06",
+          "package_id": "R0-04",
+          "description": "With runtime reads/output blocked and cancellation ignored, host activates/acknowledges the barrier by the profile deadline, denies all later stale calls, and observes child-cgroup termination or recorded VM-stop escalation",
+          "fixture_refs": [
+            "fixtures/scenarios/runtime.json"
+          ],
+          "expected": {
+            "ten_control_samples": true,
+            "control_ack": true,
+            "no_stale_admissions": true,
+            "contained": true
+          },
+          "mandatory": true,
+          "requirement_ids": [
+            "FR-011",
+            "FR-017"
+          ],
+          "success_ids": [
+            "SC-004",
+            "SC-005"
+          ]
+        }
+      }
+    },
+    {
+      "schema_version": "0.1.0",
+      "record": {
+        "type": "proof_case",
+        "fields": {
+          "case_id": "RUN-07",
+          "package_id": "R0-04",
+          "description": "Duplicate and late events/results keep original causality/revision, deduplicate effects, and never reactivate obsolete pending work or expand quota",
+          "fixture_refs": [
+            "fixtures/scenarios/runtime.json"
+          ],
+          "expected": {
+            "events_deduplicated": true,
+            "causality_preserved": true,
+            "late_work_denied": true,
+            "aggregate_quota": true
+          },
+          "mandatory": true,
+          "requirement_ids": [
+            "FR-004",
+            "FR-011",
+            "FR-012"
+          ],
+          "success_ids": [
+            "SC-002",
+            "SC-005"
+          ]
+        }
+      }
+    },
+    {
+      "schema_version": "0.1.0",
+      "record": {
+        "type": "proof_case",
+        "fields": {
+          "case_id": "RUN-08",
+          "package_id": "R0-04",
+          "description": "Killing host/SSH transport expires the independent guest lease, terminates descendants, and prevents orphan effects; killing only SSH is not accepted as termination evidence",
+          "fixture_refs": [
+            "fixtures/scenarios/runtime.json"
+          ],
+          "expected": {
+            "host_transport_lost": true,
+            "lease_expired": true,
+            "descendants_terminated": true,
+            "contained": true
+          },
+          "mandatory": true,
+          "requirement_ids": [
+            "FR-010",
+            "FR-011",
+            "FR-012"
+          ],
+          "success_ids": [
+            "SC-004",
+            "SC-005"
+          ]
+        }
+      }
+    },
+    {
+      "schema_version": "0.1.0",
+      "record": {
+        "type": "proof_case",
+        "fields": {
+          "case_id": "REC-01",
+          "package_id": "R0-04",
+          "description": "SIGKILL at both before_reservation_commit and after_reservation_commit (before final admission) restores prior consumption, reconciles/releases any durable unspent reservation, and observes zero receiver POSTs before/after restart without dispatching the old command",
+          "fixture_refs": [
+            "fixtures/scenarios/runtime.json"
+          ],
+          "expected": {
+            "reservation_seams": true,
+            "consumption_preserved": true,
+            "reservation_reconciled": true,
+            "zero_resends": true
+          },
+          "mandatory": true,
+          "requirement_ids": [
+            "FR-012"
+          ],
+          "success_ids": [
+            "SC-005"
+          ]
+        }
+      }
+    },
+    {
+      "schema_version": "0.1.0",
+      "record": {
+        "type": "proof_case",
+        "fields": {
+          "case_id": "REC-02",
+          "package_id": "R0-04",
+          "description": "SIGKILL at after_sending_commit (before dispatch) and after_receiver_increment (before completion commit) restores `outcome_unknown` even for zero arrivals, preserves consumption, performs only authorized read-only reconciliation, and causes zero additional POSTs",
+          "fixture_refs": [
+            "fixtures/scenarios/runtime.json"
+          ],
+          "expected": {
+            "sending_seams": true,
+            "unknown_restored": true,
+            "consumption_preserved": true,
+            "read_only_reconciliation": true,
+            "zero_resends": true
+          },
+          "mandatory": true,
+          "requirement_ids": [
+            "FR-012",
+            "FR-017"
+          ],
+          "success_ids": [
+            "SC-005"
+          ]
+        }
+      }
+    },
+    {
+      "schema_version": "0.1.0",
+      "record": {
+        "type": "proof_case",
+        "fields": {
+          "case_id": "REC-03",
+          "package_id": "R0-04",
+          "description": "SIGKILL after completion commit, duplicate events, and old lease messages do not duplicate an effect or reset budget; evidence/result references remain consistent",
+          "fixture_refs": [
+            "fixtures/scenarios/runtime.json"
+          ],
+          "expected": {
+            "completion_restored": true,
+            "events_deduplicated": true,
+            "consumption_preserved": true,
+            "zero_resends": true
+          },
+          "mandatory": true,
+          "requirement_ids": [
+            "FR-012",
+            "FR-017"
+          ],
+          "success_ids": [
+            "SC-005"
+          ]
+        }
+      }
+    },
+    {
+      "schema_version": "0.1.0",
+      "record": {
+        "type": "proof_case",
+        "fields": {
+          "case_id": "REC-04",
+          "package_id": "R0-04",
+          "description": "Scope/grant/control changes while the engine is down invalidate incompatible restored work; current versions and identities are checked before any new effect",
+          "fixture_refs": [
+            "fixtures/scenarios/runtime.json"
+          ],
+          "expected": {
+            "current_authority": true,
+            "current_versions": true,
+            "stale_work_denied": true
+          },
+          "mandatory": true,
+          "requirement_ids": [
+            "FR-004",
+            "FR-011",
+            "FR-012"
+          ],
+          "success_ids": [
+            "SC-002",
+            "SC-005"
+          ]
+        }
+      }
+    },
+    {
+      "schema_version": "0.1.0",
+      "record": {
+        "type": "proof_case",
+        "fields": {
+          "case_id": "REC-05",
+          "package_id": "R0-04",
+          "description": "Full disk, failed sync, damaged ledger, or incompatible checkpoint blocks new admission with visible partial evidence; unknown effects are not guessed safe or blindly resent",
+          "fixture_refs": [
+            "fixtures/scenarios/runtime.json"
+          ],
+          "expected": {
+            "storage_faults": true,
+            "admission_closed": true,
+            "partial_evidence": true,
+            "zero_resends": true
+          },
+          "mandatory": true,
+          "requirement_ids": [
+            "FR-012",
+            "FR-016",
+            "FR-018"
+          ],
+          "success_ids": [
+            "SC-005",
+            "SC-007"
+          ]
+        }
+      }
+    },
+    {
+      "schema_version": "0.1.0",
+      "record": {
+        "type": "proof_case",
+        "fields": {
+          "case_id": "EXIT-01",
+          "package_id": "R0-05",
+          "description": "Version/decision register records authoritative stable observations, exact resolved pins/checksums/licenses, pilot/TLS/backend/language/persistence choices, hardware/profile, raw measurements and rerun instructions",
+          "fixture_refs": [
+            "fixtures/scenarios/manifest.json"
+          ],
+          "expected": {
+            "stable_pins": true,
+            "provenance": true,
+            "licenses_recorded": true,
+            "decisions_recorded": true,
+            "raw_measurements": true
+          },
+          "mandatory": true,
+          "requirement_ids": [
+            "FR-013",
+            "FR-014",
+            "FR-015",
+            "FR-016"
+          ],
+          "success_ids": [
+            "SC-006"
+          ]
+        }
+      }
+    },
+    {
+      "schema_version": "0.1.0",
+      "record": {
+        "type": "proof_case",
+        "fields": {
+          "case_id": "EXIT-02",
+          "package_id": "R0-05",
+          "description": "All five packages and mandatory cases are accounted for with consistent immutable evidence; failed/blocked/unexecuted cases, missing approval or evidence, changed hashes, and unsupported required modes prevent a passing approved exit; no later-phase product/spec is claimed",
+          "fixture_refs": [
+            "fixtures/scenarios/manifest.json"
+          ],
+          "expected": {
+            "complete_inventory": true,
+            "packet_integrity": true,
+            "failure_blocks_exit": true,
+            "approval_required": true,
+            "r0_only": true
+          },
+          "mandatory": true,
+          "requirement_ids": [
+            "FR-001",
+            "FR-016",
+            "FR-018"
+          ],
+          "success_ids": [
+            "SC-001",
+            "SC-007"
+          ]
+        }
+      }
+    },
+    {
+      "schema_version": "0.1.0",
+      "record": {
+        "type": "proof_result",
+        "fields": {
+          "run_id": "00000000-0000-4000-8000-000000000006",
+          "case_id": "CON-01",
+          "status": "unexecuted",
+          "expected": {
+            "round_trip": true,
+            "stable_references": true,
+            "evidence_variants": true
+          },
+          "observed": {},
+          "evidence_refs": [],
+          "elapsed_us": 0,
+          "usage": {
+            "units": 0,
+            "bytes": 0,
+            "cpu_us": 0,
+            "elapsed_us": 0
+          }
+        }
+      }
+    }
+  ],
+  "bodies": [
+    {
+      "body_id": "00000000-0000-4000-8000-00000000000b",
+      "bytes_base64": "cHVibGljAGJpbmFyef9maXh0dXJl"
+    },
+    {
+      "body_id": "00000000-0000-4000-8000-00000000000c",
+      "bytes_base64": "eyJtYXhfYnl0ZXMiOjE2LCJvZmZzZXQiOjAsInJldmlzaW9uIjoxLCJzbmFwc2hvdF9pZCI6IjAwMDAwMDAwLTAwMDAtNDAwMC04MDAwLTAwMDAwMDAwMDAwYSJ9"
+    },
+    {
+      "body_id": "00000000-0000-4000-8000-000000000019",
+      "bytes_base64": "UmV2aWV3IHRoZSBhcHByb3ZlZCBwdWJsaWMgZml4dHVyZSBvbmx5Lg=="
+    }
+  ]
+}

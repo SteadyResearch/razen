@@ -1,0 +1,11 @@
+{
+  "schema_version": "0.1.0",
+  "world": "razen:component-proof/passive-proof@0.1.0",
+  "wit_sha256": "c1fa7edeab97ff43ccca45f898a5155f8c43cfb06937be8c247bcde1b0e760c9",
+  "build_manifest": "target/proof-components/build-manifest.json",
+  "variants": ["fixture-valid", "fixture-loop", "fixture-grow", "fixture-output", "fixture-host-call", "fixture-denied-access"],
+  "cases": ["CMP-01", "CMP-02", "CMP-03", "CMP-04", "CMP-05", "CMP-06", "CMP-07"],
+  "capabilities": {"environment": false, "preopens": false, "network": false, "inherited_stdio": false},
+  "rss_policy": "empirical runner monitor; not a hard OS or native sandbox cap",
+  "proposal_status": "proposed"
+}

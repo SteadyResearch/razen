@@ -1,0 +1,38 @@
+{
+  "schema_version": "0.1.0",
+  "fixture_only": true,
+  "authorities": [
+    "target.razen.invalid",
+    "upstream.razen.invalid",
+    "excluded.razen.invalid",
+    "model.razen.invalid"
+  ],
+  "resolved_addresses": ["127.0.0.1", "::1"],
+  "port_policy": "Only explicitly host-issued grants for currently owned ephemeral listeners; never all loopback ports",
+  "synthetic_canaries": {
+    "credential": "RAZEN_FIXTURE_CREDENTIAL_DO_NOT_EXPORT_20261116",
+    "host_file": "RAZEN_FIXTURE_HOST_CANARY_20261116",
+    "management_file": "RAZEN_FIXTURE_MANAGEMENT_CANARY_20261116",
+    "other_invocation": "RAZEN_FIXTURE_OTHER_INVOCATION_CANARY_20261116"
+  },
+  "granted_snapshot_text": "Razen public passive fixture body.\n",
+  "external_fixture_ids": [
+    "healthy",
+    "filesystem",
+    "network",
+    "privilege",
+    "memory",
+    "pids",
+    "cpu",
+    "tmpfs",
+    "output",
+    "orphan"
+  ],
+  "prohibited_exports": [
+    "synthetic credential and canary contents",
+    "CA private keys",
+    "local control capabilities",
+    "management credentials",
+    "home-directory paths"
+  ]
+}

@@ -1,0 +1,63 @@
+package razen:component-proof@0.1.0;
+
+/// R0 proof contract, not a production extension SDK.
+interface types {
+    record snapshot-reference {
+        snapshot-id: string,
+        revision: u64,
+        sha256: string,
+        length-bytes: u64,
+    }
+
+    record invocation-context {
+        invocation-id: string,
+        snapshot: snapshot-reference,
+    }
+
+    record observation {
+        rule-id: string,
+        title: string,
+        snapshot: snapshot-reference,
+        range-start: u64,
+        range-end: u64,
+    }
+
+    enum error-code {
+        invalid-input,
+        permission-denied,
+        budget-exhausted,
+        stale-snapshot,
+        timeout,
+        cancelled,
+        output-invalid,
+    }
+
+    record sdk-error {
+        code: error-code,
+        message: string,
+    }
+}
+
+/// Each call is checked against the host-bound invocation, never guest authority.
+interface snapshot-reader {
+    use types.{snapshot-reference, sdk-error};
+
+    /// Reads at most the profile's chunk limit and remaining invocation byte budget.
+    read-body: func(
+        snapshot: snapshot-reference,
+        offset: u64,
+        max-bytes: u32,
+    ) -> result<list<u8>, sdk-error>;
+}
+
+interface passive-check {
+    use types.{invocation-context, observation, sdk-error};
+
+    /// Returned observations are proposals; the host validates every reference/range.
+    analyze: func(context: invocation-context) -> result<list<observation>, sdk-error>;
+}
+
+world passive-proof {
+    import snapshot-reader;
+    export passive-check;
+}

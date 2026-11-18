@@ -1,0 +1,1 @@
+{"record":{"fields":{"acknowledged_us":150,"affected_revision":1,"barrier_active_us":100,"clock_epoch_id":"00000000-0000-4000-8000-00000000001f","late_admissions":0,"received_us":0,"request_id":"00000000-0000-4000-8000-00000000001e","unknown_extension":true},"type":"control_measurement"},"schema_version":"0.1.0"}
